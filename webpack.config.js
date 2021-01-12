@@ -39,16 +39,16 @@ module.exports={
         ]
       },
       {
-        test: /\.(png|gif|jpg)$/,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            'loader': 'file-loader',
+            loader: 'file-loader',
             options: {
               name:'assets/[hash].[ext]'
-            }
-          }
-        ]
-      }
+            },
+          },
+        ],
+      },
     ]
   },
   plugins:[
