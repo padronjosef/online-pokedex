@@ -1,0 +1,46 @@
+nav {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 8px 300px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #1D1D1D;
+  border-bottom: 3px solid #BC7222;
+  box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.7);
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  
+  font-size: 22px;
+  height: auto;
+}
+
+.logo {
+  height: 22px;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+}
+
+.menu li a {
+  padding: 0 12px;
+}
+
+.viewCode {
+  display: flex;
+  align-items: center;
+}
+
+.viewCode img {
+  height: 21px;
+  margin-right: 8px;
+}
+
+.viewCode a {
+  font-weight: bold;
+}

@@ -1,0 +1,10 @@
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  margin-left: 150px;
+}
