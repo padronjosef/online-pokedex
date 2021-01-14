@@ -1,0 +1,8 @@
+.course {
+  display: flex;
+}
+
+.course p {
+  font-size: 22px;
+  margin-left: 12px;
+}

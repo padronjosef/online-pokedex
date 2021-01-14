@@ -1,0 +1,61 @@
+body {
+  font-family: "lato", Times, serif;
+  margin: 0px;
+  color: white;
+  /* text-align: center; */
+}
+
+#app {
+  background: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(29, 29, 29, 0.7);
+  border-radius: 10px;
+  margin: 120px 340px;
+  padding: 60px 0;
+}
+
+h1 {
+  font-size: 137px;
+  margin: 10px 0;
+
+}
+
+h2 {
+  font-size: 72px;
+  margin: 0;
+  color: #F2F2F2;
+}
+
+h3 {
+  font-size: 62px;
+  margin: 0;
+  color: #C2C2C2;
+}
+
+h4 {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  width: fit-content;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  width: fit-content;
+}
+
+ul {
+  list-style-type: none;
+}

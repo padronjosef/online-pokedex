@@ -1,0 +1,1 @@
+const logo = "https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/main/photo.png"
