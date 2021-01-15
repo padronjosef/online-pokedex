@@ -1,0 +1,39 @@
+.projectSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00000020;
+  border-radius: 4px;
+  padding: 35px 25px 25px 25px;
+}
+
+.projectSmall-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectSmall-icons a:last-child {
+  margin-left: 20px;
+}
+
+.projectSmall h5 {
+  margin: 25px 0  15px;
+  font-size: 24px;
+}
+
+.projectSmall p {
+  font-size: 16px;
+}
+
+.projectSmall ul {
+  display: flex;
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+.projectSmall ul li {
+  margin-right: 12px;
+  color: #C2C2C2;
+  font-size: 14px;
+}

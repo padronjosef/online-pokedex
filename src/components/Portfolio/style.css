@@ -1,15 +1,33 @@
-#Portfolio {
-  text-align: center;
+#Portfolio h4 {
+  margin-bottom: 10px;
 }
 
 .switch {
-  font-size: 20px;
+  margin: 10px;
   border: 1px solid #BC7222;
-  padding: 15px 0;
-  border-radius: 4px;
   width: fit-content;
+  border-radius: 4px;
+}
+
+.switch input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
 }
 
 .switch label {
-  padding: 0 15px;
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  width: fit-content;
+  color: #BC7222;
+}
+
+.switch label:hover {
+  background-color: transparent;
+}
+
+.switch input[type="radio"]:checked + label {
+  background-color: #BC722220;
+  color: #F2F2F2;
 }

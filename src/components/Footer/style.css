@@ -12,11 +12,11 @@ footer h5 {
 
 .mailTo {
   color: #BC7222;
+  font-size: 20px;
   border: 1px solid #BC7222;
   border-radius: 4px;
   padding: 15px 25px;
   margin: 40px 0 60px;
-  width: fit-content;
 }
 
 .social {
@@ -28,8 +28,12 @@ footer h5 {
 
 .social li {
   margin: 0 20px;
+}
+
+.social li a {
   display: flex;
   align-items: center;
+  font-size: 18px;
 }
 
 .social img {

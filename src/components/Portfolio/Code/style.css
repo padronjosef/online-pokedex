@@ -1,0 +1,13 @@
+.code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-small {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+  padding: 0 60px;
+  margin-top: 80px;
+}

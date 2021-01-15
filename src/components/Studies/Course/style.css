@@ -1,5 +1,9 @@
 .course {
   display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #00000020;
+  width: 300px;
 }
 
 .course p {

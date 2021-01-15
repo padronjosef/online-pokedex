@@ -1,12 +1,11 @@
 import React from 'react';
-import badgeCourse from '../assets/badge-course.svg'
 
 import './style.css'
 
 const Course = () => {
   return (
     <article className="course">
-      <img src={badgeCourse} alt=""/>
+      <img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/badge-course.svg" alt=""/>
       <p>Frontend Architecture</p>
     </article>
   )

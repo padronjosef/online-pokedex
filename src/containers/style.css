@@ -17,6 +17,7 @@ a {
 section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: rgba(29, 29, 29, 0.7);
   border-radius: 10px;
   margin: 120px 340px;
@@ -54,6 +55,10 @@ h5 {
   font-weight: 400;
   text-align: center;
   width: fit-content;
+}
+
+p {
+  line-height: 120%;
 }
 
 ul {

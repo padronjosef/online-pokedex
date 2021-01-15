@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './style.css'
+
 const Blogs = () => {
   return (
-    <article>
-      <img src="" alt=""/>
+    <article className="blogs">
+      <img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/main/img-project.png" alt=""/>
       <div>
         <span>25 march 2019</span>
         <h6>Lorem Ipsum</h6>
