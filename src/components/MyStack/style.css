@@ -16,7 +16,7 @@
 
 .stack-left div {
   display: grid;
-  grid-row-gap: 35px;
+  grid-gap: 35px;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;

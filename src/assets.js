@@ -105,6 +105,108 @@ const assets = {
       link: "https://nextjs.org/",
     }
   ],
+  designs: [
+    // {
+    //   name: "Infographic Data Science",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Cover%20Data%20Science.png",
+    //   link: ""
+    // },
+    {
+      name: "OG Mi camino a Platzi",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Mi%20caminoa%20Platzi.png",
+      link: ""
+    },
+    {
+      name: "OG IBM + Platzi",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/IBM%20%2B%20Platzi%20%E2%80%93%201.png",
+      link: ""
+    },
+    {
+      name: "OG #100DaysOfEnglish",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20%23100DaysOfEnglish.png",
+      link: ""
+    },    {
+      name: "OG Apple Event September",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Apple%20terra.png",
+      link: ""
+    },
+    {
+      name: "OG Future Gaming",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Gaming%20Futuro.png",
+      link: ""
+    },
+    {
+      name: "OG Android Clean Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Clean%20architecture%20OG.png",
+      link: ""
+    },
+    {
+      name: "OG Bitcoin Instagram",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Push%20criptomonedas%20telegram.png",
+      link: ""
+    },
+    {
+      name: "OG Fin De Año",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Fin%20de%20a%C3%B1o%20%E2%80%93%201.png",
+      link: ""
+    },    {
+      name: "Meetup Red Hat Openshift",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20Kubernetes%201.png",
+      link: ""
+    },
+    {
+      name: "OG Usuarios",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Usuarios.png",
+      link: ""
+    },
+    {
+      name: "OG Tecnica correta para programar",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20%C2%BFUso%20la%20t%C3%A9cnica%20correcta%20para%20aprender%20a%20programar.png",
+      link: ""
+    },
+    {
+      name: "Meetup Women At Platzi",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Women%20At%20Platzi%20%E2%80%93%202.png",
+      link: ""
+    },
+    {
+      name: "OG Lenguaje de programacion favorito",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/encuesta.png",
+      link: ""
+    },
+    // {
+    //   name: "Infographic Video Game",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Videojuegos.png",
+    //   link: ""
+    // }
+  ],
+  uxix: [
+    {
+      name: "UI Design Jose Padron",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-gaiden.png",
+      link: ""
+    },
+    {
+      name: "UI Design Jhonny Ordoñez",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Cover.png",
+      link: ""
+    },
+    {
+      name: "UI Design Sebastian Aldana",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-sebastian.png",
+      link: ""
+    },
+    {
+      name: "UI MGV Gaming",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/MGV%20Gaming.png",
+      link: ""
+    },
+    {
+      name: "UI Design Andy Cruz",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-andy.png",
+      link: ""
+    },
+  ],
   footer: [
     {
       name: "Facebook",

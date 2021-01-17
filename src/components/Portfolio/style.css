@@ -1,9 +1,6 @@
-#Portfolio h4 {
-  margin-bottom: 10px;
-}
-
 .switch {
   margin: 10px;
+  margin-bottom: 0;
   border: 1px solid #BC7222;
   width: fit-content;
   border-radius: 4px;
