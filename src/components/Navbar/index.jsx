@@ -8,7 +8,7 @@ const viewCode = assets.navbar.viewcode
 
 const NavBar = () => {
   return (
-    <div className="navbar-container">
+    <header>
       <nav>
         <img className="logo" src={logo.img} alt={logo.alt}/>
         <ul className="menu">
@@ -23,7 +23,7 @@ const NavBar = () => {
           <a href="https://github.com/padronjosef/Portfolio-React" target="_blank" >View Code</a>
         </div>
       </nav>
-    </div>
+    </header>
   )
 }
 
