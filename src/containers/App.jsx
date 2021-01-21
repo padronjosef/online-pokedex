@@ -7,11 +7,13 @@ import Studies from '../components/Studies';
 import Articles from '../components/Articles';
 import Footer from '../components/Footer';
 
+import assets from '../assets';
 import './style.css'
-import background from './background.png'
+
+const background = assets.background
 
 const App = () =>
-  <div style={{ background: `url(${background})`, backgroundAttachment: 'fixed'}}>
+  <div style={{ background: `url(${background.img})`, backgroundAttachment: 'fixed'}}>
     <NavBar />
     <Main />
     <MyStack />

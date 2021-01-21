@@ -1,4 +1,8 @@
 const assets = {
+  background: {
+    img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp",
+    alt: "Background image"
+  },
   navbar: {
     logo: {
       img: "https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/30de37cb9c4dabe0bee035a0a49fd7f34a7e7302/logo-gaiden.svg",
