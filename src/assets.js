@@ -110,104 +110,202 @@ const assets = {
     }
   ],
   designs: [
-    // {
-    //   name: "Infographic Data Science",
-    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Cover%20Data%20Science.png",
-    //   link: ""
-    // },
     {
-      name: "OG Mi camino a Platzi",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Mi%20caminoa%20Platzi.png",
+      name: "OG Apache Spark",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Apache%20Spark.webp",
+      png:"",
+      link: ""
+    },
+    {
+      name: "Infographic Data Science",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Data%20Science.webp",
+      png:"",
+      link: ""
+    },
+    {
+      name: "OG My journey to Platzi.",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20My%20journey%20to%20Platzi.webp",
+      png:"",
       link: ""
     },
     {
       name: "OG IBM + Platzi",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/IBM%20%2B%20Platzi%20%E2%80%93%201.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20%2B%20Platzi%20%E2%80%93%201.webp",
+      png:"",
       link: ""
     },
     {
       name: "OG #100DaysOfEnglish",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20%23100DaysOfEnglish.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20%20100DaysOfEnglish.webp",
+      png:"",
       link: ""
     },    {
-      name: "OG Apple Event September",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Apple%20terra.png",
+      name: "OG Apple terra.webp",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Apple%20terra.webp",
+      png:"",
       link: ""
     },
     {
       name: "OG Future Gaming",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Gaming%20Futuro.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gaming%20Futuro.webp",
+      png:"",
       link: ""
     },
     {
-      name: "OG Android Clean Architecture",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Clean%20architecture%20OG.png",
+      name: "OG Clean architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Clean%20architecture.webp",
+      png:"",
       link: ""
     },
     {
-      name: "OG Bitcoin Instagram",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Push%20criptomonedas%20telegram.png",
+      name: "OG criptomonedas telegram",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20criptomonedas%20telegram.webp",
+      png:"",
+      link: ""
+    },
+    {
+      name: "Meetup Clean Ranks",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Clean%20Ranks.webp",
+      png: "",
       link: ""
     },
     {
       name: "OG Fin De Año",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Fin%20de%20a%C3%B1o%20%E2%80%93%201.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Fin%20de%20a%C3%B1o%20%E2%80%93%201.webp",
+      png:"",
       link: ""
     },    {
-      name: "Meetup Red Hat Openshift",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20Kubernetes%201.png",
+      name: "Meetup Kubernetes IBM",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Kubernetes%20IBM.webp",
+      png:"",
       link: ""
     },
     {
       name: "OG Usuarios",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Usuarios.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Usuarios.webp",
+      png:"",
       link: ""
     },
     {
-      name: "OG Tecnica correta para programar",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20%C2%BFUso%20la%20t%C3%A9cnica%20correcta%20para%20aprender%20a%20programar.png",
+      name: "OG técnica correcta",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20t%C3%A9cnica%20correcta.webp",
+      png:"",
       link: ""
     },
     {
       name: "Meetup Women At Platzi",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Women%20At%20Platzi%20%E2%80%93%202.png",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Women%20At%20Platzi%20%E2%80%93%202.webp",
+      png:"",
       link: ""
     },
     {
-      name: "OG Lenguaje de programacion favorito",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/encuesta.png",
+      name: "OG lenguaje de programacion",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20lenguaje%20de%20programacion.webp",
+      png:"",
       link: ""
     },
-    // {
-    //   name: "Infographic Video Game",
-    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Videojuegos.png",
-    //   link: ""
-    // }
+    {
+      name: "Infographic Video Game",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Videojuegos.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Productividad",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Productividad.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG PlatziMathChallenge",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20PlatziMathChallenge.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Gaming news 2",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gaming%20news%202.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Gana tu premio",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gana%20tu%20premio.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Historias",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Historias.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG IBM Kubernetes",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20Kubernetes%201.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Microsoft",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Markdown",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Markdown.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG Microsoft",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft%202.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "OG CPU Lento",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20CPU%20Lento.webp",
+      png: "",
+      link: ""
+    },
+    {
+      name: "",
+      img: "",
+      png: "",
+      link: ""
+    }
   ],
   uxix: [
     {
-      name: "UI Design Jose Padron",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-gaiden.png",
+      name: "Preview PF Jose Padron",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Jose%20Padron.webp",
+      png:"",
       link: ""
     },
     {
-      name: "UI Design Jhonny Ordoñez",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Cover.png",
+      name: "Preview PF Jhonny Ordones",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20%20Jhonny%20Ordones.webp",
+      png:"",
       link: ""
     },
     {
-      name: "UI Design Sebastian Aldana",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-sebastian.png",
+      name: "Preview PF Sebastian Aldana",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Sebastian%20Aldana.webp",
+      png:"",
       link: ""
     },
     {
-      name: "UI MGV Gaming",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/MGV%20Gaming.png",
+      name: "Preview MGV Gaming",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20MGV%20%20Gaming.webp",
+      png:"",
       link: ""
     },
     {
-      name: "UI Design Andy Cruz",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/portfolio-andy.png",
+      name: "Preview PF Andy Cruz",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Andy%20Cruz.webp",
+      png:"",
       link: ""
     },
   ],

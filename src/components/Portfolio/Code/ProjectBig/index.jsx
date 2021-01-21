@@ -12,8 +12,8 @@ const ProjectBig = () => {
             <h5>Project Name</h5>
           </div>
           <div className="big-project-icons">
-            <a href=""><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-github-projects.svg" alt=""/></a>
-            <a href=""><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-external-link.svg" alt=""/></a>
+            <a href=""><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-github-projects.svg" alt="link to repo"/></a>
+            <a href=""><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-external-link.svg" alt="like to live demo"/></a>
           </div>
         </div>
         <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for.</p>
@@ -24,7 +24,7 @@ const ProjectBig = () => {
         </ul>
       </div>
       <div className="big-project-img">
-        <img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/main/img-project.png" alt=""/>
+        <img src="https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/img-project.webp" alt="project image"/>
       </div>
     </article>
   )

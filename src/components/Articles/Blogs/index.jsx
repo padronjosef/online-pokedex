@@ -5,7 +5,7 @@ import './style.css'
 const Blogs = () => {
   return (
     <article className="blogs">
-      <img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/main/img-project.png" alt=""/>
+      <img src="https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/img-project.webp" alt=""/>
       <div>
         <time>25 march 2019</time>
         <h6>Lorem Ipsum</h6>
