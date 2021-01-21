@@ -39,3 +39,20 @@ footer h5 {
 .social img {
   margin-right: 15px;
 }
+
+.copy-write {
+  display: flex;
+  margin-top: 60px;
+
+}
+
+.copy-write p{
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.logo-footer {
+  width: 80px;
+}

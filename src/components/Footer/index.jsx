@@ -3,6 +3,8 @@ import assets from "../../assets";
 
 import "./style.css";
 
+const logo = assets.navbar.logo
+
 const social = assets.footer.map((data, index) => {
   return (
     <li key={`data-${index}`}>
@@ -25,6 +27,10 @@ const Footer = () => (
       Get In Touch
     </a>
     <ul className="social">{social}</ul>
+    <div className="copy-write">
+      <p>&copy; Made With &#x1F90D; by</p>
+      <img className="logo-footer" src={logo.img} alt={logo.alt} />
+    </div>
   </footer>
 );
 

@@ -10,10 +10,9 @@ const Main = () =>
     <div className="hero">
       <h3>Hello I'm</h3>
       <h1>Jose Padron</h1>
-      <h2>Fake it until you make it</h2>
+      <q cite="">Fake it until you make it</q>
     </div>
     <img src={photo.img} alt={photo.alt}/>
   </main>
-
 
 export default Main;
