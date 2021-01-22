@@ -4,6 +4,13 @@
   }
 }
 
+/* @media screen and (max-width: 1300px) {
+  section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+} */
+
 @media screen and (max-width: 970px) {
   section {
     justify-content: center;
@@ -12,7 +19,11 @@
   main {
     display: flex;
     flex-direction: column;
-    text-align: center;
+  }
+
+  .hero {
+    display: block;
+    padding: 1rem;
   }
 
   .MyStack {

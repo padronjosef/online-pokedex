@@ -14,7 +14,7 @@ import './responsive.css'
 const background = assets.background
 
 const App = () =>
-  <div style={{ background: `url(${background.img})`, backgroundAttachment: 'fixed', backgroundSize: "cover"}}>
+  <div style={{ background: `url(${background.img})`, backgroundAttachment: 'fixed',backgroundPosition: "center", backgroundSize: "cover"}}>
     <Header />
     <Main />
     <MyStack />

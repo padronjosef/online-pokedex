@@ -8,11 +8,15 @@ const photo = assets.hero
 const Main = () =>
   <main>
     <div className="hero">
-      <h3>Hello I'm</h3>
-      <h1>Jose Padron</h1>
-      <q cite="">Fake it until you make it</q>
+      <div className="hero-description">
+        <h1>Jose Padron</h1>
+        <p>React Frontend Developer & Interface and User Experience Desginer (UI / UX)</p>
+        <q cite="">Fake it until you make it</q>
+      </div>
+      <div>
+        <img src={photo.img} alt={photo.alt}/>
+      </div>
     </div>
-    <img src={photo.img} alt={photo.alt}/>
   </main>
 
 export default Main;
