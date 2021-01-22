@@ -6,13 +6,13 @@ import './style.css'
 const logo = assets.navbar.logo
 const viewCode = assets.navbar.viewcode
 
-const NavBar = () => {
+const Header = () => {
   return (
     <header>
       <nav>
         <img className="logo" src={logo.img} alt={logo.alt}/>
         <ul className="menu">
-          <li><a href="#MyStack">My Stack</a></li>
+          <li><a href="#MyStack">Stack</a></li>
           <li><a href="#Portfolio">Portfolio</a></li>
           <li><a href="#Studies">Studies</a></li>
           <li><a href="#Articles">Articles</a></li>
@@ -27,4 +27,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar;
+export default Header;

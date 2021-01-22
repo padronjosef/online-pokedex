@@ -5,9 +5,10 @@
 }
 
 .code-small {
+  max-width: 1120px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
-  padding: 0 60px;
+  padding: 0 auto;
   margin-top: 80px;
 }

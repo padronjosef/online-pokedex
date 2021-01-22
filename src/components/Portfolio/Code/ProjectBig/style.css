@@ -31,7 +31,7 @@
 }
 
 .big-project p {
-  width: 520px;
+  max-width: 520px;
   padding: 15px;
   background-color: #00000020;
   margin: 10px 0;
@@ -43,7 +43,7 @@
   margin-left: 20px;
 }
 .big-project-img img {
-  width: 450px;
+  max-width: 450px;
 }
 
 .big-project ul {

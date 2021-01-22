@@ -1,6 +1,7 @@
 const assets = {
   background: {
     img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp",
+    mobile: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background-mobile.webp",
     alt: "Background image"
   },
   navbar: {
@@ -267,12 +268,6 @@ const assets = {
     {
       name: "OG CPU Lento",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20CPU%20Lento.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "",
-      img: "",
       png: "",
       link: ""
     }

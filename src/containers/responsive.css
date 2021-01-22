@@ -1,0 +1,218 @@
+@media screen and (max-width: 1024px) {
+  .big-project {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  section {
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .MyStack {
+    align-items: center;
+  }
+
+  .stack-right {
+    margin-top: 5rem;
+  }
+
+  .stack-right dd{
+    padding: 0 2rem;
+    margin-bottom: .5rem;
+  }
+
+  .stack-right a {
+    padding-left: 2rem;
+  }
+
+  main img {
+    margin: 0;
+    max-width: 300px;
+    margin-top: 2rem;
+  }
+
+  .courses-container, .blogs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .stack-left div img:last-child {
+    grid-column: 3 / 5;
+    grid-row: 4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: none
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .MyStack {
+    flex-direction: column;
+  }
+
+  .stack-right-details-text dd {
+    max-width: 600px;
+  }
+  
+
+  .big-project {
+    flex-direction: column;
+  }
+
+  .big-project img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .code-small, .carears-container, .desings-container, .uxix-container  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer h4 {
+    margin-bottom: 2rem;
+  }
+
+  footer h5{
+    margin: 0 3rem;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .social li a {
+    margin: 5px 0;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .blogs {
+    max-width: 220px;
+  }
+
+  .blogs img{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h4 {
+    padding: 0 2rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .stack-left {
+    margin-bottom: 50px;
+  }
+
+  .stack-left div {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-left div img{
+    width: 100%;
+  }
+
+  .stack-left div img:last-child {
+    grid-column: 1 / 3;
+  }
+
+  .big-project {
+    flex-direction: column;
+  }
+
+  .big-project-details {
+    margin: 0;
+  }
+
+  .big-project-text p {
+    padding: 0;
+  }
+
+  .big-project-img {
+    margin: 0;
+  }
+  
+  .big-project img {
+    max-width: 250px;
+  }
+
+  .code-small {
+    padding: 0 1rem;
+  }
+
+  .desings-container, .uxix-container {
+    padding: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .code-small, .carears-container, .courses-container, .blogs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer h5{
+    margin: 0 2rem;
+    font-size: 18px;
+  }
+
+  .copy-write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy-write p {
+    margin: 0;
+  }
+
+  .logo-footer {
+    width: 40%;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main img {
+    max-width: 250px;
+  }
+
+  .stack-left div {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .code-big {
+    max-width: 300px;
+  }
+
+  .big-project-details {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  footer h5{
+    margin: 0 1rem;
+  }
+}

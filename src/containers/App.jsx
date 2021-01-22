@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/Navbar';
+import Header from '../components/Header';
 import Main from '../components/Main';
 import MyStack from '../components/MyStack';
 import Portfolio from '../components/Portfolio';
@@ -9,12 +9,13 @@ import Footer from '../components/Footer';
 
 import assets from '../assets';
 import './style.css'
+import './responsive.css'
 
 const background = assets.background
 
 const App = () =>
-  <div style={{ background: `url(${background.img})`, backgroundAttachment: 'fixed'}}>
-    <NavBar />
+  <div style={{ background: `url(${background.img})`, backgroundAttachment: 'fixed', backgroundSize: "cover"}}>
+    <Header />
     <Main />
     <MyStack />
     <Portfolio />

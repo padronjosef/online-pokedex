@@ -7,8 +7,10 @@ import './style.css'
 
 const Code = () =>
   <div className="code">
-    < ProjectBig />
-    < ProjectBig />
+    <div className="code-big">
+      < ProjectBig />
+      < ProjectBig />
+    </div>
     <div className="code-small">
       < ProjectSmall />
       < ProjectSmall />

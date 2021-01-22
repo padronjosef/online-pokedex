@@ -1,10 +1,14 @@
 .blogs {
   background-color: #00000020;
   border-radius: 4px;
+  max-width: 300px;
+}
+
+.img-container {
 }
 
 .blogs img {
-  width: 300px;
+  max-width: 300px;
   opacity: 0.2;
 }
 
@@ -12,8 +16,9 @@
   opacity: 1;
 }
 
-.blogs div {
+.blog-details {
   padding: 10px 16px 16px;
+  max-width: 300px;
 }
 
 .blogs span {
@@ -30,7 +35,7 @@
 
 .blogs p {
   font-size: 16px;
-  width: 268px;
+  max-width: 268px;
   color: #F2F2F2;
   margin: 0;
 }

@@ -20,8 +20,7 @@ const Footer = () => (
   <footer id="Footer">
     <h4>LET’S CREATE SOMETHING GREAT</h4>
     <h5>
-      If you like my work and have some cool project to work on, just send{" "}
-      <br /> me direct message or contact me through social sites listed below.
+      If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.
     </h5>
     <a className="mailTo" href="mailto:josepadron.go@gmail.com">
       Get In Touch
