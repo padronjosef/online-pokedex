@@ -6,7 +6,7 @@ import './style.css'
 const photo = assets.hero
 
 const Main = () =>
-  <main>
+  <main id="main">
     <div className="hero">
       <div className="hero-description">
         <h1>Jose Padron</h1>

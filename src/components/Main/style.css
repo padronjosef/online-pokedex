@@ -22,9 +22,10 @@ main {
 }
 
 main img {
-  margin-left: 150px;
+  margin-left: 100px;
   max-width: 300px;
   max-height: 300px;
+  border-radius: 50%;
 }
 
 q {

@@ -15,7 +15,7 @@ const assets = {
     }
   },
   hero: {
-    img: "https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/main/photo.png",
+    img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/photo.webp",
     alt: "photo jose padron"
   },
   stack: [
