@@ -1,18 +1,15 @@
-import React from 'react';
+import React from "react";
 
 import assets from "../../../assets";
 
 import "./style.css";
 
-const desings = assets.designs.map((data, index) => {
-  return (
-    <img src={data.img} alt={data.name} key={`data-${index}`} />
-  );
-});
-
-const Designs = () =>
+const Designs = () => (
   <div className="desings-container">
-    {desings}
+    {assets.designs.map((data, index) => {
+      return <img src={data.img} alt={data.name} key={`data-${index}`} />;
+    })}
   </div>
+);
 
-export default Designs
+export default Designs;

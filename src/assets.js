@@ -316,9 +316,9 @@ const assets = {
       link: "https://www.linkedin.com/in/padronjosef/",
     },
     {
-      name: "Twitter",
-      img: "https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/30de37cb9c4dabe0bee035a0a49fd7f34a7e7302/social-twitter.svg",
-      link: "https://twitter.com/padronjosef",
+      name: "Platzi",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/6253affae5911b61ceca4208271acbfbc2fc5b01/Social/social-platzi.svg",
+      link: "https://platzi.com/p/padronjosef/",
     },
     {
       name: "GitHub",

@@ -4,36 +4,27 @@
   align-items: center;
   background-color: #00000020;
   border-radius: 4px;
-  padding: 35px 25px 25px 25px;
+  padding: 40px 25px 25px;
 }
 
 .projectSmall-icons {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .projectSmall-icons a:last-child {
   margin-left: 20px;
 }
 
-.projectSmall h5 {
-  margin: 25px 0  15px;
-  font-size: 24px;
+.projectSmall-title {
+  margin-bottom: 20px;
 }
 
-.projectSmall p {
-  font-size: 16px;
+.projectSmall-description {
+  margin-bottom: 10px;
 }
 
-.projectSmall ul {
-  display: flex;
-  width: fit-content;
-  padding: 0;
-  margin: 0;
-}
-
-.projectSmall ul li {
+.projectSmall-stack li {
   margin-right: 12px;
-  color: #C2C2C2;
-  font-size: 14px;
 }

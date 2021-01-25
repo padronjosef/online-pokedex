@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.css'
 
-const Blogs = () => {
+const Article = () => {
   return (
     <article className="blogs">
       <div className="img-container">
@@ -10,11 +10,11 @@ const Blogs = () => {
       </div>
       <div className="blog-details">
         <time>25 march 2019</time>
-        <h6>Lorem Ipsum</h6>
+        <h3>Lorem Ipsum</h3>
         <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by</p>
       </div>
     </article>
   )
 }
 
-export default Blogs;
+export default Article;

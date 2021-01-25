@@ -13,9 +13,9 @@ const Main = () =>
         <p>React Frontend Developer & Interface and User Experience Desginer (UI / UX)</p>
         <q cite="">Fake it until you make it</q>
       </div>
-      <div>
+      <figure>
         <img src={photo.img} alt={photo.alt}/>
-      </div>
+      </figure>
     </div>
   </main>
 

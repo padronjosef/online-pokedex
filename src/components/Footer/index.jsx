@@ -17,17 +17,17 @@ const social = assets.footer.map((data, index) => {
 });
 
 const Footer = () => (
-  <footer id="Footer">
-    <h4>LET’S CREATE SOMETHING GREAT</h4>
-    <h5>
+  <footer id="footer">
+    <h2><span>05.</span> LET’S CREATE SOMETHING GREAT</h2>
+    <p>
       If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.
-    </h5>
-    <a className="mailTo" href="mailto:josepadron.go@gmail.com">
-      Get In Touch
+    </p>
+    <a className="btn" href="mailto:josepadron.go@gmail.com">
+      Let's get in touch
     </a>
     <ul className="social">{social}</ul>
     <div className="copy-write">
-      <p>&copy; Made With &#x1F90D; by</p>
+      <p>&copy; Made with &#x1F90D; by </p>
       <img className="logo-footer" src={logo.img} alt={logo.alt} />
     </div>
   </footer>

@@ -1,19 +1,22 @@
 main {
   height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero {
-  max-width: 1240px;
+  width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  padding: 50px;
+  padding: 40px;
+  justify-content: space-around;
 }
 
 .hero-description {
-  max-width: 750px;
+  max-width: 727px;
 }
 
 .hero-description p {
@@ -21,8 +24,7 @@ main {
   margin: 1rem 0;
 }
 
-main img {
-  margin-left: 100px;
+.hero img {
   max-width: 300px;
   max-height: 300px;
   border-radius: 50%;
@@ -30,6 +32,6 @@ main img {
 
 q {
   font-size: 28px;
-  margin: 0;
   color: #BC7222;
+  quotes: none;
 }

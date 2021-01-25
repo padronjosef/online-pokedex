@@ -1,10 +1,15 @@
 .course {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background-color: #00000020;
   max-width: 300px;
-  padding: 0 25px;
+  padding: 5px 25px;
+}
+
+.course img {
+  width: 30px;
 }
 
 .course p {

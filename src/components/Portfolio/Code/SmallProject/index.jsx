@@ -13,12 +13,12 @@ const ProjectSmall = () => {
             <a href=""><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-external-link.svg" alt=""/></a>
           </div>
         </div>
-        <h5>Lorem ipsum</h5>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
-        <ul>
-          <li>Django</li>
-          <li>React</li>
-          <li>GitHub Api</li>
+        <h3 className="projectSmall-title">Lorem ipsum</h3>
+        <p className="projectSmall-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+        <ul className="projectSmall-stack">
+          <li><span>Django</span></li>
+          <li><span>Django</span></li>
+          <li><span>Django</span></li>
         </ul>
       </div>
     </article>

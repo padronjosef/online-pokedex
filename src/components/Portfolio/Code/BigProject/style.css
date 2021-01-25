@@ -1,7 +1,7 @@
 .big-project {
   display: flex;
-  margin: 20px 0;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .big-project-text {
@@ -11,22 +11,14 @@
 .big-project-details {
   display: flex;
   align-items: center;
-  text-align: left;
   justify-content: space-between;
-  margin-right: 20px;
 }
 
 .big-project-icons img {
   margin-left: 16px;
 }
 
-.big-project-title span {
-  font-size: 14px;
-  color: #BC7222;
-}
-
-.big-project-title h5 {
-  font-size: 28px;
+.big-project-title h3 {
   margin: 5px 0 10px;
 }
 
@@ -36,7 +28,6 @@
   background-color: #00000020;
   margin: 10px 0;
   border-radius: 4px;
-  font-size: 18px;
 }
 
 .big-project-img {
@@ -53,5 +44,5 @@
 }
 
 .big-project ul li {
-  margin-right: 12px;
+  margin-right: 28px;
 }

@@ -6,26 +6,16 @@ footer {
   align-items: center;
 }
 
-footer h4 {
+footer p {
+  margin: 0;
+  max-width: 680px;
+  font-size: 22px;
+  text-align: center;
   margin-bottom: 40px;
 }
 
-footer h5 {
-  margin: 0;
-  max-width: 720px;
-}
-
-.mailTo {
-  color: #BC7222;
-  font-size: 20px;
-  border: 1px solid #BC7222;
-  border-radius: 4px;
-  padding: 15px 25px;
-  margin: 40px 0 60px;
-}
-
 .social {
-  margin: 0;
+  margin: 50px 0 60px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -43,15 +33,15 @@ footer h5 {
 
 .social img {
   margin-right: 15px;
+  height: 28px;
 }
 
 .copy-write {
   display: flex;
-  margin-top: 60px;
+  align-items: center;
 }
 
 .copy-write p{
-  margin-bottom: 10px;
   font-size: 18px;
   margin: 0;
   margin-right: 5px;

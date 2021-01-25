@@ -1,21 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import ProjectBig from './ProjectBig'
-import ProjectSmall from './ProjectSmall'
+import BigProject from "./BigProject";
+import SmallProject from "./SmallProject";
 
-import './style.css'
+import "./style.css";
 
-const Code = () =>
+const Code = () => (
   <div className="code">
     <div className="code-big">
-      < ProjectBig />
-      < ProjectBig />
+      <BigProject />
+      <BigProject />
     </div>
     <div className="code-small">
-      < ProjectSmall />
-      < ProjectSmall />
-      < ProjectSmall />
+      <SmallProject />
+      <SmallProject />
+      <SmallProject />
     </div>
   </div>
+);
 
-export default Code
+export default Code;

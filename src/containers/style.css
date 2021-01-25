@@ -2,10 +2,6 @@ body {
   font-family: "lato", Times, serif;
   margin: 0px;
   color: white;
-  /* text-align: center; */
-}
-
-#app {
   background: black;
 }
 
@@ -28,39 +24,69 @@ section {
 h1 {
   font-size: 100px;
   margin: 10px 0;
-
 }
 
 h2 {
-  font-size: 72px;
-  margin: 0;
-  color: #F2F2F2;
+  font-size: 28px;
+  margin: 0 0 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2 span{
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 h3 {
-  font-size: 62px;
+  font-size: 22px;
   margin: 0;
-  color: #C2C2C2;
+  color: #F2F2F2
 }
 
-h4 {
-  font-size: 32px;
-  margin: 0;
-  text-align: center;
-  width: fit-content;
-}
-
-h5 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  width: fit-content;
-}
-
-p {
+p, dd {
   line-height: 120%;
+  font-size: 16px;
+  color: #C2C2C2;
+  margin: 0;
+}
+
+span {
+  color: #BC7222;
+  font-size: 14px;
+}
+
+time {
+  font-size: 12px;
+  color: #BC7222;
+  margin-bottom: 5px;
+}
+
+figure {
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 0;
+  width: 300px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #BC722210;
+  color: #BC7222;
+  border: 1px solid #BC7222;
+  transition: .5s;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import BtnFile from '../complements/BtnFile/';
 import BtnShow from '../complements/BtwShow';
 
 import Course from './Course';
@@ -7,9 +6,8 @@ import Course from './Course';
 import './style.css'
 
 const Studies = () =>
-  <section id="Studies" className="studies">
-    <h4>Everything I have learned</h4>
-    <BtnFile />
+  <section id="studies">
+    <h2><span>03.</span> Everything I have learned</h2>
     <div className="carears-container">
       <Course />
       <Course />
@@ -22,7 +20,7 @@ const Studies = () =>
       <Course />
       <Course />
     </div>
-    <BtnShow />
+    <BtnShow value="certificates"/>
   </section>
 
 export default Studies;

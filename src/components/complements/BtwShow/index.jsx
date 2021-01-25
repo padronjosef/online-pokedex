@@ -1,11 +1,6 @@
 import React from 'react';
 
-import './style.css'
-
-const BtnShow = () => {
-  return (
-    <button className="btn-show" type="button">View More</button>
-  )
-}
+const BtnShow = (props ) =>
+  <a className="btn">View all the {props.value}</a>
 
 export default BtnShow;

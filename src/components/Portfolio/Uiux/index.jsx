@@ -1,18 +1,15 @@
-import React from 'react';
+import React from "react";
 
 import assets from "../../../assets";
 
 import "./style.css";
 
-const desings = assets.uxix.map((data, index) => {
-  return (
-    <img src={data.img} alt={data.name} key={`data-${index}`} />
-  );
-});
-
-const Designs = () =>
+const Uiux = () => (
   <div className="uxix-container">
-    {desings}
+    {assets.uxix.map((data, index) => {
+      return <img src={data.img} alt={data.name} key={`data-${index}`} />;
+    })}
   </div>
+);
 
-export default Designs
+export default Uiux;
