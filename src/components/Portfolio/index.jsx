@@ -6,7 +6,7 @@ import "./style.css";
 const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio">
-      <h2>
+      <h2 className="portfolio__title">
         <span>02.</span> Some Things I’ve Built
       </h2>
 

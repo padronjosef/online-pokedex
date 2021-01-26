@@ -1,9 +1,10 @@
-header {
+.header {
   position: fixed;
   width: 100%;
   padding: 8px 0;
   top: 0;
-  z-index: 1;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: center;
   
@@ -12,11 +13,12 @@ header {
   box-shadow: 0px 1px 20px 3px rgba(0,0,0,0.7);
 }
 
-nav {
+.navbar {
   width: 1340px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0 auto;
 }
 
 .logo {
@@ -24,7 +26,7 @@ nav {
   display: flex;
 }
 
-.logo img{
+.logo__img{
   height: 100%;
 }
 
@@ -32,22 +34,22 @@ nav {
   padding: 0 10px;
 }
 
-.menu li {
+.menu__item {
   padding: 8px 12px;
 }
 
-.menu li a {
+.menu__link {
   font-size: 18px;
 }
 
-.menu li span {
+.menu__span {
   color: #fff;
   font-size: 14px;
   margin-right: 5px;
   font-weight: bold;
 }
 
-.menu li:hover{
+.menu__item:hover{
   padding: 7px 11px;
   border: solid #BC7222 1px;
   transition: background-color .5s;
@@ -55,13 +57,13 @@ nav {
   border-radius: 4px;
 }
 
-.menu li:hover > a {
+.menu__item:hover > .menu__link {
   color: #BC7222;
   transition: color .5s;
 }
 
-.menu li:hover > a span {
-  color: #BC7222;;
+.menu__item:hover > .menu__link .menu__span {
+  color: #BC7222;
   transition: color .5s;
 }
 

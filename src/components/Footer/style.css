@@ -1,4 +1,4 @@
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   padding: 60px 0;
@@ -6,8 +6,7 @@ footer {
   align-items: center;
 }
 
-footer p {
-  margin: 0;
+.footer__messege {
   max-width: 680px;
   font-size: 22px;
   text-align: center;
@@ -21,17 +20,17 @@ footer p {
   flex-direction: row;
 }
 
-.social li {
+.social__item {
   margin: 0 20px;
 }
 
-.social li a {
+.social__link {
   display: flex;
   align-items: center;
   font-size: 18px;
 }
 
-.social img {
+.social__img {
   margin-right: 15px;
   height: 28px;
 }
@@ -41,12 +40,12 @@ footer p {
   align-items: center;
 }
 
-.copy-write p{
+.copy-write__message{
   font-size: 18px;
   margin: 0;
   margin-right: 5px;
 }
 
-.logo-footer {
+.copy-write__img {
   width: 80px;
 }

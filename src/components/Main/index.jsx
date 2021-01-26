@@ -1,22 +1,28 @@
-import React from 'react';
-import assets from '../../assets';
+import React from "react";
+import assets from "../../assets";
 
-import './style.css'
+import "./style.css";
 
-const photo = assets.hero
+const photo = assets.hero;
 
-const Main = () =>
-  <main id="main">
+const Main = () => (
+  <main id="main" className="main">
     <div className="hero">
-      <div className="hero-description">
-        <h1>Jose Padron</h1>
-        <p>React Frontend Developer & Interface and User Experience Desginer (UI / UX)</p>
-        <q cite="">Fake it until you make it</q>
+      <div className="hero__wrapper">
+        <h1 className="hero__title">Jose Padron</h1>
+        <p className="hero__messege">
+          React Frontend Developer & Interface and User Experience Desginer (UI
+          / UX)
+        </p>
+        <q hero__messege="hero__quote" cite="">
+          Fake it until you make it
+        </q>
       </div>
-      <figure>
-        <img src={photo.img} alt={photo.alt}/>
+      <figure className="photo">
+        <img className="photo__img" src={photo.img} alt={photo.alt} />
       </figure>
     </div>
   </main>
+);
 
 export default Main;
