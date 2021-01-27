@@ -1,24 +1,30 @@
-.blogs {
+.article {
   background-color: #00000020;
   border-radius: 4px;
   max-width: 300px;
 }
 
-.blogs h3 {
+.article__title {
   margin-bottom: 10px;
 }
 
-.blogs img {
+.article__img {
   max-width: 300px;
   opacity: 0.2;
 }
 
-.blogs img:hover {
+.article__img:hover {
   opacity: 1;
   transition: .5s;
 }
 
-.blog-details {
+.article__details {
   padding: 10px 16px 16px;
   max-width: 300px;
+}
+
+.article__time {
+  font-size: 12px;
+  color: #bc7222;
+  margin-bottom: 5px;
 }

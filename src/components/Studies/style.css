@@ -1,14 +1,18 @@
-.carears-container, .courses-container{
-  display: grid;
-  justify-content: center;
-  grid-gap: 20px;
+
+.carears {
   margin-bottom: 40px;
 }
 
-.carears-container {
+.carears, .courses{
+  display: grid;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.carears {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.courses-container {
+.courses {
   grid-template-columns: repeat(3, 1fr);
 }

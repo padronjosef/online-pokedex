@@ -3,7 +3,7 @@ import assets from "../../assets";
 
 import "./style.css";
 
-const logo = assets.navbar.logo
+const logo = assets.navbar.logo;
 
 const social = assets.footer.map((data, index) => {
   return (
@@ -18,9 +18,10 @@ const social = assets.footer.map((data, index) => {
 
 const Footer = () => (
   <footer id="footer" className="footer">
-    <h2 className="footer__title"><span>05.</span> LET’S CREATE SOMETHING GREAT</h2>
+    <h2 className="footer__title"> LET’S CREATE SOMETHING GREAT</h2>
     <p className="footer__messege">
-      If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.
+      If you like my work and have some cool project to work on, just send me
+      direct message or contact me through social sites listed below.
     </p>
     <a className="footer__btn btn" href="mailto:josepadron.go@gmail.com">
       Let's get in touch

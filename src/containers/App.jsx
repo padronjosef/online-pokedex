@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 
 import assets from "../assets";
 import "./style.css";
-import "./responsive.css";
 
 const background = assets.background;
 

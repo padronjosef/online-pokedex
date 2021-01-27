@@ -4,7 +4,7 @@
   padding: 8px 0;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   
@@ -32,21 +32,23 @@
 
 .menu {
   padding: 0 10px;
+  counter-reset: menu-counter;
 }
 
 .menu__item {
   padding: 8px 12px;
+  counter-increment: menu-counter;
+}
+
+.menu__link::before {
+  content: "0" counter(menu-counter) ".";
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .menu__link {
   font-size: 18px;
-}
-
-.menu__span {
-  color: #fff;
-  font-size: 14px;
-  margin-right: 5px;
-  font-weight: bold;
 }
 
 .menu__item:hover{
@@ -58,11 +60,6 @@
 }
 
 .menu__item:hover > .menu__link {
-  color: #BC7222;
-  transition: color .5s;
-}
-
-.menu__item:hover > .menu__link .menu__span {
   color: #BC7222;
   transition: color .5s;
 }

@@ -1,26 +1,27 @@
-import React from 'react';
-import BtnShow from '../complements/BtwShow';
+import React from "react";
+import BtnShow from "../complements/BtwShow";
 
-import Course from './Course';
+import Certificate from "./Certificate";
 
-import './style.css'
+import "./style.css";
 
-const Studies = () =>
-  <section id="studies">
-    <h2><span>03.</span> Everything I have learned</h2>
-    <div className="carears-container">
-      <Course />
-      <Course />
+const Studies = () => (
+  <section id="studies" className="estudies">
+    <h2>Everything I have learned</h2>
+    <div className="carears">
+      <Certificate />
+      <Certificate />
     </div>
-    <div className="courses-container">
-      <Course />
-      <Course />
-      <Course />
-      <Course />
-      <Course />
-      <Course />
+    <div className="courses">
+      <Certificate />
+      <Certificate />
+      <Certificate />
+      <Certificate />
+      <Certificate />
+      <Certificate />
     </div>
-    <BtnShow value="certificates"/>
+    <BtnShow value="certificates" />
   </section>
+);
 
 export default Studies;

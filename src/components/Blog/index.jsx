@@ -1,18 +1,19 @@
-import React from 'react';
-import Article from './Article';
-import BtnShow from '../complements/BtwShow';
+import React from "react";
+import Article from "./Article";
+import BtnShow from "../complements/BtwShow";
 
-import './style.css'
+import "./style.css";
 
-const Blog = () =>
+const Blog = () => (
   <section id="blog" className="blog">
-    <h2><span>04.</span> Things I've Written To The Internet</h2>
-    <div className="blogs-container">
+    <h2>Things I've Written To The Internet</h2>
+    <div className="blog__wrapper">
       <Article />
       <Article />
       <Article />
     </div>
-    <BtnShow value="articles"/>
+    <BtnShow value="articles" />
   </section>
+);
 
 export default Blog;

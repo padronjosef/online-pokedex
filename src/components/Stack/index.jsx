@@ -6,9 +6,7 @@ import "./style.css";
 
 const Stack = () => (
   <section id="stack" className="stack">
-    <h2>
-      <span>01.</span> All the technologies I've use
-    </h2>
+    <h2>All the technologies I've use</h2>
     <div className="stack__wrapper">
       <StackLeft />
       <StackRight />

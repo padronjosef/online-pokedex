@@ -1,4 +1,4 @@
-.course {
+.certificate {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,11 +8,11 @@
   padding: 5px 25px;
 }
 
-.course img {
+.certificate__img {
   width: 30px;
 }
 
-.course p {
+.certificate__title {
   font-size: 22px;
   margin-left: 12px;
 }

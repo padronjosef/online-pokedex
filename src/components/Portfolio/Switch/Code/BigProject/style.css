@@ -1,0 +1,51 @@
+.big-project {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.big-project__wrapper {
+  padding: 15px;
+}
+
+.big-project__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big-project__title {
+  margin: 5px 0 10px;
+  display: block;
+}
+
+.big-project__title::before {
+  content: "Feature Project";
+  display: block;
+  color: #bc7222;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.big-project__link {
+  margin-left: 16px;
+}
+
+.big-project__description {
+  max-width: 520px;
+  padding: 15px;
+  background-color: #00000020;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.big-project__item {
+  margin-right: 28px;
+}
+
+.big-project__figure {
+  max-width: 450px;
+}
+.big-project__img {
+  margin-left: 20px;
+  width: 100%;
+}
