@@ -7,20 +7,10 @@ import Studies from "../components/Studies";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 
-import assets from "../assets";
 import "./style.css";
 
-const background = assets.background;
-
 const App = () => (
-  <div
-    style={{
-      background: `url(${background.img})`,
-      backgroundAttachment: "fixed",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-    }}
-  >
+  <div className="app">
     <Header />
     <Main />
     <Stack />
