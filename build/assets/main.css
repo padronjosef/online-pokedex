@@ -6,7 +6,7 @@
 
 .stack-right{border:#bc7222 solid 1px;background:#bc722210;border-radius:4px;padding:20px;max-width:400px}.stack-right__wrapper{flex-direction:column;align-items:center;display:flex}.stack-right__title{margin-bottom:32px;font-size:32px}.stack-right__img{width:120px;margin-bottom:30px;filter:invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg) brightness(50%) contrast(89%)}.stack-right__details{margin-bottom:5px;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4}
 
-.stack__wrapper{display:flex;flex-flow:row wrap;width:100%;justify-content:space-evenly}
+.app{background-image:url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp");background-position:center;background-attachment:fixed;background-size:cover}.stack__wrapper{display:flex;flex-flow:row wrap;width:100%;justify-content:space-evenly}
 
 .btn{font-size:18px;color:#fff;border:1px solid #fff;padding:10px 0;width:300px;border-radius:4px;text-align:center;cursor:pointer;margin-top:40px}.btn:hover{background-color:#bc722210;color:#bc7222;border:1px solid #bc7222;transition:0.5s}
 
