@@ -4,6 +4,11 @@
   border-radius: 4px;
   padding: 20px;
   max-width: 400px;
+  height: 350px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .stack-right__wrapper {
@@ -18,7 +23,7 @@
 }
 
 .stack-right__img {
-  width: 120px;
+  height: 120px;
   margin-bottom: 30px;
   filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
     brightness(50%) contrast(89%);
@@ -30,4 +35,11 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+}
+
+.stack-right__link {
+  display: block;
+  width: 100%;
+  color: #bc7222;
+  font-size: 14px;
 }

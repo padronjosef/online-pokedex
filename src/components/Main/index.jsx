@@ -14,7 +14,7 @@ const Main = () => (
           React Frontend Developer & Interface and User Experience Desginer (UI
           / UX)
         </p>
-        <q hero__messege="hero__quote" cite="">
+        <q className="hero__quote" cite="">
           Fake it until you make it
         </q>
       </div>
