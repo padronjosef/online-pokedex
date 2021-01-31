@@ -22,8 +22,13 @@
   font-size: 32px;
 }
 
+.stack-right__span {
+  text-transform: lowercase;
+}
+
 .stack-right__img {
   height: 120px;
+  width: 90%;
   margin-bottom: 30px;
   filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
     brightness(50%) contrast(89%);

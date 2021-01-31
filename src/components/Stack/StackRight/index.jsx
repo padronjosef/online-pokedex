@@ -10,7 +10,7 @@ const StackRight = ({ name, img, p, link } = props) => {
         <img className="stack-right__img" src={img} alt={name} />
         <dd className="stack-right__details">{p}</dd>
         <a className="stack-right__link" href={link} target="_blank">
-          https://www.{name}.com
+          https://www.<span className="stack-right__span">{name}</span>.com
         </a>
       </dl>
     </div>

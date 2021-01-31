@@ -1,14 +1,21 @@
 import React from 'react';
+import assets from "/src/assets";
 
-import './style.css'
+import "./style.css";
 
 const Certificate = () => {
   return (
-    <article className="certificate">
-      <img className="certificate__img" src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/badge-course.svg" alt=""/>
-      <h3 className="certificate__title">Frontend Architecture</h3>
-    </article>
-  )
-}
+    <div className="courses">
+      {assets.certificates.map((data, index) => {
+        return (
+          <a href={data} href={data.link} target="__blank" key={`data-${index}`}>
+            <img className="stack-left__img" src={data.img} alt={data.name} key={`data-${index}`} />
+            <h3>{data.name}</h3>
+          </a>
+        );
+      })}
+    </div>
+  );
+};
 
 export default Certificate;

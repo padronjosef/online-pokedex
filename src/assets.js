@@ -299,6 +299,28 @@ const assets = {
       link: ""
     },
   ],
+  certificates: [
+    {
+      name: "Frontend Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
+      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+    },
+    {
+      name: "Frontend Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
+      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+    },
+    {
+      name: "Frontend Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
+      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+    },
+    {
+      name: "Frontend Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
+      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+    },
+  ],
   footer: [
     {
       name: "Facebook",
