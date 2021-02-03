@@ -18,9 +18,9 @@ const Main = () => (
           Fake it until you make it
         </q>
       </div>
-      <figure className="photo">
+      <a className="photo" href="https://github.com/padronjosef/Portfolio-React" target="__blank">
         <img className="photo__img" src={photo.img} alt={photo.alt} />
-      </figure>
+      </a>
     </div>
   </main>
 );
