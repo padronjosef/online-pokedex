@@ -9,8 +9,13 @@ body {
   font-family: "lato", Times, serif;
   margin: 0px;
   color: white;
-  background: black;
   counter-reset: section-counter;
+  
+  background-color: black;
+  background-image: url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {

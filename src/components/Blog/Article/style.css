@@ -2,6 +2,7 @@
   background-color: #00000020;
   border-radius: 4px;
   max-width: 300px;
+  cursor: pointer;
 }
 
 .article__title {
@@ -13,7 +14,7 @@
   opacity: 0.2;
 }
 
-.article__img:hover {
+.article__img:hover{
   opacity: 1;
   transition: .5s;
 }

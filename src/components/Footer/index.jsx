@@ -28,7 +28,7 @@ const Footer = () => (
     </a>
     <ul className="social">{social}</ul>
     <div className="copy-write">
-      <p className="copy-write__messege">&copy; Made with &#x1F90D; by </p>
+      <p className="copy-write__message">&copy; Made with &#x1F90D; by</p>
       <img className="copy-write__img" src={logo.img} alt={logo.alt} />
     </div>
   </footer>

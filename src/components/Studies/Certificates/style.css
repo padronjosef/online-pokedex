@@ -10,9 +10,10 @@
 
 .certificate__img {
   width: 30px;
+  cursor: pointer;
 }
 
-.certificate__title {
+.certificate__name {
   font-size: 22px;
   margin-left: 12px;
 }
