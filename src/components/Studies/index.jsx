@@ -9,7 +9,7 @@ const Studies = () => (
   <section id="studies" className="estudies">
     <h2>Everything I have learned</h2>
     <Certificates />
-    <BtnShow value="certificates" />
+    <BtnShow value="46 certificates" />
   </section>
 );
 

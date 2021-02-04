@@ -301,25 +301,101 @@ const assets = {
   ],
   certificates: [
     {
-      name: "Frontend Architecture",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
+      name: "Carrear of Frontend Architecture",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/A%20-%20Arquitectura%20Frontend.webp",
       link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
     },
     {
-      name: "Frontend Architecture",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
-      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+      name: "Carrear of English School of Platzi",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/B%20-%20Escuela%20de%20Ingl%C3%A9s.webp",
+      link: "https://platzi.com/p/padronjosef/ruta/13-idioma-ingles/diploma/detalle/",
     },
     {
-      name: "Frontend Architecture",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
-      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+      name: "Introducción a Terminal y Línea de Comandos 2019",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/1%20-%20Introduccion%20a%20Terminal%20y%20Linea%20de%20Comandos%202019.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1276-terminal-2019/diploma/detalle/",
     },
     {
-      name: "Frontend Architecture",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/badge-course.svg",
-      link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
+      name: "Introducción al Diseño de Prototipos 2018",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/2%20-%20Introducci%C3%B3n%20al%20Dise%C3%B1o%20de%20Prototipos%202018.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1254-prototipado/diploma/detalle/",
     },
+    {
+      name: "Introducción a la Creación de Empresas y Startups",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/3%20-%20Introduccion%20a%20la%20Creacion%20de%20Empresas%20y%20Startups.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1186-creacion-de-empresas/diploma/detalle/",
+    },
+    {
+      name: "Fundamentos de JavaScript",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/4%20-%20Fundamentos%20de%20JavaScript.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1339-fundamentos-javascript/diploma/detalle/",
+    },
+    {
+      name: "Fundamentos de Ingeniería de Software",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/5%20-%20Fundamentos%20de%20Ingenieria%20de%20Software.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1098-ingenieria/diploma/detalle/",
+    },
+    {
+      name: "Diploma del Curso profesional de Git y GitHub 2017",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/6%20-%20Curso%20profesional%20de%20Git%20y%20GitHub%202017.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1170-git-github-2017-old/diploma/detalle/",
+    },
+    {
+      name: "Diploma del Curso Práctico de React JS",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/7%20-%20Curso%20Practico%20de%20React%20JS.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1651-react-ejs/diploma/detalle/",
+    },
+  ],
+  blogs: [
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Git%20y%20GitHub.webp",
+      link:"https://medium.com/@padronjosef/entiende-git-y-github-de-una-vez-f24178ecaf1c",
+      time:"2019",
+      title:"Git & GitHub",
+      paragraph:"Para resumir Git es un sistema de control de versiones. Es solo una manera elegante de decir que en vez de guardar una versión de cada archivo, guarda solo los"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Mi%20camino%20a%20Platzi.webp",
+      link:"https://platzi.com/blog/mi-camino-a-platzi/",
+      time:"2020",
+      title:"Mi Camino A Platzi",
+      paragraph:"Recientemente cumpli mi primer año en Platzi y quiero compartir con ustedes cómo ha sido mi historia estos últimos 3 años en Colombia y cómo me reinventé para poder"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/haz%20felices%20a%20tus%20usuarios.webp",
+      link:"https://platzi.com/blog/haz-felices-a-tus-usuarios/",
+      time:"2020",
+      title:"haz felices a tus usuarios",
+      paragraph:"Quizás creas que esta es otra charla de cómo ser bueno en una habilidad con la que pocas personas nacen pero no, dar un buen soporte y hacer felices a tus usuarios es"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/mas%20rapido%20Todo%20sobre%20tu%20CPU.webp",
+      link:"https://platzi.com/blog/fundamiento-cpu/",
+      time:"2020",
+      title:"¿Computador Lento?",
+      paragraph:"En este artículo vas aprender el funcionamiento de un procesador de manera sencilla y rápida. Aunque las computadoras y los teléfonos son ya parte de nuestro día a día"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp",
+      link:"https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/",
+      time:"2020",
+      title:"Algoritmo del cubo Rubik",
+      paragraph:"¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%201.webp",
+      link:"https://platzi.com/blog/gaming-news/",
+      time:"2020",
+      title:"Platzi Gaming News 1",
+      paragraph:"Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%202.webp",
+      link:"https://platzi.com/blog/noticias-videojuegos/",
+      time:"2020",
+      title:"Platzi Gaming News 2",
+      paragraph:"Ya tenemos las reviews y especificaciones de los nuevos procesadores Intel, si bien sigue utilizando la tecnología de 14nm, vienen con muchas mejoras con respecto a la"
+    }
   ],
   footer: [
     {

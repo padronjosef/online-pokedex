@@ -1,10 +1,9 @@
 .certificate {
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 10px;
   background-color: #00000020;
-  max-width: 300px;
+  width: 300px;
   padding: 5px 25px;
 }
 
@@ -16,4 +15,7 @@
 .certificate__name {
   font-size: 22px;
   margin-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

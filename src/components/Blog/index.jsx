@@ -7,11 +7,7 @@ import "./style.css";
 const Blog = () => (
   <section id="blog" className="blog">
     <h2>Things I've Written To The Internet</h2>
-    <div className="blog__wrapper">
-      <Article />
-      <Article />
-      <Article />
-    </div>
+    <Article />
     <BtnShow value="articles" />
   </section>
 );

@@ -19,7 +19,7 @@ const Header = () => {
           <li className="menu__item"><a href="#blog" className="menu__link">Blog</a></li>
           <li className="menu__item"><a href="#footer" className="menu__link">Contact</a></li>
         </ul>
-        <a href="#" className="resume">Resume</a>
+        <a href="/src/HV-Jose-Padron.pdf" target="__black" className="resume">Resume</a>
       </nav>
     </header>
   )
