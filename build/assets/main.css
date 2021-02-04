@@ -16,7 +16,7 @@
 
 .switch{margin:0;border:1px solid #BC7222;width:fit-content;border-radius:4px;margin-bottom:40px}.switch__input[type="radio"]{opacity:0;position:fixed;width:0}.switch__label{display:inline-block;padding:15px 20px;font-size:18px;width:fit-content;color:#BC7222;cursor:pointer}.switch__label:hover{background-color:transparent}.switch__input[type="radio"]:checked+label{background-color:#BC722220;color:#F2F2F2}.projects__code{display:flex;flex-direction:column;align-items:center}.projects__uiux,.projects__design{display:grid;grid-template-columns:repeat(3, 1fr);grid-gap:30px;padding:0 60px}.projects__img{width:100%;border-radius:4px}
 
-.certificate{display:flex;align-items:center;border-radius:10px;background-color:#00000020;width:300px;padding:5px 25px}.certificate__img{width:30px;cursor:pointer}.certificate__name{font-size:22px;margin-left:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.certificate{display:flex;align-items:center;border-radius:10px;background-color:#00000020;width:300px;padding:5px 25px}.certificate__img{width:30px;cursor:pointer;filter:grayscale(1)}.certificate:hover>.certificate__img{filter:grayscale(0);transition:.5s}.certificate:hover>.certificate__name{color:#bc7222;transition:.5s}.certificate__name{font-size:22px;margin-left:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 
 .courses{display:flex;flex-wrap:wrap;justify-content:center;grid-gap:20px}
 
