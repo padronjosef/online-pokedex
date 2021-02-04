@@ -19,7 +19,7 @@ const Header = () => {
           <li className="menu__item"><a href="#blog" className="menu__link">Blog</a></li>
           <li className="menu__item"><a href="#footer" className="menu__link">Contact</a></li>
         </ul>
-        <a href="/src/HV-Jose-Padron.pdf" target="__black" className="resume">Resume</a>
+        <a href="https://raw.githubusercontent.com/padronjosef/Portfolio-React/b20042a49ad9a43ea912c1f3e0d42ce2d512112b/src/HV-Jose-Padron.pdf" className="resume">Resume</a>
       </nav>
     </header>
   )

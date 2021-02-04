@@ -159,113 +159,113 @@ const assets = {
       png:"",
       link: ""
     },
-    {
-      name: "Meetup Clean Ranks",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Clean%20Ranks.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Fin De Año",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Fin%20de%20a%C3%B1o%20%E2%80%93%201.webp",
-      png:"",
-      link: ""
-    },    {
-      name: "Meetup Kubernetes IBM",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Kubernetes%20IBM.webp",
-      png:"",
-      link: ""
-    },
-    {
-      name: "OG Usuarios",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Usuarios.webp",
-      png:"",
-      link: ""
-    },
-    {
-      name: "OG técnica correcta",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20t%C3%A9cnica%20correcta.webp",
-      png:"",
-      link: ""
-    },
-    {
-      name: "Meetup Women At Platzi",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Women%20At%20Platzi%20%E2%80%93%202.webp",
-      png:"",
-      link: ""
-    },
-    {
-      name: "OG lenguaje de programacion",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20lenguaje%20de%20programacion.webp",
-      png:"",
-      link: ""
-    },
-    {
-      name: "Infographic Video Game",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Videojuegos.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Productividad",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Productividad.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG PlatziMathChallenge",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20PlatziMathChallenge.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Gaming news 2",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gaming%20news%202.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Gana tu premio",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gana%20tu%20premio.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Historias",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Historias.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG IBM Kubernetes",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20Kubernetes%201.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Microsoft",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Markdown",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Markdown.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG Microsoft",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft%202.webp",
-      png: "",
-      link: ""
-    },
-    {
-      name: "OG CPU Lento",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20CPU%20Lento.webp",
-      png: "",
-      link: ""
-    }
+    // {
+    //   name: "Meetup Clean Ranks",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Clean%20Ranks.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Fin De Año",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Fin%20de%20a%C3%B1o%20%E2%80%93%201.webp",
+    //   png:"",
+    //   link: ""
+    // },    {
+    //   name: "Meetup Kubernetes IBM",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Kubernetes%20IBM.webp",
+    //   png:"",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Usuarios",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Usuarios.webp",
+    //   png:"",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG técnica correcta",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20t%C3%A9cnica%20correcta.webp",
+    //   png:"",
+    //   link: ""
+    // },
+    // {
+    //   name: "Meetup Women At Platzi",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Meetup%20Women%20At%20Platzi%20%E2%80%93%202.webp",
+    //   png:"",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG lenguaje de programacion",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20lenguaje%20de%20programacion.webp",
+    //   png:"",
+    //   link: ""
+    // },
+    // {
+    //   name: "Infographic Video Game",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/Infografia%20Videojuegos.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Productividad",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Productividad.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG PlatziMathChallenge",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20PlatziMathChallenge.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Gaming news 2",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gaming%20news%202.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Gana tu premio",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Gana%20tu%20premio.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Historias",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Historias.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG IBM Kubernetes",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20IBM%20Kubernetes%201.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Microsoft",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Markdown",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Markdown.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG Microsoft",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Microsoft%202.webp",
+    //   png: "",
+    //   link: ""
+    // },
+    // {
+    //   name: "OG CPU Lento",
+    //   img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20CPU%20Lento.webp",
+    //   png: "",
+    //   link: ""
+    // }
   ],
   uxix: [
     {
@@ -348,25 +348,11 @@ const assets = {
   ],
   blogs: [
     {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Git%20y%20GitHub.webp",
-      link:"https://medium.com/@padronjosef/entiende-git-y-github-de-una-vez-f24178ecaf1c",
-      time:"2019",
-      title:"Git & GitHub",
-      paragraph:"Para resumir Git es un sistema de control de versiones. Es solo una manera elegante de decir que en vez de guardar una versión de cada archivo, guarda solo los"
-    },
-    {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Mi%20camino%20a%20Platzi.webp",
-      link:"https://platzi.com/blog/mi-camino-a-platzi/",
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp",
+      link:"https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/",
       time:"2020",
-      title:"Mi Camino A Platzi",
-      paragraph:"Recientemente cumpli mi primer año en Platzi y quiero compartir con ustedes cómo ha sido mi historia estos últimos 3 años en Colombia y cómo me reinventé para poder"
-    },
-    {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/haz%20felices%20a%20tus%20usuarios.webp",
-      link:"https://platzi.com/blog/haz-felices-a-tus-usuarios/",
-      time:"2020",
-      title:"haz felices a tus usuarios",
-      paragraph:"Quizás creas que esta es otra charla de cómo ser bueno en una habilidad con la que pocas personas nacen pero no, dar un buen soporte y hacer felices a tus usuarios es"
+      title:"Algoritmo Del Cubo Rubik",
+      paragraph:"¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones"
     },
     {
       img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/mas%20rapido%20Todo%20sobre%20tu%20CPU.webp",
@@ -376,26 +362,40 @@ const assets = {
       paragraph:"En este artículo vas aprender el funcionamiento de un procesador de manera sencilla y rápida. Aunque las computadoras y los teléfonos son ya parte de nuestro día a día"
     },
     {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp",
-      link:"https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/",
-      time:"2020",
-      title:"Algoritmo del cubo Rubik",
-      paragraph:"¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones"
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Git%20y%20GitHub.webp",
+      link:"https://medium.com/@padronjosef/entiende-git-y-github-de-una-vez-f24178ecaf1c",
+      time:"2019",
+      title:"Git & GitHub",
+      paragraph:"Para resumir Git es un sistema de control de versiones. Es solo una manera elegante de decir que en vez de guardar una versión de cada archivo, guarda solo los"
     },
-    {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%201.webp",
-      link:"https://platzi.com/blog/gaming-news/",
-      time:"2020",
-      title:"Platzi Gaming News 1",
-      paragraph:"Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming"
-    },
-    {
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%202.webp",
-      link:"https://platzi.com/blog/noticias-videojuegos/",
-      time:"2020",
-      title:"Platzi Gaming News 2",
-      paragraph:"Ya tenemos las reviews y especificaciones de los nuevos procesadores Intel, si bien sigue utilizando la tecnología de 14nm, vienen con muchas mejoras con respecto a la"
-    }
+    // {
+    //   img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Mi%20camino%20a%20Platzi.webp",
+    //   link:"https://platzi.com/blog/mi-camino-a-platzi/",
+    //   time:"2020",
+    //   title:"Mi Camino A Platzi",
+    //   paragraph:"Recientemente cumpli mi primer año en Platzi y quiero compartir con ustedes cómo ha sido mi historia estos últimos 3 años en Colombia y cómo me reinventé para poder"
+    // },
+    // {
+    //   img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/haz%20felices%20a%20tus%20usuarios.webp",
+    //   link:"https://platzi.com/blog/haz-felices-a-tus-usuarios/",
+    //   time:"2020",
+    //   title:"Haz Felices A Tus Usuarios",
+    //   paragraph:"Quizás creas que esta es otra charla de cómo ser bueno en una habilidad con la que pocas personas nacen pero no, dar un buen soporte y hacer felices a tus usuarios es"
+    // },
+    // {
+    //   img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%202.webp",
+    //   link:"https://platzi.com/blog/gaming-news/",
+    //   time:"2020",
+    //   title:"Gaming News 1",
+    //   paragraph:"Ya tenemos las reviews y especificaciones de los nuevos procesadores Intel, si bien sigue utilizando la tecnología de 14nm, vienen con muchas mejoras con respecto a la"
+    // },
+    // {
+    //   img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%201.webp",
+    //   link:"https://platzi.com/blog/noticias-videojuegos/",
+    //   time:"2020",
+    //   title:"Gaming News 2",
+    //   paragraph:"Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming"
+    // }
   ],
   footer: [
     {

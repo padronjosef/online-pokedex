@@ -10,6 +10,17 @@
 .certificate__img {
   width: 30px;
   cursor: pointer;
+  filter: grayscale(1);
+}
+
+.certificate:hover > .certificate__img {
+  filter: grayscale(0);
+  transition: .5s;
+}
+
+.certificate:hover > .certificate__name {
+  color: #bc7222;
+  transition: .5s;
 }
 
 .certificate__name {
