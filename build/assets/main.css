@@ -167,25 +167,25 @@ table {
     margin-top: 5rem;
   }
 
-  .courses-container, .blogs-container {
+  .courses {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  .header {
     display: none
   }
 
-  h1 {
+  .hero__title {
     font-size: 5rem;
   }
 
-  .MyStack {
+  .stack {
     flex-direction: column;
   }
 
-  .stack-right-details-text dd {
+  .stack-right__details {
     max-width: 600px;
   }
   
@@ -199,15 +199,15 @@ table {
     margin: 0;
   }
 
-  .code-small, .carears-container, .desings-container, .uxix-container  {
+  .projects__code, .courses, .projects__design, .projects__uiux  {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  footer h4 {
+  .footer__title {
     margin-bottom: 2rem;
   }
 
-  footer h5{
+  .footer__messege {
     margin: 0 3rem;
   }
 
@@ -215,36 +215,30 @@ table {
     flex-direction: column;
   }
 
-  .social li a {
+  .social__link {
     margin: 5px 0;
     font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h1 {
+  .hero__title {
     font-size: 52px;
-  }
-
-  h2 span {
-    font-size: 24px;
-    display: block;
-    margin-bottom: 10px;
   }
 
   .btn {
     width: 90%;
   }
 
-  .hero-description p {
+  .hero__messege {
     font-size: 32px;
   }
 
-  q {
-    font-size: 18px;
+  .hero__quote {
+    font-size: 26px;
   }
 
-  .hero img {
+  .photo__img {
     max-width: 250px;
   }
 
@@ -253,14 +247,9 @@ table {
     margin-right: 40px;
   }
 
-  .stack-left img{
+  .stack-left__img {
     width: 100%;
     margin-right: 40px;
-  }
-
-  .switch label {
-    padding: 15px;
-    font-size: 16px;
   }
 
   .code-big {
@@ -272,27 +261,27 @@ table {
     margin: 0;
   }
 
-  .big-project-text p {
+  .big-project__description {
     padding: 0;
   }
 
-  .big-project-img {
+  .big-project__figure {
     margin: 0;
   }
   
-  .big-project img {
+  .big-project__img {
     max-width: 250px;
   }
 
-  .code-small {
+  .small-project {
     padding: 0 1rem;
   }
 
-  .desings-container, .uxix-container {
+  .projects__design, .projects__uiux {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .code-small, .carears-container, .courses-container, .blogs-container {
+  .blog__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -300,7 +289,7 @@ table {
     flex-direction: column;
   }
 
-  .logo-footer {
+  .copy-write__img {
     width: 40%;
     margin-top: 1rem;
   }
