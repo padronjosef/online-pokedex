@@ -34,16 +34,6 @@
   .stack-right__details {
     max-width: 600px;
   }
-  
-
-  .big-project {
-    flex-direction: column;
-  }
-
-  .big-project img {
-    max-width: 100%;
-    margin: 0;
-  }
 
   .projects__code, .courses, .projects__design, .projects__uiux {
     grid-template-columns: repeat(2, 1fr);
@@ -53,8 +43,9 @@
     margin-bottom: 2rem;
   }
 
-  .footer__messege {
-    margin: 0 3rem;
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .social {
@@ -71,9 +62,45 @@
   .blog__wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .portfolio, .blog {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .projects__code {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-direction: column-reverse !important;
+    background: #00000020;
+
+  }
+
+  .project__details {
+    padding: 0;
+    padding: 1rem;
+  }
+
+  .project__description {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .project__figure {
+    width: 100%;
+  }
+
+  .project:nth-child(n+3) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .hero {
+    padding: 1rem;
+  }
   .hero__title {
     font-size: 52px;
   }
@@ -104,37 +131,20 @@
     margin-right: 40px;
   }
 
-  .code-big {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .big-project-details {
-    margin: 0;
-  }
-
-  .big-project__description {
-    padding: 0;
-  }
-
-  .big-project__figure {
-    margin: 0;
-  }
-  
-  .big-project__img {
-    max-width: 250px;
-  }
-
-  .small-project {
-    padding: 0 1rem;
+  .switch__label {
+    padding: 10px 15px;
   }
 
   .projects__design, .projects__uiux {
     grid-template-columns: repeat(1, 1fr);
-  }
+  } 
 
   .blog__wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .article__img {
+    width: 100%;
   }
 
   .copy-write {

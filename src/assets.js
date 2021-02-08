@@ -105,6 +105,45 @@ const assets = {
       link: "https://nextjs.org/",
     }
   ],
+  projects: [
+    {
+      name:"projecto 1",
+      github: "github.com",
+      demo:"google.com",
+      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for.",
+      stack:"React Firebase Node",
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Apache%20Spark.webp",
+    },
+    {
+      name:"projecto 2",
+      github: "github.com",
+      demo:"google.com",
+      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for.",
+      stack:"React Firebase Node",
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/designs/OG%20Apache%20Spark.webp",
+    },
+    {
+      name:"projecto 3",
+      github: "github.com",
+      demo:"google.com",
+      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced.",
+      stack:"React Firebase Node",
+    },
+    {
+      name:"projecto 4",
+      github: "github.com",
+      demo:"google.com",
+      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced.",
+      stack:"React Firebase Node",
+    },
+    {
+      name:"projecto 5",
+      github: "github.com",
+      demo:"google.com",
+      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced.",
+      stack:"React Firebase Node",
+    },
+  ],
   designs: [
     {
       name: "OG Apache Spark",

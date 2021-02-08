@@ -10,6 +10,7 @@
   max-width: 680px;
   font-size: 22px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .social {
@@ -39,9 +40,8 @@
   align-items: center;
 }
 
-.copy-write__message{
+.copy-write__message {
   font-size: 18px;
-  margin: 0;
   margin-right: .3em;
 }
 

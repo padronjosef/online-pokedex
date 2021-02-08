@@ -1,0 +1,98 @@
+.project {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.project__details {
+  padding: 15px;
+}
+
+.project__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project__title {
+  margin: 5px 0 10px;
+  display: block;
+}
+
+.project__title::before {
+  content: "Feature Project";
+  display: block;
+  color: #bc7222;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.project__link {
+  margin-left: 16px;
+}
+
+.project__description {
+  max-width: 500px;
+  padding: 15px;
+  background-color: #00000020;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.project__figure {
+  width: 450px;
+  border-radius: 4px;
+}
+
+.project__img {
+  width: 100%;
+}
+
+.project:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+.project__header:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.project:nth-child(n+3) {
+  max-width: 350px;
+  flex-direction: column-reverse;
+  background-color: #00000020;
+  padding: 35px 25px 25px;
+  margin: 15px 15px 40px ;
+  box-sizing: border-box;
+  align-items: flex-start;  
+}
+
+.project:nth-child(n+3) .project__details {
+  padding: 0;
+}
+
+.project:nth-child(n+3) .project__description {
+  background-color: transparent;
+  padding: 0;
+}
+
+.project:nth-child(n+3) .project__links {
+  position: relative;
+  top: -60px;
+}
+
+.project:nth-child(n+3) .project__link img{
+  width: 20px;
+}
+
+.project:nth-child(n+3) .project__title::before{
+  display: none;
+}
+
+.project:nth-child(n+3) .project__figure {
+  width: 40px;
+  margin-bottom: 20px;
+}
+
+.project:nth-child(n+3) .project__img {
+  content:url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/icon-folder.svg");
+}

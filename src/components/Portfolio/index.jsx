@@ -2,6 +2,8 @@ import React from "react";
 import BtwShow from "../complements/BtwShow";
 import Switch from "./Switch";
 
+import "./style.css"
+
 const mb10 = {
   marginBottom: "10px",
 };
