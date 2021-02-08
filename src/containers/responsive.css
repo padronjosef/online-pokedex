@@ -5,8 +5,10 @@
 
   .hero {
     flex-direction: column;
-    align-items: center;
-    height: 70vh;
+  }
+
+  .photo {
+    margin-top: 3rem;
   }
 
   .stack-right {
