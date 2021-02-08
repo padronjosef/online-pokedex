@@ -9,7 +9,9 @@ const StackLeft = ({handelOpen}) => {
     <div className="stack-left">
       {assets.stack.map((data, index) => {
         return (
-          <img className="stack-left__img" onClick={()=> handelOpen(data)} src={data.img} alt={data.name} key={`data-${index}`} />
+          <figure className="stack-left__figure" key={`data-${index}`} >
+            <img className="stack-left__img" onClick={()=> handelOpen(data)} src={data.img} alt={data.name}/>
+          </figure>
         );
       })}
     </div>

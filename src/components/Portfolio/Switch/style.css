@@ -30,10 +30,11 @@
   color: #F2F2F2;
 }
 
-.projects__code {
+.projects__code, .projects__uiux, .projects__design {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .projects__uiux, .projects__design {
@@ -41,6 +42,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin-bottom: 40px;
+}
+
+.porjects__figure {
+  max-width: 400px;
 }
 
 .projects__img {

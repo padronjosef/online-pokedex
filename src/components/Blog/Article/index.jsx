@@ -8,7 +8,9 @@ const Article = () => (
     {assets.blogs.map((data, index) => {
       return (
         <a href={data.link} target="__black" className="article" key={`data-${index}`}>
-        <img className="article__img" src={data.img} alt={data.title}/>
+        <figure>
+          <img className="article__img" src={data.img} alt={data.title}/>
+        </figure>
         <div className="article__details">
           <time className="article__time">{data.time}</time>
           <h3 className="article__title">{data.title}</h3>
