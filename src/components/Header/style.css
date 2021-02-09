@@ -51,17 +51,29 @@
   font-size: 18px;
 }
 
-.menu__item:hover{
-  padding: 7px 11px;
+.menu__item--active {
+  color: #BC7222;
+  padding: 8px 12px;
   border: solid #BC7222 1px;
   transition: background-color .5s;
   background-color: #BC722210;
   border-radius: 4px;
+  transition: color .5s;
+  margin: 0px;
+}
+
+.menu__item:hover{
+  padding: 7px 11px;
+  margin: 1px;
 }
 
 .menu__item:hover > .menu__link {
   color: #BC7222;
   transition: color .5s;
+}
+
+.menu__item:first-child{
+  display: none;
 }
 
 .resume {
