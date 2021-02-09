@@ -17,7 +17,7 @@ const social = assets.footer.map((data, index) => {
 });
 
 const Footer = () => (
-  <footer id="footer" className="footer">
+  <footer id="footer" className="footer" data-aos="fade-up" data-aos-easing="ease-out" data-aos-once="true">
     <h2 className="footer__title"> LET’S CREATE SOMETHING GREAT</h2>
     <p className="footer__messege">
       If you like my work and have some cool project to work on, just send me

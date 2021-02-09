@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./responsive.css";
+@import "./aos.css";
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +29,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(29, 29, 29, 0.7);
+  background-color: rgba(29, 29, 29, 0.8);
   border-radius: 10px;
   margin: 120px auto;
   padding: 60px 1rem;

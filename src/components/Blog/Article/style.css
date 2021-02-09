@@ -16,12 +16,17 @@
 
 .article__img {
   width: 100%;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
-.article__img:hover{
+.article:hover .article__img {
   opacity: 1;
-  transition: .5s;
+  transition: 1s;
+}
+
+.article:hover {
+  transform: scale(1.02);
+  transition: 1s;
 }
 
 .article__details {

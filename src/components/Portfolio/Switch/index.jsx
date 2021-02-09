@@ -10,7 +10,7 @@ const Switch = () => {
 
   return (
     <Fragment>
-      <div className="switch">
+      <div className="switch" >
         <input className="switch__input" type="radio" id="Code" name="switchPortfolio" value="Code" defaultChecked />
         <label className="switch__label" onClick={ ()=> setShow("Code") } htmlFor="Code">Code</label>
 

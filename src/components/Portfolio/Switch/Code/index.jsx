@@ -4,7 +4,7 @@ import assets from "/src/assets";
 import './style.css'
 
 const Code = () => (
-  <div className="projects__code">
+  <div className="projects__code" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
     {assets.projects.map((data, index) => {
       return (
         <article className="project" key={`data-${index}`}>

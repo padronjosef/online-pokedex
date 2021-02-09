@@ -4,7 +4,7 @@ import "./style.css";
 
 const StackRight = ({ name, img, p, link } = props) => {
   return (
-    <div className="stack-right">
+    <div className="stack-right" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
       <dl className="stack-right__wrapper">
         <dt className="stack-right__title">{name}</dt>
         <img className="stack-right__img" src={img} alt={name} />

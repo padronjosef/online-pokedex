@@ -10,7 +10,7 @@ const mb10 = {
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="portfolio" className="portfolio" data-aos="fade-left" data-aos-duration="1200" data-aos-easing="ease-out" data-aos-once="true">
       <h2 style={mb10}>Some Things I’ve Built</h2>
       <Switch />
       <BtwShow value="projects" />
