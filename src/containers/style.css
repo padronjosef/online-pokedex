@@ -10,7 +10,7 @@ body {
   margin: 0px;
   color: white;
   counter-reset: section-counter;
-  
+
   background-color: black;
   background-image: url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp");
   background-position: center;
@@ -75,4 +75,19 @@ span {
 
 ul {
   display: flex;
+}
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
