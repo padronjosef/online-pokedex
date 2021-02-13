@@ -1,0 +1,94 @@
+@import "./reset.css";
+@import "./aos.css";
+
+@import "./responsive.scss";
+@import './variables.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "lato", Times, serif;
+  margin: 0px;
+  color: $secondaryColor;
+  counter-reset: section-counter;
+
+  background-color: black;
+  background-image: url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $secondaryColor;
+}
+
+section {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(29, 29, 29, 0.8);
+  border-radius: 10px;
+  margin: 120px auto;
+  padding: 60px 1rem;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0 0 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2::before {
+  counter-increment: section-counter;
+  content: "0" counter(section-counter) ".";
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: $primaryColor;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p,
+dd {
+  line-height: 120%;
+  font-size: 16px;
+  color: $gray1;
+  margin: 0;
+}
+
+span {
+  color: $primaryColor;
+  font-size: 14px;
+}
+
+ul {
+  display: flex;
+}
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
