@@ -3,7 +3,7 @@ import React from "react";
 import assets from "/src/assets";
 
 const Design = () => (
-  <div className="projects__design">
+  <div className="projects__design" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
     {assets.designs.map((data, index) => {
       return (
         <figure className="projects__figure" key={`data-${index}`} >

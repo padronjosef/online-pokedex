@@ -4,7 +4,7 @@ import assets from "/src/assets";
 import './style.css'
 
 const Article = () => (
-  <div className="blog__wrapper">
+  <div className="blog__wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
     {assets.blogs.map((data, index) => {
       return (
         <a href={data.link} target="__black" className="article" key={`data-${index}`}>

@@ -4,7 +4,7 @@ import assets from "/src/assets";
 import "./style.css";
 
 const Certificates = () => (
-  <div className="courses">
+  <div className="courses" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
     {assets.certificates.map((data, index) => {
       return (
         <a className="certificate" target="__blank" href={data} href={data.link} key={`data-${index}`}>

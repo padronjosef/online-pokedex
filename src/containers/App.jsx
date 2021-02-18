@@ -7,7 +7,12 @@ import Studies from "../components/Studies";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 
+import AOS from 'aos';
+import './aos.css';
+
 import "./style.css";
+
+AOS.init();
 
 const App = () => (
   <div className="app">

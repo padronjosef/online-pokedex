@@ -6,7 +6,7 @@ import "./style.css";
 
 const StackLeft = ({handelOpen}) => {
   return (
-    <div className="stack-left">
+    <div className="stack-left" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
       {assets.stack.map((data, index) => {
         return (
           <figure className="stack-left__figure" key={`data-${index}`} >
