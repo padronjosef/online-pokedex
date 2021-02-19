@@ -1,5 +1,6 @@
 @import "./reset.css";
-@import "./responsive.css";
+@import "./aos.css";
+@import "./responsive.scss";
 
 html {
   scroll-behavior: smooth;

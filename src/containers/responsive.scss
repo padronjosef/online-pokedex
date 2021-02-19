@@ -18,11 +18,46 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    display: none
+    display: none;
+    padding-bottom: 10vh;
+    height: 100vh;
+    box-sizing: border-box;
   }
 
-  .hamburger {
-    display: inline-block;
+  .navbar {
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    height: auto;
+    max-width: 300px;
+  }
+
+  .logo__img {
+    width: 100%;
+  }
+
+  .main-menu {
+    display: block;
+  }
+
+  .menu__item {
+    padding-bottom: 50px;
+  }
+  
+  .menu__link {
+    font-size: 40px;
+  }
+
+  .menu__link::before {
+    font-size: 32px;
+  }
+
+  .resume {
+    font-size: 40px;
+    padding: 50px 30%;
   }
 
   .hero__title {
