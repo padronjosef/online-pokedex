@@ -6,7 +6,7 @@ import "./style.css";
 const photo = assets.hero;
 
 const Main = () => (
-  <main id="main" className="main">
+  <main id="main" className="main" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
     <div className="hero">
       <div className="hero__wrapper">
         <h1 className="hero__title">Jose Padron</h1>
