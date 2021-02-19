@@ -3,7 +3,7 @@ import Code from './Code';
 import Uiux from './Uiux';
 import Design from './Design';
 
-import "./style.css"
+import "./style.scss"
 
 const Switch = () => {
   const [show, setShow] = useState("Code")

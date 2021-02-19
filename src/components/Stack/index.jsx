@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import StackLeft from "./StackLeft";
 import StackRight from "./StackRight";
+import assets from "/src/containers/assets/assets";
 
-import assets from "/src/assets";
-
-import "./style.css";
+import "./style.scss";
 
 const Stack = () => {
   const [ showStack, setShowStack ] = useState(assets.stack[0]);

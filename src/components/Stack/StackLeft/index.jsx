@@ -1,8 +1,7 @@
 import React from "react";
-import assets from "/src/assets";
+import assets from "/src/containers/assets/assets";
 
-import "./style.css";
-
+import "./style.scss";
 
 const StackLeft = ({handelOpen}) => {
   return (

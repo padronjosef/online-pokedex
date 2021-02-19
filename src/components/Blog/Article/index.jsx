@@ -1,7 +1,7 @@
 import React from 'react';
-import assets from "/src/assets";
+import assets from "/src/containers/assets/assets";
 
-import './style.css'
+import './style.scss'
 
 const Article = () => (
   <div className="blog__wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">

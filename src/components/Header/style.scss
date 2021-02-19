@@ -33,6 +33,7 @@
 .menu {
   padding: 0 10px;
   counter-reset: menu-counter;
+  display: flex;
 }
 
 .menu__item {

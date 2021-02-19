@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './style.css'
+import './style.scss'
 
 const BtnShow = (props ) =>
   <a className="btn">View all the {props.value}</a>

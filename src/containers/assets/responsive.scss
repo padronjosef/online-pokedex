@@ -18,64 +18,20 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    display: none;
-    padding-bottom: 10vh;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-evenly;
-  }
-
-  .logo {
-    height: auto;
-    max-width: 300px;
-  }
-
-  .logo__img {
-    width: 100%;
-  }
-
-  .main-menu {
-    display: block;
-  }
-
-  .menu__item {
-    padding-bottom: 50px;
-  }
-  
-  .menu__link {
-    font-size: 40px;
-  }
-
-  .menu__link::before {
-    font-size: 32px;
-  }
-
-  .resume {
-    font-size: 40px;
-    padding: 50px 30%;
+    display: none
   }
 
   .hero__title {
     font-size: 5rem;
   }
 
-  .stack {
-    flex-direction: column;
-  }
-
   .stack-right__details {
     max-width: 600px;
   }
 
-  .projects__code, .projects__design, .projects__uiux {
+  .projects__design, .projects__uiux {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 
   .courses {
     justify-content: flex-start;
@@ -88,7 +44,6 @@
   .certificate:nth-child(n+6) {
     display: none;
   }
-
 
   .footer__title {
     margin-bottom: 2rem;
@@ -106,6 +61,7 @@
   .social__link {
     margin: 5px 0;
     font-size: 1.8rem;
+    margin: .5rem 0;
   }
 }
 
@@ -151,6 +107,7 @@
   .hero {
     padding: 1rem;
   }
+
   .hero__title {
     font-size: 52px;
   }
@@ -183,14 +140,6 @@
 
   .switch__label {
     padding: 10px 15px;
-  }
-
-  .projects__design, .projects__uiux {
-    grid-template-columns: repeat(1, 1fr);
-  } 
-
-  .blog__wrapper {
-    grid-template-columns: repeat(1, 1fr);
   }
 
   .article__img {

@@ -1,6 +1,5 @@
 import React from "react";
-
-import assets from "/src/assets";
+import assets from "/src/containers/assets/assets";
 
 const Design = () => (
   <div className="projects__design" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">

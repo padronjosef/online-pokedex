@@ -8,7 +8,7 @@ import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import AOS from 'aos';
 
-import "./style.css";
+import "./assets/style.scss";
 
 AOS.init();
 

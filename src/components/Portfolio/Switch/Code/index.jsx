@@ -1,7 +1,7 @@
 import React from 'react';
-import assets from "/src/assets";
+import assets from "/src/containers/assets/assets";
 
-import './style.css'
+import './style.scss'
 
 const Code = () => (
   <div className="projects__code" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">

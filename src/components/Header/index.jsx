@@ -1,8 +1,8 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy'
-import assets from '../../assets';
+import assets from '../../containers/assets/assets';
 
-import './style.css'
+import './style.scss'
 
 const logo = assets.navbar.logo
 
@@ -13,7 +13,7 @@ const Header = () => {
         <a href="#" className="logo">
           <img className="logo__img" src={logo.img} alt={logo.alt}/>
         </a>
-        <Scrollspy className="main-menu" items={ ['main', 'stack', 'portfolio', 'studies', 'blog', 'footer'] } currentClassName="menu__item--active" offset={-100}>
+        <Scrollspy className="menu" items={ ['main', 'stack', 'portfolio', 'studies', 'blog', 'footer'] } currentClassName="menu__item--active" offset={-100}>
           <li className="menu__item"><a href="#main" className="menu__link"></a></li>
           <li className="menu__item"><a href="#stack" className="menu__link">Stack</a></li>
           <li className="menu__item"><a href="#portfolio" className="menu__link">Portfolio</a></li>
