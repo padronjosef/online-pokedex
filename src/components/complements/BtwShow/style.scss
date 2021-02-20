@@ -1,7 +1,9 @@
+@import '/src/containers/assets/variables.scss';
+
 .btn {
   font-size: 18px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: $gray1;
+  border: 1px solid $gray1;
   padding: 10px 0;
   width: 300px;
   border-radius: 4px;
@@ -11,8 +13,8 @@
 }
 
 .btn:hover {
-  background-color: #bc722210;
-  color: #bc7222;
-  border: 1px solid #bc7222;
+  background-color: $bgColor2;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
   transition: 0.5s;
 }

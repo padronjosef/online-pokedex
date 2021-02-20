@@ -1,24 +1,95 @@
-@media screen and (max-width: 970px) {
-  section {
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    display: none;
+    padding: 4vh 3vw;
+    box-sizing: border-box;
+    height: 100%;
+
+    &--is-active {
+      display: flex;
+    }
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: baseline;
+    // justify-content: space-between;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 2rem;
+    margin-left: 12px;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    display: block;
+    padding-bottom: 3vh;
+    box-sizing: border-box;
+
+    &__item {
+      padding-bottom: 3vh;
+
+      &:hover {
+        padding-bottom: 3vh;
+      }
+
+      &--active {
+        padding-bottom: 3vh;
+        background-color: transparent;
+        border: transparent;
+
+        .menu__link {
+          color: $primaryColor;
+        }
+      }
+
+      &::before {
+        font-size: 24px;
+        margin-right: .5rem;
+      }
+    }
+
+    &__link {
+      font-size: 40px;
+    }
+  }
+
+  .center {
+    width: 100%;
+    display: flex;
     justify-content: center;
   }
 
-  .hero {
-    flex-direction: column;
-  }
+  .resume {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    max-width: 400px;
+    font-size: 40px;
+    box-sizing: border-box;
+    padding: 20px 25%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 5vh;
 
-  .photo {
-    margin-top: 3rem;
-  }
-
-  .blog__wrapper {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    display: none
+    &:hover {
+      max-width: 400px;
+      font-size: 40px;
+      padding: 20px 25%;
+    }
   }
 
   .hero__title {
@@ -29,7 +100,7 @@
     max-width: 600px;
   }
 
-  .projects__design, .projects__uiux {
+  .projects {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -41,27 +112,27 @@
     max-width: 90vw;
   }
 
-  .certificate:nth-child(n+6) {
-    display: none;
-  }
-
-  .footer__title {
-    margin-bottom: 2rem;
+  .article {
+    max-width: 550px;
   }
 
   .footer {
     padding-left: 1rem;
     padding-right: 1rem;
+  
+    &__title {
+      margin-bottom: 2rem;
+    }
   }
 
   .social {
     flex-direction: column;
-  }
 
-  .social__link {
-    margin: 5px 0;
-    font-size: 1.8rem;
-    margin: .5rem 0;
+    &__link {
+      margin: 5px 0;
+      font-size: 1.8rem;
+      margin: .5rem 0;
+    }
   }
 }
 
@@ -71,57 +142,53 @@
     padding-left: 1rem;
   }
 
-  .article {
-    max-width: 550px;
-  }
-
-  .projects__code {
-    flex-direction: column;
-  }
-
   .project {
     flex-direction: column-reverse !important;
-    background: #00000020;
-  }
+    background: $bgColor3;
 
-  .project__details {
-    padding: 0;
-    padding: 1rem;
-  }
+    &__code {
+      flex-direction: column;
+    }
 
-  .project__description {
-    background-color: transparent;
-    padding: 0;
-  }
+    &__details {
+      padding: 0;
+      padding: 1rem;
+    }
 
-  .project__figure {
-    width: 100%;
-  }
+    &__description {
+      background-color: transparent;
+      padding: 0;
+    }
 
-  .project:nth-child(n+3) {
-    display: none;
+    &__figure {
+      width: 100%;
+    }
+
+    &:nth-child(n+3) {
+      display: none;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .hero {
-    padding: 1rem;
-  }
-
-  .hero__title {
-    font-size: 52px;
-  }
-
   .btn {
     width: 95%;
   }
 
-  .hero__messege {
-    font-size: 32px;
-  }
+  .hero {
+    padding: 1rem;
 
-  .hero__quote {
-    font-size: 26px;
+    &__title {
+      font-size: 52px;
+    }
+
+    &__messege {
+      font-size: 32px;
+    }
+
+    &__quote {
+      font-size: 26px;
+    }
   }
 
   .photo__img {
@@ -131,11 +198,11 @@
   .stack-left {
     display: flex;
     overflow: scroll;
-  }
 
-  .stack-left__figure {
-    width: 100%;
-    margin-right: 40px;
+    &__figure {
+      width: 100%;
+      margin-right: 40px;
+    }
   }
 
   .switch__label {
@@ -148,10 +215,10 @@
 
   .copy-write {
     flex-direction: column;
-  }
 
-  .copy-write__img {
-    width: 40%;
-    margin-top: 1rem;
+    &__img {
+      width: 40%;
+      margin-top: 1rem;
+    }
   }
 }

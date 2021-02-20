@@ -1,6 +1,5 @@
 import React from "react";
 import assets from "/src/containers/assets/assets";
-
 import "./style.scss";
 
 const StackLeft = ({handelOpen}) => {

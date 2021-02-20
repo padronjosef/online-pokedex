@@ -1,54 +1,50 @@
+@import "/src/containers/assets/variables.scss";
+
 .switch {
   margin: 0;
-  border: 1px solid #BC7222;
+  border: $primaryColor 1px solid;
   width: fit-content;
   border-radius: 4px;
   margin-bottom: 40px;
+
+  &__input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    
+    &[type="radio"]:checked + label {
+      background-color: $bgColor2;
+      color: $gray1;
+    }
+  }
+  &__label {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    width: fit-content;
+    color: $primaryColor;
+    cursor: pointer;
+  }
 }
 
-.switch__input[type="radio"] {
-  opacity: 0;
-  position: fixed;
-  width: 0;
-}
-
-.switch__label {
-  display: inline-block;
-  padding: 15px 20px;
-  font-size: 18px;
-  width: fit-content;
-  color: #BC7222;
-  cursor: pointer;
-}
-
-.switch__label:hover {
-  background-color: transparent;
-}
-
-.switch__input[type="radio"]:checked + label {
-  background-color: #BC722220;
-  color: #F2F2F2;
-}
-
-.projects__code, .projects__uiux, .projects__design {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.projects__uiux, .projects__design {
+.projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
   margin-bottom: 40px;
-}
 
-.porjects__figure {
-  max-width: 400px;
-}
+  &__code {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.projects__img {
-  width: 100%;
-  border-radius: 4px;
+  &__figure {
+    max-width: 320px;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 4px;
+  }
 }

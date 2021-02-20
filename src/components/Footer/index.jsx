@@ -1,6 +1,5 @@
 import React from "react";
 import assets from "../../containers/assets/assets";
-
 import "./style.scss";
 
 const logo = assets.navbar.logo;

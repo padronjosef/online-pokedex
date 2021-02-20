@@ -7,10 +7,11 @@ import Studies from "../components/Studies";
 import Blog from "../components/Blog";
 import Footer from "../components/Footer";
 import AOS from 'aos';
-
 import "./assets/style.scss";
 
 AOS.init();
+
+// const viewWidth = window.screen.width
 
 const App = () => (
   <div className="app">

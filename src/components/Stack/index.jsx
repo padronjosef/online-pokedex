@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import StackLeft from "./StackLeft";
 import StackRight from "./StackRight";
 import assets from "/src/containers/assets/assets";
-
 import "./style.scss";
 
 const Stack = () => {

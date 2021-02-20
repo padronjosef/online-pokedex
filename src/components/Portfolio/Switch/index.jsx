@@ -2,7 +2,6 @@ import React, { useState, Fragment } from 'react';
 import Code from './Code';
 import Uiux from './Uiux';
 import Design from './Design';
-
 import "./style.scss"
 
 const Switch = () => {

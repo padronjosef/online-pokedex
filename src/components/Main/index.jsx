@@ -1,6 +1,5 @@
 import React from "react";
 import assets from "../../containers/assets/assets";
-
 import "./style.scss";
 
 const photo = assets.hero;
@@ -18,7 +17,6 @@ const Main = () => (
         </q>
       </div>
       <a className="photo" href="https://github.com/padronjosef/Portfolio-React" target="__blank">
-        <span className="photo__span">View Portfolio <br /> Code</span>
         <img className="photo__img" src={photo.img} alt={photo.alt} />
       </a>
     </div>

@@ -1,3 +1,5 @@
+@import '/src/containers/assets/variables.scss';
+
 .courses{
   display: flex;
   flex-wrap: wrap;
@@ -10,32 +12,22 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background-color: #00000020;
+  background-color: $bgColor3;
   max-width: 300px;
   padding: 5px 20px;
   box-sizing: border-box;
-}
 
-.certificate__img {
-  width: 30px;
-  cursor: pointer;
-  filter: grayscale(1);
-}
+  &__img {
+    width: 30px;
+    cursor: pointer;
+    filter: grayscale(1);
+  }
 
-.certificate:hover > .certificate__img {
-  filter: grayscale(0);
-  transition: .5s;
-}
-
-.certificate:hover > .certificate__name {
-  color: #bc7222;
-  transition: .5s;
-}
-
-.certificate__name {
-  font-size: 22px;
-  margin-left: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  &__name {
+    font-size: 22px;
+    margin-left: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

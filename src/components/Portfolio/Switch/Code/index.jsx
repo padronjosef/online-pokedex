@@ -1,11 +1,10 @@
 import React from 'react';
 import assets from "/src/containers/assets/assets";
-
 import './style.scss'
 
 const Code = () => (
   <div className="projects__code" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-    {assets.projects.map((data, index) => {
+    {assets.projects.slice(0, 5).map((data, index) => {
       return (
         <article className="project" key={`data-${index}`}>
           <div className="project__details">
@@ -19,9 +18,9 @@ const Code = () => (
             <p className="project__description">{data.description}</p>
             <span>{data.stack}</span>
           </div>
-          <figure className="project__figure">
+          <a className="project__figure" href={data.demo} target="__black">
             <img className="project__img" src={data.img} alt={data.name}/>
-          </figure>
+          </a>
         </article>
       );
     })}
