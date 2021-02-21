@@ -1,7 +1,7 @@
 import React from "react";
 import DB from '/src/DB';
 import "./style.scss";
-import "../complements/BtwShow/style.scss";
+import BtwShow from "../complements/BtwShow";
 
 const logo = DB.navbar.logo;
 
