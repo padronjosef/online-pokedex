@@ -56,17 +56,24 @@ body {
 //            stack          //
 // _________________________ //
 
-.stack-left__img:hover {
-  filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
+.stack-left__img {
+  &--active {
+    filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
     brightness(50%) contrast(89%);
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: all .4s ease-in;
-}
+  }
 
-.stack-left__img:active {
-  transform: scale(1.2);
-  transition: all .2s ease-out;
+  &:hover {
+    filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
+    brightness(50%) contrast(89%);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .4s ease-in;
+  }
+
+  &:active {
+    transform: scale(1.2);
+    transition: all .2s ease-out;
+  }
 }
 
 // _________________________ //
