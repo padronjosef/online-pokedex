@@ -4,13 +4,17 @@
   }
 
   .header {
-    display: none;
+    visibility: hidden;
     padding: 4vh 3vw;
     box-sizing: border-box;
     height: 100%;
+    left: 100vw;
+    transition: all 400ms ease-out;
 
     &--is-active {
-      display: flex;
+      visibility: visible;
+      left: 0;
+      transition: all 400ms ease-out;
     }
   }
 
