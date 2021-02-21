@@ -1,10 +1,10 @@
 import React from "react";
-import assets from "/src/containers/assets/assets";
+import DB from '/src/DB';
 import "./style.scss";
 
 const Certificates = () => (
   <div className="courses" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-    {assets.certificates.slice(0, 6).map((data, index) => {
+    {DB.certificates.slice(0, 6).map((data, index) => {
       return (
         <a className="certificate" target="__blank" href={data} href={data.link} key={`data-${index}`}>
           <img className="certificate__img" src={data.img} alt={data.name} key={`data-${index}`} />

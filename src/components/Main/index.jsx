@@ -1,8 +1,8 @@
 import React from "react";
-import assets from "../../containers/assets/assets";
+import DB from '/src/DB';
 import "./style.scss";
 
-const photo = assets.hero;
+const photo = DB.hero;
 
 const Main = () => (
   <main id="main" className="main" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">

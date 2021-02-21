@@ -1,10 +1,10 @@
 import React from "react";
-import assets from "../../containers/assets/assets";
+import DB from '/src/DB';
 import "./style.scss";
 
-const logo = assets.navbar.logo;
+const logo = DB.navbar.logo;
 
-const social = assets.footer.map((data, index) => {
+const social = DB.footer.map((data, index) => {
   return (
     <li className="social__item" key={`data-${index}`}>
       <a className="social__link" href={data.link} target="_blank">

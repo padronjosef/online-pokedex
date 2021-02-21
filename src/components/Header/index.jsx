@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import Hamburger from './Hamburger'
 import Scrollspy from 'react-scrollspy'
-import assets from '../../containers/assets/assets';
+import DB from '/src/DB';
 import './style.scss'
 
-const logo = assets.navbar.logo
+const logo = DB.navbar.logo
 
 const Header = () => {
   return (

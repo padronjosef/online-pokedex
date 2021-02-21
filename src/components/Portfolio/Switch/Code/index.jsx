@@ -1,10 +1,10 @@
 import React from 'react';
-import assets from "/src/containers/assets/assets";
+import DB from '/src/DB';
 import './style.scss'
 
 const Code = () => (
   <div className="projects__code" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-    {assets.projects.slice(0, 5).map((data, index) => {
+    {DB.projects.slice(0, 5).map((data, index) => {
       return (
         <article className="project" key={`data-${index}`}>
           <div className="project__details">

@@ -57,6 +57,10 @@
   .project__header {
     flex-direction: row-reverse;
   }
+
+  .project__title {
+    text-align: right;
+  }
 }
 
 .project:nth-child(n + 3) {

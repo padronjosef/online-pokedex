@@ -343,49 +343,49 @@ const assets = {
   ],
   certificates: [
     {
-      name: "Carrear of Frontend Architecture",
+      name: "Frontend Architecture Carrear",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/A%20-%20Arquitectura%20Frontend.webp",
       link: "https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/",
     },
     {
-      name: "Carrear of English School of Platzi",
+      name: "Platzi English School Carrear",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/B%20-%20Escuela%20de%20Ingl%C3%A9s.webp",
       link: "https://platzi.com/p/padronjosef/ruta/13-idioma-ingles/diploma/detalle/",
     },
     {
-      name: "Introducción a Terminal y Línea de Comandos 2019",
+      name: "Introduction to Terminal and Command Line",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/1%20-%20Introduccion%20a%20Terminal%20y%20Linea%20de%20Comandos%202019.webp",
       link: "https://platzi.com/p/padronjosef/curso/1276-terminal-2019/diploma/detalle/",
     },
     {
-      name: "Introducción al Diseño de Prototipos 2018",
+      name: "Introduction to Prototype Design",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/2%20-%20Introducci%C3%B3n%20al%20Dise%C3%B1o%20de%20Prototipos%202018.webp",
       link: "https://platzi.com/p/padronjosef/curso/1254-prototipado/diploma/detalle/",
     },
     {
-      name: "Introducción a la Creación de Empresas y Startups",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/3%20-%20Introduccion%20a%20la%20Creacion%20de%20Empresas%20y%20Startups.webp",
-      link: "https://platzi.com/p/padronjosef/curso/1186-creacion-de-empresas/diploma/detalle/",
-    },
-    {
-      name: "Fundamentos de JavaScript",
-      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/4%20-%20Fundamentos%20de%20JavaScript.webp",
-      link: "https://platzi.com/p/padronjosef/curso/1339-fundamentos-javascript/diploma/detalle/",
-    },
-    {
-      name: "Fundamentos de Ingeniería de Software",
+      name: "Fundamentals of Software Engineering",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/5%20-%20Fundamentos%20de%20Ingenieria%20de%20Software.webp",
       link: "https://platzi.com/p/padronjosef/curso/1098-ingenieria/diploma/detalle/",
     },
     {
-      name: "Diploma del Curso profesional de Git y GitHub 2017",
+      name: "Git and GitHub Professional Course",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/6%20-%20Curso%20profesional%20de%20Git%20y%20GitHub%202017.webp",
       link: "https://platzi.com/p/padronjosef/curso/1170-git-github-2017-old/diploma/detalle/",
     },
     {
-      name: "Diploma del Curso Práctico de React JS",
+      name: "React JS Practical Course",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/7%20-%20Curso%20Practico%20de%20React%20JS.webp",
       link: "https://platzi.com/p/padronjosef/curso/1651-react-ejs/diploma/detalle/",
+    },
+    {
+      name: "JavaScript basics",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/4%20-%20Fundamentos%20de%20JavaScript.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1339-fundamentos-javascript/diploma/detalle/",
+    },
+    {
+      name: "Introduction to the Creation of Companies and Startups",
+      img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/3%20-%20Introduccion%20a%20la%20Creacion%20de%20Empresas%20y%20Startups.webp",
+      link: "https://platzi.com/p/padronjosef/curso/1186-creacion-de-empresas/diploma/detalle/",
     },
   ],
   blogs: [

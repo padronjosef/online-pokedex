@@ -1,10 +1,10 @@
 import React from 'react';
-import assets from "/src/containers/assets/assets";
+import DB from '/src/DB';
 import './style.scss'
 
 const Article = () => (
   <div className="blog__wrapper" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-    {assets.blogs.slice(0, 3).map((data, index) => {
+    {DB.blogs.slice(0, 3).map((data, index) => {
       return (
         <a href={data.link} target="__black" className="article" key={`data-${index}`}>
           <figure>
