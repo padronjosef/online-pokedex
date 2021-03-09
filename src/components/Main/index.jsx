@@ -10,7 +10,7 @@ const Main = () => (
       <div className="hero__wrapper">
         <h1 className="hero__title">Jose Padron</h1>
         <p className="hero__messege">
-          React Frontend Developer & Interface and User Experience Desginer (UI / UX)
+          React Frontend Developer with solid knowledge on interface designing (UI)
         </p>
         <q className="hero__quote" cite="">
           Fake it until you make it

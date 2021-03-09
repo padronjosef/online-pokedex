@@ -31,7 +31,7 @@ const Header = () => {
             <li className="menu__item"><a href="#footer" className="menu__link">Contact</a></li>
           </Scrollspy>
           <div className="center">
-            <a href="https://raw.githubusercontent.com/padronjosef/Portfolio-React/b20042a49ad9a43ea912c1f3e0d42ce2d512112b/src/HV-Jose-Padron.pdf" className="resume">Resume</a>
+            <a href="https://github.com/padronjosef/Portfolio-Assets/raw/main/HV%20Jose%20Padron.pdf" className="resume">Resume</a>
           </div>
         </nav>
       </header>
