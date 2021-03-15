@@ -1,8 +1,6 @@
-# My personal portoflio :house_with_garden:.
+# My personal portoflio :house_with_garden:
 
 This project has the purpose of show out my experience, featured projects, studies, articles and supply all my contact methods.
-
-Feel free of fork it :)
 
 # How to run the project.
 
@@ -25,5 +23,7 @@ Feel free of fork it :)
 - css-loader 5.0.1
 - sass-loader 10.1.0
 - mini-css-extract-plugin 1.3.3
+
+#### Feel free of fork it :)
 
 Make with :heart: by [@padronjosef](https://github.com/padronjosef)
