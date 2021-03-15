@@ -1,16 +1,16 @@
 import React from "react";
-import DB from '/src/DB';
+import DB from "/src/DB";
 import "./style.scss";
 import BtwShow from "../complements/BtwShow";
 
 const logo = DB.navbar.logo;
 
-const social = DB.footer.map((data, index) => {
+const social = DB.footer.map(({ link, img, name }, index) => {
   return (
-    <li className="social__item" key={`data-${index}`}>
-      <a className="social__link" href={data.link} target="_blank">
-        <img className="social__img" src={data.img} alt={data.name} />
-        {data.name}
+    <li className="social__item" key={index}>
+      <a className="social__link" href={link} target="_blank">
+        <img className="social__img" src={img} alt={name} />
+        {name}
       </a>
     </li>
   );

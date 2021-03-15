@@ -4,22 +4,22 @@ import './style.scss'
 
 const Code = () => (
   <div className="projects__code" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-    {DB.projects.slice(0, 5).map((data, index) => {
+    {DB.projects.slice(0, 5).map(({ name, github, demo, description, stack, img }, index) => {
       return (
-        <article className="project" key={`data-${index}`}>
+        <article className="project" key={index}>
           <div className="project__details">
             <div className="project__header">
-              <h3 className="project__title">{data.name}</h3>
+              <h3 className="project__title">{name}</h3>
               <div className="project__links">
-                <a className="project__link" href={data.github} target="__black"><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-github-projects.svg" alt="link to repo"/></a>
-                <a className="project__link" href={data.demo} target="__black"><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-external-link.svg" alt="like to live demo"/></a>
+                <a className="project__link" href={github} target="__black"><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-github-projects.svg" alt="link to repo"/></a>
+                <a className="project__link" href={demo} target="__black"><img src="https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/3b9cadea124e6438ca1f3554f966e6d27bc48989/icon-external-link.svg" alt="like to live demo"/></a>
               </div>
             </div>
-            <p className="project__description">{data.description}</p>
-            <span>{data.stack}</span>
+            <p className="project__description">{description}</p>
+            <span>{stack}</span>
           </div>
-          <a className="project__figure" href={data.demo} target="__black">
-            <img className="project__img" src={data.img} alt={data.name}/>
+          <a className="project__figure" href={demo} target="__black">
+            <img className="project__img" src={img} alt={name}/>
           </a>
         </article>
       );

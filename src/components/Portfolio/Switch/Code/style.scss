@@ -71,6 +71,7 @@
   margin: 15px 15px 40px;
   box-sizing: border-box;
   align-items: flex-start;
+  justify-content: space-between;
 
   .project {
     &__img {
@@ -93,6 +94,12 @@
 
     &__link img {
       width: 20px;
+    }
+
+    &__title {
+      width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     &__title::before {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-const StackRight = ({ name, img, p, link } = props) => {
+const StackRight = ({ name, img, p, link }) => {
   return (
     <div className="stack-right" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
       <dl className="stack-right__wrapper">

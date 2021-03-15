@@ -18,13 +18,13 @@
   box-sizing: border-box;
 
   &__img {
-    width: 30px;
+    width: 26px;
     cursor: pointer;
     filter: grayscale(1);
   }
 
   &__name {
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 12px;
     white-space: nowrap;
     overflow: hidden;
