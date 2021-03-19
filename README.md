@@ -1,6 +1,8 @@
-# My personal portoflio :house_with_garden:
+# My personal portoflio :briefcase:
 
 This project has the purpose of show out my experience, featured projects, studies, articles and supply all my contact methods.
+
+Made from with scratch react.js, sass, webpack, aos and gh-pages, it is a project on develop because I like to implement all the new technologies that i'm learning on it.
 
 # How to run the project.
 
@@ -11,18 +13,8 @@ This project has the purpose of show out my experience, featured projects, studi
 
 # Dependencies.
 
-- React.js 17.0.1 :atom:
-- Webpack 5.11.1
-- eslint 7.17.0
-- AOS 2.3.4
-- react-scrollspy 3.4.3
-- babel 7.12.10
-- gh-pages 3.1.0
-- file-loader 6.2.0
-- html-loader 1.3.2
-- css-loader 5.0.1
-- sass-loader 10.1.0
-- mini-css-extract-plugin 1.3.3
+- NPM 4.0.3
+- Node 15.10.0
 
 #### Feel free of fork it :)
 
