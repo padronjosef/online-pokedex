@@ -115,12 +115,12 @@ const assets = {
       img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/portfolio-react.webp",
     },
     {
-      name:"Rick and Morty API",
-      github: "https://github.com/padronjosef/rick-and-morty-react",
-      demo:"https://github.com/padronjosef/rick-and-morty-react",
-      description:"The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for.",
-      stack:"React, Restful Api, Node",
-      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/rick-and-morte.webp",
+      name:"Sneak Creative",
+      github: "https://github.com/padronjosef/Sneak-Creative",
+      demo:"https://padronjosef.github.io/Sneak-Creative/",
+      description:"Technical test made for Tita Media where I was challenged to develop an interface using a pregiven design and using the api of unsplash without using any kind of library or framework.",
+      stack:"ES6+, Unsplash API, Responsive",
+      img:"https://raw.githubusercontent.com/padronjosef/Sneak-Creative/main/assets/icons/opengraft.png",
     },
     {
       name:"VideBlog Geek",
