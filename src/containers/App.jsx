@@ -19,8 +19,8 @@ const App = () => (
     <Main/>
     <Stack/>
     <Portfolio/>
-    <Studies/>
     <Blog/>
+    <Studies/>
     <Footer/>
   </div>
 );
