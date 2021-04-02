@@ -5,16 +5,14 @@ import BtwShow from "../complements/BtwShow";
 
 const logo = DB.navbar.logo;
 
-const social = DB.footer.map(({ link, img, name }, index) => {
-  return (
-    <li className="social__item" key={index}>
-      <a className="social__link" href={link} target="_blank">
-        <img className="social__img" src={img} alt={name} />
-        {name}
-      </a>
-    </li>
-  );
-});
+const social = DB.footer.map(({ link, img, name }, index) => (
+  <li className="social__item" key={index}>
+    <a className="social__link" href={link} target="_blank">
+      <img className="social__img" src={img} alt={name} />
+      {name}
+    </a>
+  </li>
+));
 
 const Footer = () => (
   <footer id="footer" className="footer" data-aos="zoom-in">
