@@ -5,10 +5,10 @@ import "./style.scss";
 const StackLeft = ({handelOpen}) => {
   return (
     <div className="stack-left" data-aos="zoom-in" data-aos-duration="1500" data-aos-mirror="true">
-      {DB.stack.map((data, index) => {
+      {DB.stack.map(({img, name} = data, index) => {
         return (
           <figure className="stack-left__figure" key={`data-${index}`} >
-            <img className="stack-left__img" onClick={()=> handelOpen(data)} src={data.img} alt={data.name}/>
+            <img className="stack-left__img" onClick={()=> handelOpen(data)} src={img} alt={name}/>
           </figure>
         );
       })}
