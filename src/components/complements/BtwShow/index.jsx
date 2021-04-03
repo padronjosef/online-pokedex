@@ -1,6 +1,14 @@
-import React from 'react';
-import './style.scss'
+import React from "react";
+import "./style.scss";
 
-const BtnShow = (props ) => <a className="btn">View all the {props.value}</a>
+const BtnShow = ({ onClick, value, total, minToRendered }) => {
+  const text = (total === minToRendered) ? `View all the ${value}`: 'show less' 
+  
+  return (
+    <a onClick={onClick} className="btn">
+      {text}
+    </a>
+  );
+};
 
 export default BtnShow;
