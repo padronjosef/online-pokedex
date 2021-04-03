@@ -1,17 +1,14 @@
 import React from "react";
-import DB from "/src/DB";
 import "./style.scss";
 
-const Article = () => (
+const Article = ({totalToRender} = props) => (
   <div
     className="blog__wrapper"
     data-aos="zoom-in"
     data-aos-duration="1500"
     data-aos-mirror="true"
   >
-    {DB.blogs
-      .slice(0, 3)
-      .map(({ link, img, title, time, paragraph }, index) => (
+    {totalToRender.map(({ link, img, title, time, paragraph }, index) => (
         <a href={link} target="__black" className="article" key={index}>
           <figure>
             <img className="article__img" src={img} alt={title} />
