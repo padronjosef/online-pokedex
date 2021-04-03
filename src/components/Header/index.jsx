@@ -1,17 +1,11 @@
 import React, { Fragment } from 'react';
 import Hamburger from './Hamburger'
+import closeMenu from "/src/components/complements/CloseMenu";
 import Scrollspy from 'react-scrollspy'
 import DB from '/src/DB';
 import './style.scss'
 
 const logo = DB.navbar.logo
-
-const closeMenu = () => {
-  let modal = document.body.style.overflow;
-  header.classList.toggle("header--is-active");
-  hamburger.classList.toggle("hamburger--is-active");
-  (modal == 'hidden') ? modal = document.body.style.overflow = 'visible' : modal = document.body.style.overflow = "hidden"
-}
 
 const Header = () => (
   <Fragment>
