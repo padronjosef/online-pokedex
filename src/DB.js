@@ -110,7 +110,7 @@ const assets = {
       name:"React portfolio",
       github: "https://github.com/padronjosef/Portfolio-React",
       demo:"https://padronjose.com",
-      description:"My personal portfolio made from scratch with React.js, Sass, Webpack, AOS and GH-Pages, it is a project on develop because I like to implement all the new technologies that i'm learning on it.",
+      description:"Made from scratch with React.js, Sass, Webpack, AOS and GH-Pages, it is a project on continuous development because I'm always implementing all the new technologies and techniques that I'm learning on it.",
       stack:"React, Sass, webpack",
       img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/portfolio-react.webp",
     },
@@ -120,7 +120,7 @@ const assets = {
       demo:"https://padronjosef.github.io/Sneak-Creative/",
       description:"Technical test where I was challenged to develop an interface using a pregiven design and consuming the api of unsplash without using any kind of library or framework.",
       stack:"Unsplash API, ES6+",
-      img:"https://raw.githubusercontent.com/padronjosef/Sneak-Creative/main/assets/icons/opengraft.png",
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/Sneak%20Creative.webp",
     },
     {
       name:"VideBlog Geek",
@@ -712,6 +712,13 @@ const assets = {
       time:"2020",
       title:"Gaming News 2",
       paragraph:"Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming"
+    },
+    {
+      img:"https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/platzi-recap.webp",
+      link:"https://platzi.com/blog/recaps/",
+      time:"2020",
+      title:"Platzi Recaps",
+      paragraph:"¿Te gustaría escuchar toda la información del curso en menos de lo que te tardas en escuchar una canción? ¿Quieres que te avisemos cuando este disponible el curso que"
     }
   ],
   footer: [
