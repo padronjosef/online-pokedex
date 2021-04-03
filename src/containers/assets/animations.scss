@@ -77,6 +77,20 @@ body {
 }
 
 // _________________________ //
+//        portafolio         //
+// _________________________ //
+
+.project__figure:hover {
+  transform: scale(1.01);
+  transition: all .4s ease-in;
+}
+
+.project__img:hover {
+  opacity: .7;
+  transition: all .4s ease-in;
+}
+
+// _________________________ //
 //          studies          //
 // _________________________ //
 
