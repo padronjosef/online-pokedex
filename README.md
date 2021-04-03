@@ -2,7 +2,7 @@
 
 This project has the purpose of show out my experience, featured projects, studies, articles and supply all my contact methods.
 
-Made from with scratch react.js, sass, webpack, aos and gh-pages, it is a project on develop because I like to implement all the new technologies that i'm learning on it.
+Made from scratch with React.js, Sass, Webpack, AOS and GH-Pages, it is a project on continuous development because I'm always implementing all the new technologies and techniques that I'm learning on it.
 
 # How to run the project.
 
