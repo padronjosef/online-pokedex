@@ -643,21 +643,21 @@ const assets = {
     },
     {
       id: "course47",
-      name: "HTML5 from scratch 2020 Edition",
+      name: "HTML5 From Scratch. Edition 2020",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/31%20-%20Curso%20de%20HTML%20y%20CSS.webp",
       link: "https://www.udemy.com/course/html5-edicion-2020/",
       status: "udemy"
     },
     {
       id: "course48",
-      name: "CSS from scratch. Edition 2020",
+      name: "CSS From Scratch. Edition 2020",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/37%20-%20Curso%20de%20CSS%20Grid%20Layout%202017.webp",
       link: "https://www.udemy.com/course/css-edicion-2020/",
       status: "udemy"
     },
     {
       id: "course49",
-      name: "JavaScript from scratch 2020 Edition",
+      name: "JavaScript From Scratch. Edition 2020",
       img: "https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/45%20-%20Curso%20Basico%20de%20JavaScript.webp",
       link: "https://www.udemy.com/course/curso-de-javascript-2020/",
       status: "udemy"
