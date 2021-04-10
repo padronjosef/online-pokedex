@@ -1,12 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Platzi from "./Platzi"
+import SistemaC3 from "./SistemaC3"
+import GdenTechnology from "./GdenTechnology"
+import Sericincol from "./Sericincol"
 import './style.scss'
 
 const About = () => {
-  <section className="about">
-    <article>about me</article>
-    <p></p>
-    <article></article>
-  </section>
+  const [experience, setExperience] = useState("Platzi")
+  
+  return (
+    <section className="about" id="about">
+      <h2>A short resume of me</h2>
+      <div className="about__resume">
+        <p>Hello there! I'm Jose, a Frontend Developer based on Bogota. CO.</p>
+        <p>I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finish my electronic engineering, I start my journey in the tech industry having some failures and much more successes, <a target="_blank" href="https://platzi.com/blog/mi-camino-a-platzi/">you can reed my story here.</a></p>
+        <p>But always working hard to overcome myself writing great code. I'm a space and videogames fanatic, retired pianist, PC hardware lover and meme maker.</p>
+      </div>
+      <h3>These are where I've worked</h3>
+      <div className="experience-wrapper">
+        <div className="experience" >
+          <input className="experience__input" type="radio" id="Platzi" name="switchExperience" value="Platzi" defaultChecked />
+          <label className="experience__label" onClick={ ()=> setExperience("Platzi") } htmlFor="Platzi">Platzi</label>
+
+          <input className="experience__input" type="radio" id="SistemaC3" name="switchExperience" value="SistemaC3" />
+          <label className="experience__label" onClick={ ()=> setExperience("SistemaC3") } htmlFor="SistemaC3">Sistema C3</label>
+
+          <input className="experience__input" type="radio" id="GdenTechnology" name="switchExperience" value="GdenTechnology" />
+          <label className="experience__label" onClick={ ()=> setExperience("GdenTechnology") } htmlFor="GdenTechnology">Gden Technology</label> 
+
+          <input className="experience__input" type="radio" id="Sericincol" name="switchExperience" value="Sericincol" />
+          <label className="experience__label" onClick={ ()=> setExperience("Sericincol") } htmlFor="Sericincol">Sericincol</label> 
+        </div>
+        <article className="company">
+          {experience === "Platzi" && <Platzi />}
+          {experience === "SistemaC3" && <SistemaC3 />}
+          {experience === "GdenTechnology" && <GdenTechnology />}
+          {experience === "Sericincol" && <Sericincol />}
+        </article>
+      </div>
+    </section>
+  )
 }
 
 export default About
