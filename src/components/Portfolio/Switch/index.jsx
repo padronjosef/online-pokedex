@@ -19,12 +19,9 @@ const Switch = () => {
         <input className="switch__input" type="radio" id="Designs" name="switchPortfolio" value="Designs" />
         <label className="switch__label" onClick={ ()=> setShow("Designs") } htmlFor="Designs">Designs</label> 
       </div>
-
-      <Fragment>
-        {show === "Code" && <Code />}
-        {show === "UI/UX" && <Uiux />}
-        {show === "Designs" && <Design />}
-      </Fragment>
+      {show === "Code" && <Code />}
+      {show === "UI/UX" && <Uiux />}
+      {show === "Designs" && <Design />}
     </Fragment>
   )
 }
