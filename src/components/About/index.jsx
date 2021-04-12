@@ -10,13 +10,13 @@ const About = () => {
   
   return (
     <section className="about" id="about">
-      <h2>A short resume of me</h2>
+      <h2>A short summary about me</h2>
       <div className="about__resume">
-        <p>Hello there! I'm Jose, a Frontend Developer based on Bogota. CO.</p>
-        <p>I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finish my electronic engineering, I start my journey in the tech industry having some failures and much more successes, <a target="_blank" href="https://platzi.com/blog/mi-camino-a-platzi/">you can reed my story here.</a></p>
-        <p>But always working hard to overcome myself writing great code. I'm a space and videogames fanatic, retired pianist, PC hardware lover and meme maker.</p>
+        <p>Hello there! I'm Jose, a Frontend Developer based in Bogota. CO.</p>
+        <p>I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finished my electronic engineering career, I started my journey in the tech industry having some failures and much more accomplishments, <a target="_blank" href="https://platzi.com/blog/mi-camino-a-platzi/">you can reed my story here.</a></p>
+        <p>But always working hard to constantly better myself and write great code. I'm a space and videogame fanatic, a retired pianist, a PC hardware lover and meme maker.</p>
       </div>
-      <h3>These are where I've worked</h3>
+      <h3>This is where I've worked</h3>
       <div className="experience-wrapper">
         <div className="experience" >
           <input className="experience__input" type="radio" id="Platzi" name="switchExperience" value="Platzi" defaultChecked />

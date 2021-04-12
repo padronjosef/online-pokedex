@@ -22,29 +22,6 @@
   width: 100%;
 }
 
-.company {
-  max-width: 550px;
-  margin-left: 3vw;
-  &__name {
-    font-size: 22px;
-    color: $primaryColor;
-  }
-  &__time {
-    font-size: 12px;
-  }
-  &__job-title {
-    font-size: 16px;
-    margin-top: 22px;
-    margin-left: .5em;
-    margin-bottom: 5px;
-  }
-  &__job-description {
-    font-size: 14px;
-    color: $gray2;
-    margin-left: 2em;
-  }
-}
-
 .experience {
   display: flex;
   flex-direction: column;
@@ -69,5 +46,28 @@
     color: $primaryColor;
     cursor: pointer;
     border-left: 3px solid $gray2;
+  }
+}
+
+.company {
+  max-width: 550px;
+  margin-left: 3vw;
+  &__name {
+    font-size: 22px;
+    color: $primaryColor;
+  }
+  &__time {
+    font-size: 12px;
+  }
+  &__job-title {
+    font-size: 16px;
+    margin-top: 22px;
+    margin-left: .5em;
+    margin-bottom: 5px;
+  }
+  &__job-description {
+    font-size: 14px;
+    color: $gray2;
+    margin-left: 2em;
   }
 }

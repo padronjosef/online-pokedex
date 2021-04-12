@@ -44,7 +44,8 @@ body {
   color: $gray1;
   counter-reset: section-counter;
 
-  background: black url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp") no-repeat fixed center;
+  background-color: black;
+  // background: black url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/background.webp") no-repeat fixed center;
   background-size: cover;
 }
 
