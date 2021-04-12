@@ -5,7 +5,10 @@ import BtnShow from "../complements/BtwShow";
 import Certificates from "./Certificates";
 
 const Studies = () => {
-  const [count, setCount] = useState(DB.certificates.slice(0, 6));
+  const { certificates } = DB;
+  const inititalState = certificates.slice(0, 6);
+
+  const [count, setCount] = useState(inititalState);
 
   return (
     <section
@@ -18,10 +21,12 @@ const Studies = () => {
       <h2>Everything I have learned</h2>
       <Certificates totalToRender={count} />
       <BtnShow
-        minToRendered={6}
+        minimun={6}
         total={count.length}
-        onClick={() => count.length === 6 ? setCount(DB.certificates) : setCount(DB.certificates.slice(0, 6))}
-        value={DB.certificates.length + " certficates"}
+        value={certificates.length + " certficates"}
+        onClick={() =>
+          count.length === 6 ? setCount(certificates) : setCount(inititalState)
+        }
       />
     </section>
   );
