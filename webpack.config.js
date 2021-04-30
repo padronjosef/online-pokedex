@@ -1,32 +1,32 @@
-const path = require('path')
-const HtmlWebPackPlugin= require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports={
+module.exports = {
   entry: './src/index.js',
-    output: {
-      path: path.resolve(__dirname, 'build'),
-      filename: 'bundle.js'
-    },
-    resolve:{
-      extensions: ['.js', '.jsx']
-    },
-    module:{
-      rules:[
-        {
-          test: /\.(js|jsx)$/,
-          exclude: /node_modules/,
-          use: {
-            loader: "babel-loader"
-          }
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
         },
-        {
-          test: /\.html$/,
-          use:[
+      },
+      {
+        test: /\.html$/,
+        use: [
           {
-            loader: "html-loader"
-          }
-        ]
+            loader: 'html-loader',
+          },
+        ],
       },
       {
         test: /\.(s*)css$/,
@@ -35,8 +35,8 @@ module.exports={
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
       {
         test: /\.(pdf|gif|png|jpe?g|svg)$/,
@@ -44,21 +44,21 @@ module.exports={
           {
             loader: 'file-loader',
             options: {
-              name:'assets/[hash].[ext]'
+              name: 'assets/[hash].[ext]',
             },
           },
         ],
       },
-    ]
+    ],
   },
-  plugins:[
+  plugins: [
     new HtmlWebPackPlugin({
       template: './public/index.html',
       filename: './index.html',
       favicon: './src/favicon/favicon.ico',
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].css'
-    })
-  ]
+      filename: 'assets/[name].css',
+    }),
+  ],
 };

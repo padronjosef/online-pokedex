@@ -1,10 +1,10 @@
 const closeMenu = () => {
-  if(screen.width < 692) {
+  if (window.screen.width <= 768) {
     let modal = document.body.style.overflow;
-    hamburger.classList.toggle("hamburger--is-active");
-    header.classList.toggle("header--is-active");
-    (modal == 'hidden') ? modal = document.body.style.overflow = 'visible' : modal = document.body.style.overflow = "hidden"
+    hamburger.classList.toggle('hamburger--is-active');
+    header.classList.toggle('header--is-active');
+    (modal === 'hidden') ? modal = 'visible' : modal = 'hidden';
   }
-}
+};
 
-export default closeMenu
+export default closeMenu;
