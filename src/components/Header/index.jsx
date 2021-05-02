@@ -1,8 +1,8 @@
 import React from 'react';
-import Hamburger from './Hamburger';
-import closeMenu from '/src/components/complements/CloseMenu';
 import Scrollspy from 'react-scrollspy';
-import DB from '/src/DB';
+import Hamburger from './Hamburger';
+import closeMenu from '../complements/CloseMenu';
+import DB from '../../DB';
 import './style.scss';
 
 const { logo } = DB.navbar;

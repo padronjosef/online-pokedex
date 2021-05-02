@@ -1,5 +1,5 @@
 import React from 'react';
-import DB from '/src/DB';
+import DB from '../../../../DB';
 import './style.scss';
 
 const Code = () => {
@@ -8,8 +8,8 @@ const Code = () => {
 
   return (
     <div className='projects__code' data-aos='zoom-in' data-aos-duration='1500' data-aos-mirror='true'>
-      {DB.projects.slice(0, 5).map(({ name, github, demo, description, stack, img }, index) => (
-        <article className='project' key={index}>
+      {DB.projects.slice(0, 5).map(({ name, github, demo, description, stack, img }) => (
+        <article className='project' key={name}>
           <div className='project__details'>
             <div className='project__header'>
               <h3 className='project__title'>{name}</h3>

@@ -14,49 +14,18 @@ const Switch = () => {
   return (
     <>
       <div className='switch'>
-        <input
-          className='switch__input'
-          type='radio'
-          id='Code'
-          name='switchPortfolio'
-          value='Code'
-          defaultChecked
-        />
-        <label
-          className='switch__label'
-          onClick={() => renderSecction('Code')}
-          htmlFor='Code'
-        >
+        <input className='switch__input' type='radio' id='Code' name='switchPortfolio' value='Code' defaultChecked />
+        <label className='switch__label' onClick={() => renderSecction('Code')} htmlFor='Code'>
           Code
         </label>
 
-        <input
-          className='switch__input'
-          type='radio'
-          id='UI/UX'
-          name='switchPortfolio'
-          value='UI/UX'
-        />
-        <label
-          className='switch__label'
-          onClick={() => renderSecction('UI/UX')}
-          htmlFor='UI/UX'
-        >
+        <input className='switch__input' type='radio' id='UI/UX' name='switchPortfolio' value='UI/UX' />
+        <label className='switch__label' onClick={() => renderSecction('UI/UX')} htmlFor='UI/UX'>
           UI/UX
         </label>
 
-        <input
-          className='switch__input'
-          type='radio'
-          id='Designs'
-          name='switchPortfolio'
-          value='Designs'
-        />
-        <label
-          className='switch__label'
-          onClick={() => renderSecction('Designs')}
-          htmlFor='Designs'
-        >
+        <input className='switch__input' type='radio' id='Designs' name='switchPortfolio' value='Designs' />
+        <label className='switch__label' onClick={() => renderSecction('Designs')} htmlFor='Designs'>
           Designs
         </label>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StackLeft from './StackLeft';
 import StackRight from './StackRight';
-import DB from '/src/DB';
+import DB from '../../DB';
 import './style.scss';
 
 const Stack = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import DB from '/src/DB';
+import DB from '../../../../DB';
 
 const Uiux = () => (
   <div className='projects' data-aos='zoom-in' data-aos-duration='1500' data-aos-mirror='true'>

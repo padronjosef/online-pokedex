@@ -1,5 +1,5 @@
 import React from 'react';
-import DB from '/src/DB';
+import DB from '../../DB';
 import './style.scss';
 
 const photo = DB.hero;

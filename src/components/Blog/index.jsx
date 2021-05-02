@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DB from '/src/DB';
+import DB from '../../DB';
 import Article from './Article';
 import BtnShow from '../complements/BtwShow';
 
