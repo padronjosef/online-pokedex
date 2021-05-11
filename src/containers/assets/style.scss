@@ -67,8 +67,6 @@ h2 {
 
   &::before {
     color: $primaryColor;
-    counter-increment: section-counter;
-    content: "0" counter(section-counter) ".";
     font-size: 24px;
     display: inline-block;
     margin-bottom: 10px;

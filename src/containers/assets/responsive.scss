@@ -137,6 +137,30 @@
 }
 
 @media screen and (max-width: 640px) {
+  .experience-wrapper{
+    flex-direction: column;
+  }
+
+  .experience{
+    flex-direction: row;
+    margin-bottom: 20px;
+    overflow: scroll;
+
+    &__input[type="radio"] {
+      &[type="radio"]:checked + label {
+        border-left: 0;
+        border-bottom: 4px solid $primaryColor;
+      }
+    }
+    &__label {
+      border-left: 0;
+      border-bottom: 3px solid $gray;
+      display: flex !important;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
   .portfolio, .blog {
     padding-right: 1rem;
     padding-left: 1rem;
