@@ -20,16 +20,14 @@
 
   .navbar {
     flex-direction: column;
-    align-items: baseline;
-    // justify-content: space-between;
     justify-content: flex-start;
     box-sizing: border-box;
   }
 
   .logo {
     height: auto;
-    max-width: 200px;
-    margin-bottom: 2rem;
+    max-width: 160px;
+    margin-bottom: 5vh;
     margin-left: 12px;
 
     &__img {
@@ -137,6 +135,14 @@
 }
 
 @media screen and (max-width: 640px) {
+  h2 {
+    margin-bottom: 16px !important;
+  }
+
+  section {
+    margin: 30px auto !important;
+  }
+
   .experience-wrapper{
     flex-direction: column;
   }
