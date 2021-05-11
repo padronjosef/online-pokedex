@@ -1,7 +1,7 @@
 const assets = {
   navbar: {
     logo: {
-      img: 'https://raw.githubusercontent.com/padronjosef/Icon-Portfolio-react/30de37cb9c4dabe0bee035a0a49fd7f34a7e7302/logo-gaiden.svg',
+      img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/logo-gaiden.png',
       alt: 'logo Gaiden',
     },
     viewcode: {
@@ -10,7 +10,7 @@ const assets = {
     },
   },
   hero: {
-    img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/photo.webp',
+    img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/newphoto.png',
     alt: 'photo jose padron',
   },
   stack: [
@@ -126,7 +126,7 @@ const assets = {
       name: 'VideBlog Geek',
       github: 'https://github.com/padronjosef/Firebase-geek-blog',
       demo: 'https://github.com/padronjosef/Firebase-geek-blog',
-      description: 'It was my first full stack app using JavaScript, FireBase and Stylus to create a tech forum that has all the features of a CRUD app.',
+      description: 'SPA using JavaScript and FireBase to create a tech forum that has all the features of a CRUD app.',
       stack: 'React, FireBase, stylus',
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/videoblog-geek-firebase.webp',
     },
@@ -134,7 +134,7 @@ const assets = {
       name: 'CRUD Management',
       github: 'https://github.com/padronjosef/React-Badges',
       demo: 'https://github.com/padronjosef/React-Badges',
-      description: 'An small CRUD app where I used React.js and Json Fake API to simulate the landing page of a fictitious react event.',
+      description: 'CRUD app where I used React.js and Json Fake API to simulate the landing page of a fictitious react event.',
       stack: 'React, Fake Api, CRUD',
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/code/react-badges.webp',
     },
@@ -346,13 +346,13 @@ const assets = {
   certificates: [
     {
       id: 'carrear1',
-      name: 'Frontend Architecture Carrear',
+      name: 'Frontend Architecture Career',
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/A%20-%20Arquitectura%20Frontend.webp',
       link: 'https://platzi.com/p/padronjosef/ruta/7-arquitecto/diploma/detalle/',
     },
     {
       id: 'carrear2',
-      name: 'English School Carrear',
+      name: 'English School Career',
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/B%20-%20Escuela%20de%20Ingl%C3%A9s.webp',
       link: 'https://platzi.com/p/padronjosef/ruta/13-idioma-ingles/diploma/detalle/',
     },
@@ -670,7 +670,7 @@ const assets = {
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp',
       link: 'https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/',
       time: '2020',
-      title: 'Algoritmo Del Cubo Rubik',
+      title: 'Cubo Rubik',
       paragraph: '¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones',
     },
     {

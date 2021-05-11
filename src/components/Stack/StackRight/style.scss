@@ -2,7 +2,7 @@
 
 .stack-right {
   border: $primaryColor solid 1px;
-  background: $bgColor2;
+  background: $bgButtons;
   border-radius: 4px;
   padding: 20px;
   max-width: 400px;
@@ -28,8 +28,6 @@
     height: 120px;
     width: 90%;
     margin-bottom: 30px;
-    filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
-      brightness(50%) contrast(89%);
   }
 
   &__details {

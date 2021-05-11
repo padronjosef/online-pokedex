@@ -15,6 +15,7 @@ const social = DB.footer.map(({ link, img, name }) => (
 
 const Footer = () => (
   <footer id='footer' className='footer' data-aos='zoom-in'>
+    <span className='footer__span'>05. What&apos;s Next?</span>
     <h2 className='footer__title'> LET’S CREATE SOMETHING GREAT</h2>
     <p className='footer__messege'>
       If you like my work and have some cool project to work on, just send me

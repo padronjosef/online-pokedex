@@ -23,7 +23,7 @@ const Studies = () => {
       <BtnShow
         minimun={6}
         total={count.length}
-        value={`${certificates.length} certficates`}
+        value={`${certificates.length}`}
         onClick={() => (count.length === 6 ? setCount(certificates) : setCount(inititalState))}
       />
     </section>

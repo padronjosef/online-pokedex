@@ -2,8 +2,8 @@
 
 .btn {
   font-size: 18px;
-  color: $gray1;
-  border: 1px solid $gray1;
+  color: $secondaryColor;
+  border: 1px solid $secondaryColor;
   padding: 10px 0;
   width: 300px;
   border-radius: 4px;
@@ -11,10 +11,11 @@
   cursor: pointer;
   box-sizing: border-box;
   background-color: transparent;
+  font-family: $primaryFont;
 }
 
 .btn:hover {
-  background-color: $bgColor2;
+  background-color: $bgButtons;
   color: $primaryColor;
   border: 1px solid $primaryColor;
   transition: 0.5s;

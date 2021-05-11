@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background-color: $bgColor3;
+  background-color: $bgText;
   width: 300px;
   padding: 5px 20px;
   box-sizing: border-box;
@@ -20,7 +20,7 @@
   &__img {
     width: 26px;
     cursor: pointer;
-    filter: grayscale(1);
+    filter: grayscale(100%);
   }
 
   &__name {

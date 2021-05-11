@@ -17,7 +17,7 @@ const Header = () => (
         </a>
         <Scrollspy className='menu' id='menu' items={['main', 'about', 'stack', 'portfolio', 'blog', 'studies', 'footer']} currentClassName='menu__item--active' offset={-100}>
           <li className='menu__item'><a href='#main' className='menu__link'>blank</a></li>
-          <li className='menu__item'><a href='#about' className='menu__link'>about</a></li>
+          <li className='menu__item'><a href='#about' className='menu__link'>About</a></li>
           <li className='menu__item'><a href='#stack' className='menu__link'>Stack</a></li>
           <li className='menu__item'><a href='#portfolio' className='menu__link'>Portfolio</a></li>
           <li className='menu__item'><a href='#blog' className='menu__link'>Blog</a></li>

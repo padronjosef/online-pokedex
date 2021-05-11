@@ -18,15 +18,11 @@
 
   &__title {
     margin: 5px 0 10px;
-    display: block;
-
-    &::before {
-      content: "Feature Project";
-      display: block;
-      color: $primaryColor;
-      font-size: 14px;
-      margin-bottom: 5px;
-    }
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
   }
 
   &__link {
@@ -36,7 +32,7 @@
   &__description {
     max-width: 500px;
     padding: 15px;
-    background-color: $bgColor3;
+    background-color: $bgText;
     margin: 10px 0;
     border-radius: 4px;
   }
@@ -51,7 +47,8 @@
   &__img {
     width: 100%;
     height: 100%;
-    opacity: 0.4;
+    filter: grayscale(100%);
+    opacity: 0.2;
     border-radius: 4px;
   }
 }
@@ -66,26 +63,28 @@
   .project__title {
     text-align: right;
   }
+
+  .project__details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
 
 .project:nth-child(n + 3) {
   max-width: 320px;
   flex-direction: column-reverse;
-  background-color: $bgColor3;
-  padding: 35px 25px 25px;
+  background-color: $bgText;
+  padding: 2rem;
   margin: 15px 15px 40px;
   box-sizing: border-box;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: flex-end;
 
   .project {
     &__figure {
-      height: auto;
-    }
-
-    &__img {
-      content: url("https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/icon-folder.svg");
-      opacity: 1;
+      display: none;
     }
 
     &__details {
@@ -95,19 +94,6 @@
     &__description {
       background-color: transparent;
       padding: 0;
-    }
-
-    &__links {
-      position: relative;
-      top: -60px;
-    }
-
-    &__link img {
-      width: 20px;
-    }
-
-    &__title {
-      width: 160px;
     }
 
     &__title::before {

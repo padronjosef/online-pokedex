@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  font-family: $primaryFont;
 }
 
 .experience {
@@ -34,9 +35,9 @@
     &[type="radio"]:checked + label {
       border-left: 4px solid $primaryColor;
       border-radius: 0 4px 4px 0;
-      background-color: $bgColor2;
+      background-color: $bgButtons;
       display: block;
-      color: $gray1;
+      color: $secondaryColor;
     }
   }
   &__label {
@@ -45,7 +46,9 @@
     font-size: 18px;
     color: $primaryColor;
     cursor: pointer;
-    border-left: 3px solid $gray2;
+    border-left: 3px solid $gray;
+    font-family: $secondaryFont;
+    font-weight: bold;
   }
 }
 
@@ -55,6 +58,8 @@
   &__name {
     font-size: 22px;
     color: $primaryColor;
+    font-family: $secondaryFont;
+    font-weight: bold;
   }
   &__time {
     font-size: 12px;
@@ -67,7 +72,7 @@
   }
   &__job-description {
     font-size: 14px;
-    color: $gray2;
+    color: $gray;
     margin-left: 2em;
   }
 }

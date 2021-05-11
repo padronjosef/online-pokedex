@@ -22,7 +22,7 @@ body {
     padding: 8px 12px;
     border: $primaryColor solid 1px;
     transition: background-color 0.5s;
-    background-color: $bgColor2;
+    background-color: $bgButtons;
     border-radius: 4px;
     transition: color 0.5s;
     margin: 0px;
@@ -45,7 +45,7 @@ body {
   .resume:hover {
     font-size: 16px;
     color: $primaryColor;
-    background-color: $bgColor2;
+    background-color: $bgButtons;
     padding: 5px 40px;
     border: $primaryColor solid 1px;
     border-radius: 4px;
@@ -57,14 +57,14 @@ body {
 // _________________________ //
 
 .stack-left__img {
-  &--active {
-    filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
-    brightness(50%) contrast(89%);
-  }
+  // &--active {
+  //   filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
+  //   brightness(50%) contrast(89%);
+  // }
 
   &:hover {
-    filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
-    brightness(50%) contrast(89%);
+    // filter: invert(34%) sepia(30%) saturate(1113%) hue-rotate(351deg)
+    // brightness(50%) contrast(89%);
     cursor: pointer;
     transform: scale(1.1);
     transition: all .4s ease-in;

@@ -13,8 +13,8 @@
     width: 0;
     
     &[type="radio"]:checked + label {
-      background-color: $bgColor2;
-      color: $gray1;
+      background-color: $bgButtons;
+      color: $secondaryColor;
     }
   }
   &__label {
