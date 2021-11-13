@@ -12,8 +12,6 @@ import './assets/style.scss';
 
 AOS.init();
 
-// const viewWidth = window.screen.width
-
 const App = () => (
   <div className='app'>
     <Header />

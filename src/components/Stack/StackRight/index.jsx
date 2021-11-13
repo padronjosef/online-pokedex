@@ -1,24 +1,18 @@
 import React from 'react';
+import AnimatedDiv from '../../complements/AnimatedDiv';
 import './style.scss';
 
 const StackRight = ({ name, img, p, link }) => (
-  <div
-    className='stack-right'
-    data-aos='zoom-in'
-    data-aos-duration='1500'
-    data-aos-mirror='true'
-  >
+  <AnimatedDiv className='stack-right'>
     <dl className='stack-right__wrapper'>
       <dt className='stack-right__title'>{name}</dt>
       <img className='stack-right__img' src={img} alt={name} />
       <dd className='stack-right__details'>{p}</dd>
       <a className='stack-right__link' href={link} rel='noreferrer' target='_blank'>
-        https://www.
-        <span className='stack-right__span'>{name}</span>
-        .com
+        {`https://www.${name.toLowerCase()}.com`}
       </a>
     </dl>
-  </div>
+  </AnimatedDiv>
 );
 
 export default StackRight;

@@ -50,12 +50,12 @@ a {
   text-decoration: none;
 }
 
-section {
+.section {
   max-width: 1240px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 120px auto;
+  margin: 100px auto;
   padding: 60px 1rem;
   box-sizing: border-box;
 }
@@ -73,6 +73,12 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     margin-right: 5px;
+  }
+}
+
+.portfolio{
+  h2 {
+    margin-bottom: 25px;
   }
 }
 

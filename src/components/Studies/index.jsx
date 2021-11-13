@@ -1,32 +1,29 @@
 import React, { useState } from 'react';
 import DB from '../../DB';
+import AnimatedDiv from '../complements/AnimatedDiv';
 import BtnShow from '../complements/BtwShow';
-
 import Certificates from './Certificates';
 
 const Studies = () => {
-  const { certificates } = DB;
-  const inititalState = certificates.slice(0, 6);
+  const { studies } = DB;
+  const { certificates, title } = studies;
+  const inititalState = studies.certificates.slice(0, 6);
 
-  const [count, setCount] = useState(inititalState);
+  const [certificate, setCertificate] = useState(inititalState);
+
+  const handleClick = () => (certificate.length === 6 ? setCertificate(certificates) : setCertificate(inititalState));
 
   return (
-    <section
-      id='studies'
-      className='estudies'
-      data-aos='fade-up'
-      data-aos-duration='1500'
-      data-aos-mirror='true'
-    >
-      <h2>Everything I have learned</h2>
-      <Certificates totalToRender={count} />
+    <AnimatedDiv id='Studies' className='section'>
+      <h2>{title}</h2>
+      <Certificates certificate={certificate} />
       <BtnShow
         minimun={6}
-        total={count.length}
+        total={certificate.length}
         value={`${certificates.length}`}
-        onClick={() => (count.length === 6 ? setCount(certificates) : setCount(inititalState))}
+        onClick={handleClick}
       />
-    </section>
+    </AnimatedDiv>
   );
 };
 

@@ -1,13 +1,9 @@
 import React from 'react';
+import AnimatedDiv from '../../complements/AnimatedDiv';
 import './style.scss';
 
 const Article = ({ totalToRender } = props) => (
-  <div
-    className='blog__wrapper'
-    data-aos='zoom-in'
-    data-aos-duration='1500'
-    data-aos-mirror='true'
-  >
+  <AnimatedDiv className='blog__wrapper'>
     {totalToRender.map(({ link, img, title, time, paragraph }) => (
       <a href={link} target='__black' className='article' key={title}>
         <figure>
@@ -20,7 +16,7 @@ const Article = ({ totalToRender } = props) => (
         </div>
       </a>
     ))}
-  </div>
+  </AnimatedDiv>
 );
 
 export default Article;

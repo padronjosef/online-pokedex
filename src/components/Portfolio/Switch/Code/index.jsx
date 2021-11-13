@@ -1,11 +1,14 @@
 import React from 'react';
 import DB from '../../../../DB';
+import AnimatedDiv from '../../../complements/AnimatedDiv';
 import './style.scss';
 
 const Code = () => {
+  const { projects } = DB.portfolio;
+
   return (
-    <div className='projects__code' data-aos='zoom-in' data-aos-duration='1500' data-aos-mirror='true'>
-      {DB.projects.slice(0, 5).map(({ name, demo, description, stack, img }) => (
+    <AnimatedDiv className='projects__code'>
+      {projects.slice(0, 5).map(({ name, demo, description, stack, img }) => (
         <a className='project' href={demo} target='__black' key={name}>
           <div className='project__details'>
             <div className='project__header'>
@@ -21,7 +24,7 @@ const Code = () => {
           </figure>
         </a>
       ))}
-    </div>
+    </AnimatedDiv>
   );
 };
 

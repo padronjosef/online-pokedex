@@ -1,37 +1,29 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
+import DB from '../../../DB';
 import Code from './Code';
 import Uiux from './Uiux';
 import Design from './Design';
 import './style.scss';
 
 const Switch = () => {
-  const [show, setShow] = useState('Code');
-
-  const renderSecction = (secction) => {
-    setShow(secction);
-  };
+  const [renderSecction, setRenderSecction] = useState('Code');
+  const { sections } = DB.portfolio;
 
   return (
     <>
       <div className='switch'>
-        <input className='switch__input' type='radio' id='Code' name='switchPortfolio' value='Code' defaultChecked />
-        <label className='switch__label' onClick={() => renderSecction('Code')} htmlFor='Code'>
-          Code
-        </label>
-
-        <input className='switch__input' type='radio' id='UI/UX' name='switchPortfolio' value='UI/UX' />
-        <label className='switch__label' onClick={() => renderSecction('UI/UX')} htmlFor='UI/UX'>
-          UI/UX
-        </label>
-
-        <input className='switch__input' type='radio' id='Designs' name='switchPortfolio' value='Designs' />
-        <label className='switch__label' onClick={() => renderSecction('Designs')} htmlFor='Designs'>
-          Designs
-        </label>
+        {sections.map((section) => (
+          <Fragment key={section}>
+            <input className='switch__input' type='radio' id={section} name='switchPortfolio' value={section} defaultChecked={section === sections[0]} />
+            <label className='switch__label' onClick={() => setRenderSecction(section)} htmlFor={section}>
+              {section}
+            </label>
+          </Fragment>
+        ))}
       </div>
-      {show === 'Code' && <Code />}
-      {show === 'UI/UX' && <Uiux />}
-      {show === 'Designs' && <Design />}
+      {renderSecction === 'Code' && <Code />}
+      {renderSecction === 'UI/UX' && <Uiux />}
+      {renderSecction === 'Designs' && <Design />}
     </>
   );
 };

@@ -1,15 +1,16 @@
 import React from 'react';
 import DB from '../../../DB';
+import AnimatedDiv from '../../complements/AnimatedDiv';
 import './style.scss';
 
 const StackLeft = ({ handelOpen }) => (
-  <div className='stack-left' data-aos='zoom-in' data-aos-duration='1500' data-aos-mirror='true'>
-    {DB.stack.map((data) => (
+  <AnimatedDiv className='stack-left'>
+    {DB.stack.icons.map((data) => (
       <figure className='stack-left__figure' key={data.name}>
         <img className='stack-left__img' onClick={() => handelOpen(data)} src={data.img} alt={data.name} />
       </figure>
     ))}
-  </div>
+  </AnimatedDiv>
 );
 
 export default StackLeft;

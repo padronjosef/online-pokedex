@@ -1,30 +1,23 @@
 import React, { useState } from 'react';
+import DB from '../../DB';
+import AnimatedDiv from '../complements/AnimatedDiv';
 import StackLeft from './StackLeft';
 import StackRight from './StackRight';
-import DB from '../../DB';
 import './style.scss';
 
 const Stack = () => {
-  const { stack } = DB;
-
-  const [showStack, setShowStack] = useState(stack[0]);
-
-  const { name, img, p, link } = showStack;
+  const { title, icons } = DB.stack;
+  const [stack, setStack] = useState(icons[0]);
+  const { name, img, p, link } = stack;
 
   return (
-    <section
-      id='stack'
-      className='stack'
-      data-aos='fade-up'
-      data-aos-duration='1500'
-      data-aos-mirror='true'
-    >
-      <h2>All the technologies I&apos;ve use</h2>
+    <AnimatedDiv id='Stack' className='stack section'>
+      <h2>{title}</h2>
       <div className='stack__wrapper'>
-        <StackLeft handelOpen={setShowStack} />
+        <StackLeft handelOpen={setStack} />
         <StackRight name={name} img={img} p={p} link={link} />
       </div>
-    </section>
+    </AnimatedDiv>
   );
 };
 

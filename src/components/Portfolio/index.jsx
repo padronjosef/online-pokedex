@@ -1,16 +1,16 @@
 import React from 'react';
+import DB from '../../DB';
+import AnimatedDiv from '../complements/AnimatedDiv';
 import Switch from './Switch';
 
-const mb10 = {
-  marginBottom: '10px',
-};
-
 const Portfolio = () => {
+  const { title } = DB.portfolio;
+
   return (
-    <section id='portfolio' className='portfolio' data-aos='fade-up' data-aos-duration='1500' data-aos-mirror='true'>
-      <h2 style={mb10}>Some Things I’ve Built</h2>
+    <AnimatedDiv id='Portfolio' className='portfolio section'>
+      <h2>{title}</h2>
       <Switch />
-    </section>
+    </AnimatedDiv>
   );
 };
 

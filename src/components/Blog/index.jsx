@@ -1,31 +1,23 @@
 import React, { useState } from 'react';
 import DB from '../../DB';
-import Article from './Article';
+import AnimatedDiv from '../complements/AnimatedDiv';
+import Article from './components/Article';
 import BtnShow from '../complements/BtwShow';
 
 const Blog = () => {
-  const { blogs } = DB;
-  const inititalState = blogs.slice(0, 3);
+  const { blog } = DB;
+  const inititalState = blog.articles.slice(0, 3);
 
   const [count, setCount] = useState(inititalState);
 
+  const hadlerClick = () => (count.length === 3 ? setCount(blog.articles) : setCount(inititalState));
+
   return (
-    <section
-      id='blog'
-      className='blog'
-      data-aos='fade-up'
-      data-aos-duration='1500'
-      data-aos-mirror='true'
-    >
-      <h2>Things I&apos;ve Written To The Internet</h2>
+    <AnimatedDiv id='Blog' className='blog section'>
+      <h2>{blog.title}</h2>
       <Article totalToRender={count} />
-      <BtnShow
-        minimun={3}
-        total={count.length}
-        value='articles'
-        onClick={() => (count.length === 3 ? setCount(blogs) : setCount(inititalState))}
-      />
-    </section>
+      <BtnShow minimun={3} total={count.length} value='articles' onClick={hadlerClick} />
+    </AnimatedDiv>
   );
 };
 

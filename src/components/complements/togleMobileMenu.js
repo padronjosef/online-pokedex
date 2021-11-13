@@ -1,5 +1,5 @@
-const closeMenu = () => {
-  if (window.screen.width <= 768) {
+const togleMobileMenu = () => {
+  if (window.innerWidth <= 768) {
     let modal = document.body.style.overflow;
     hamburger.classList.toggle('hamburger--is-active');
     header.classList.toggle('header--is-active');
@@ -7,4 +7,4 @@ const closeMenu = () => {
   }
 };
 
-export default closeMenu;
+export default togleMobileMenu;
