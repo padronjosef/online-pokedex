@@ -36,7 +36,7 @@ const assets = {
     ],
     summary: {
       title: 'A short summary about me',
-      name: 'Hello there! I&apos;m Jose, a Frontend Developer based in Bogota. CO.',
+      name: "Hello there! I'm Jose, a Frontend Developer based in Bogota. CO.",
       description: 'I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finished my electronic engineering career, I started my journey in the tech industry having some failures and much more accomplishments, ',
       footer: "But always working hard to constantly better myself and write great code. I'm a space and videogame fanatic, a retired pianist and a PC hardware lover.",
       subTitle: "This is where I've worked",
