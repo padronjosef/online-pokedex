@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import DB from '../../DB';
 import AnimatedDiv from '../complements/AnimatedDiv';
 import BtnShow from '../complements/BtwShow';
-import Certificates from './Certificates';
+import Certificates from './components/Certificates';
+import './style.scss';
 
 const Studies = () => {
   const { studies } = DB;

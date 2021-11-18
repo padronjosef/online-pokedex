@@ -3,7 +3,6 @@ import DB from '../../../DB';
 import Code from './Code';
 import Uiux from './Uiux';
 import Design from './Design';
-import './style.scss';
 
 const Switch = () => {
   const [renderSecction, setRenderSecction] = useState('Code');

@@ -1,7 +1,6 @@
 import React from 'react';
 import DB from '../../../DB';
 import AnimatedDiv from '../../complements/AnimatedDiv';
-import './style.scss';
 
 const StackLeft = ({ handelOpen }) => (
   <AnimatedDiv className='stack-left'>

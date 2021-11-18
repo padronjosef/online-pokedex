@@ -1,6 +1,6 @@
 import React from 'react';
-import DB from '../../../../DB';
-import AnimatedDiv from '../../../complements/AnimatedDiv';
+import DB from '../../../DB';
+import AnimatedDiv from '../../complements/AnimatedDiv';
 
 const Design = () => {
   const { designs, behance, ViewMore } = DB.portfolio;

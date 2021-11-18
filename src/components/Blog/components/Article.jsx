@@ -1,6 +1,5 @@
 import React from 'react';
 import AnimatedDiv from '../../complements/AnimatedDiv';
-import './style.scss';
 
 const Article = ({ totalToRender } = props) => (
   <AnimatedDiv className='blog__wrapper'>

@@ -1,7 +1,6 @@
 import React from 'react';
-import DB from '../../../../DB';
-import AnimatedDiv from '../../../complements/AnimatedDiv';
-import './style.scss';
+import DB from '../../../DB';
+import AnimatedDiv from '../../complements/AnimatedDiv';
 
 const Code = () => {
   const { projects } = DB.portfolio;

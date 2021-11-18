@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import DB from '../../DB';
 import AnimatedDiv from '../complements/AnimatedDiv';
-import StackLeft from './StackLeft';
-import StackRight from './StackRight';
+import StackLeft from './components/StackLeft';
+import StackRight from './components/StackRight';
 import './style.scss';
 
 const Stack = () => {

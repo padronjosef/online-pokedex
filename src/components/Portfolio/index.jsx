@@ -1,7 +1,8 @@
 import React from 'react';
 import DB from '../../DB';
 import AnimatedDiv from '../complements/AnimatedDiv';
-import Switch from './Switch';
+import Switch from './components/Switch';
+import './style.scss';
 
 const Portfolio = () => {
   const { title } = DB.portfolio;

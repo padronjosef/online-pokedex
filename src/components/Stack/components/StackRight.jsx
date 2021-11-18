@@ -1,6 +1,5 @@
 import React from 'react';
 import AnimatedDiv from '../../complements/AnimatedDiv';
-import './style.scss';
 
 const StackRight = ({ name, img, p, link }) => (
   <AnimatedDiv className='stack-right'>

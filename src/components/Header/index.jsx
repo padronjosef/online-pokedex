@@ -1,6 +1,6 @@
 import React from 'react';
 import DB from '../../DB';
-import Hamburger from './components';
+import Hamburger from './components/Hamburger';
 import togleMobileMenu from '../complements/togleMobileMenu';
 import Menu from './components/Menu';
 import './style.scss';

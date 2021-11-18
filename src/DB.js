@@ -1,7 +1,7 @@
 const assets = {
   email: 'josepadron.go@gmail.com',
   about: {
-    workPlaces: ['Bewe Software', 'Platzi', 'SistemaC3', 'GdenTechnology', 'Sericincol'],
+    workPlaces: ['Bewe Software', 'Platzi', 'Sistema C3', 'Gden Technology', 'Sericincol'],
     jobs: [
       {
         name: 'Bewe Software',
@@ -13,7 +13,10 @@ const assets = {
         name: 'Platzi',
         time: 'Sep 2019 - Feb 2021',
         position: ['Community Relations', 'Customer Success'],
-        description: ['Leading developer communities, UX Interviewing, UI Designing and creating graphic assets', 'Student Coaching, Creating learning paths, Customer Experience and Training peers.'],
+        description: [
+          'Leading developer communities, UX Interviewing, UI Designing and creating graphic assets',
+          'Student Coaching, Creating learning paths, Customer Experience and Training peers.',
+        ],
       },
       {
         name: 'Sistema C3',
@@ -31,7 +34,7 @@ const assets = {
         name: 'Sericincol',
         time: 'Sep 2017 - Oct 2018',
         position: ['Computer Asistant'],
-        description: ['My firsts steps as a frontend developer. I created landing pages using javascript vanilla, html and css'],
+        description: ['My firsts steps as a frontend developer. I created landing pages using javascript vanilla, html and css.'],
       },
     ],
     summary: {

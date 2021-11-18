@@ -1,6 +1,6 @@
 import React from 'react';
-import AnimatedDiv from '../../../complements/AnimatedDiv';
-import DB from '../../../../DB';
+import AnimatedDiv from '../../complements/AnimatedDiv';
+import DB from '../../../DB';
 
 const Uiux = () => {
   const { uxix } = DB.portfolio;

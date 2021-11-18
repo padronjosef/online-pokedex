@@ -3,6 +3,7 @@ import DB from '../../DB';
 import AnimatedDiv from '../complements/AnimatedDiv';
 import Article from './components/Article';
 import BtnShow from '../complements/BtwShow';
+import './style.scss';
 
 const Blog = () => {
   const { blog } = DB;

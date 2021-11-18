@@ -6,10 +6,10 @@ Made from scratch with React.js, Sass, Webpack, AOS and GH-Pages, it is a projec
 
 # How to run the project.
 
-1. Run the command `npm run install` to inicialize the project dependencies.
-2. Run the command `npm run start` to start the project.
-3. Run the command `npm run build` for compile the project.
-4. Run the command `npm run deploy` if you want to build and deploy the project to github page, be aware of change the homepage in the package.json file.
+1. Run the command `npm run install` : to inicialize the project dependencies.
+2. Run the command `npm run start` : to start the development environment.
+3. Run the command `npm run build` : for compile the project.
+4. Run the command `npm run deploy` : if you want to build and deploy the project to your github page just be aware of changing the "homepage" in package.json and the text in the CNAME files.
 
 # Dependencies.
 
