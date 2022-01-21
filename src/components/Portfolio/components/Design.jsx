@@ -13,7 +13,7 @@ const Design = () => {
           </figure>
         ))}
       </AnimatedDiv>
-      <AnimatedDiv className='btn' href={behance} target='__black'>{ViewMore}</AnimatedDiv>
+      <AnimatedDiv className='btn' href={behance}>{ViewMore}</AnimatedDiv>
     </>
   );
 };
