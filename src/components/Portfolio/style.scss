@@ -55,6 +55,7 @@
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   &__details {
     padding: 15px;
@@ -64,10 +65,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   &__title {
-    margin: 5px 0 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     text-overflow: ellipsis;
@@ -76,7 +78,18 @@
   }
 
   &__link {
-    margin-left: 16px;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    span {
+      color: white;
+      font-weight: 200;
+    }
+  }
+
+  &__external-link-icon {
+    height: 12px;
+    margin-left: 6px;
   }
 
   &__description {
@@ -106,27 +119,34 @@
 .project:nth-child(2) {
   flex-direction: row-reverse;
 
-  .project__header {
-    flex-direction: row-reverse;
-  }
+  .project {
+    &__header {
+      flex-direction: row-reverse;
+    }
 
-  .project__title {
-    text-align: right;
-  }
+    &__title {
+      text-align: right;
+    }
 
-  .project__details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    &__details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__external-link-icon {
+      flex-direction: row-reverse
+    }
   }
 }
 
 .project:nth-child(n + 3) {
   max-width: 320px;
+  box-sizing: border-box;
   flex-direction: column-reverse;
   background-color: $bgText;
-  padding: 2rem;
-  margin: 15px 15px 40px;
+  padding: 1.5rem;
+  margin: 10px 10px 40px;
   box-sizing: border-box;
   align-items: center;
   border-radius: 4px;
@@ -139,6 +159,10 @@
 
     &__details {
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
 
     &__description {
@@ -154,6 +178,10 @@
       width: 40px;
       margin-bottom: 20px;
       background: transparent;
+    }
+
+    &__link {
+      display: none;
     }
   }
 }

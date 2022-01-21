@@ -4,16 +4,21 @@ import AnimatedDiv from '../../complements/AnimatedDiv';
 
 const Code = () => {
   const { projects } = DB.portfolio;
+  const ExternalLinkIcon = 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/icon-external-link.svg';
 
   return (
     <AnimatedDiv className='projects__code'>
-      {projects.slice(0, 5).map(({ name, demo, description, stack, img }) => (
+      {projects.slice(0, 5).map(({ name, demo, description, stack, img, github }) => (
         <a className='project' href={demo} target='__black' key={name}>
           <div className='project__details'>
             <div className='project__header'>
               <h3 className='project__title'>
                 {name}
               </h3>
+              <a href={github} target='__black' className='project__link'>
+                <span>code</span>
+                <img className='project__external-link-icon' src={ExternalLinkIcon} alt={github} />
+              </a>
             </div>
             <p className='project__description'>{description}</p>
             <span className='project__stack'>{stack}</span>

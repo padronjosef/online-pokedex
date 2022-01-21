@@ -33,6 +33,25 @@ blockquote, q {
 //      general styles       //
 // _________________________ //
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 1rem;
+  box-sizing: border-box;
+}
+
+.portfolio > h2 {
+  margin-bottom: 25px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -50,16 +69,6 @@ a {
   text-decoration: none;
 }
 
-.section {
-  max-width: 1240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 100px auto;
-  padding: 60px 1rem;
-  box-sizing: border-box;
-}
-
 h2 {
   font-size: 28px;
   margin-bottom: 40px;
@@ -73,12 +82,6 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     margin-right: 5px;
-  }
-}
-
-.portfolio{
-  h2 {
-    margin-bottom: 25px;
   }
 }
 
