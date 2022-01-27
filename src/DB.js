@@ -372,22 +372,10 @@ const assets = {
     ],
     uxix: [
       {
-        name: 'Preview PF Jose Padron',
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Jose%20Padron.webp',
+        name: 'Preview PF Andy Cruz',
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Andy%20Cruz.webp',
         png: '',
-        link: 'https://www.behance.net/gallery/110617319/My-Portfolio',
-      },
-      {
-        name: 'Preview PF Jhonny Ordones',
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20%20Jhonny%20Ordones.webp',
-        png: '',
-        link: 'https://www.behance.net/gallery/110617523/Jhonny-Ordonez-Portfolio',
-      },
-      {
-        name: 'Preview PF Sebastian Aldana',
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Sebastian%20Aldana.webp',
-        png: '',
-        link: 'https://www.behance.net/gallery/113887767/Sebastian-Aldana-Portfolio',
+        link: 'https://www.behance.net/gallery/110692101/Andy-Cruz-Portfolio',
       },
       {
         name: 'Preview MGV Gaming',
@@ -396,10 +384,22 @@ const assets = {
         link: 'https://www.behance.net/gallery/110690593/MGV-Gaming',
       },
       {
-        name: 'Preview PF Andy Cruz',
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Andy%20Cruz.webp',
+        name: 'Preview PF Sebastian Aldana',
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Sebastian%20Aldana.webp',
         png: '',
-        link: 'https://www.behance.net/gallery/110692101/Andy-Cruz-Portfolio',
+        link: 'https://www.behance.net/gallery/113887767/Sebastian-Aldana-Portfolio',
+      },
+      {
+        name: 'Preview PF Jhonny Ordones',
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20%20Jhonny%20Ordones.webp',
+        png: '',
+        link: 'https://www.behance.net/gallery/110617523/Jhonny-Ordonez-Portfolio',
+      },
+      {
+        name: 'Preview PF Jose Padron',
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/UI/Preview%20PF%20Jose%20Padron.webp',
+        png: '',
+        link: 'https://www.behance.net/gallery/110617319/My-Portfolio',
       },
     ],
   },

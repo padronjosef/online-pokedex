@@ -167,13 +167,13 @@
     padding: 1rem 0;
 
     &__figure {
-      width: 100%;
+      width: auto;
       height: auto;
     }
 
     &__img {
-      width: 380px;
-      height: 200px;
+      width: 220px;
+      height: auto;
       object-fit: cover;
     }
   }
