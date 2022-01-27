@@ -6,7 +6,7 @@
 
 .about__resume {
   max-width: 750px;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
   p {
     margin-bottom: 10px;
     a {
@@ -16,9 +16,9 @@
 }
 
 .experience-wrapper {
-  margin-top: 32px;
+  margin-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   font-family: $primaryFont;
 }
@@ -26,6 +26,7 @@
 .experience {
   display: flex;
   flex-direction: column;
+  width: 30%;
 
   &__input[type="radio"] {
     opacity: 0;
@@ -33,8 +34,8 @@
     width: 0;
     
     &[type="radio"]:checked + label {
-      border-left: 4px solid $primaryColor;
-      border-radius: 0 4px 4px 0;
+      border-left: 0.25rem solid $primaryColor;
+      border-radius: 0 0.25rem 0.25rem 0;
       background-color: $bgButtons;
       display: block;
       color: $secondaryColor;
@@ -42,7 +43,7 @@
   }
   &__label {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 1rem;
     font-size: 18px;
     color: $primaryColor;
     cursor: pointer;
@@ -53,8 +54,7 @@
 }
 
 .company {
-  max-width: 550px;
-  margin-left: 3vw;
+  width: 60%;
   &__name {
     font-size: 22px;
     color: $primaryColor;
@@ -66,13 +66,13 @@
   }
   &__job-title {
     font-size: 16px;
-    margin-top: 22px;
-    margin-left: .5em;
-    margin-bottom: 5px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
   &__job-description {
     font-size: 14px;
+    margin-left: 1.5rem;
     color: $gray;
-    margin-left: 2em;
   }
 }

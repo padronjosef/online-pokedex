@@ -1,10 +1,8 @@
 @import './variables.scss';
 
 @media screen and (max-width: 768px) {
-  .section {
-    padding: 0 40px !important;
-    margin: 140px 0 !important;
-    height: auto;
+  .app {
+    padding: 0 7vw !important;
   }
 
   .hamburger {
@@ -16,9 +14,13 @@
     border-radius: 100%
   }
 
+  .btn {
+    width: 100%;
+  }
+
   .header {
     visibility: hidden;
-    padding: 4vh 10vw;
+    padding: 4vh 7vw;
     box-sizing: border-box;
     height: 100%;
     left: 100vw;
@@ -34,14 +36,16 @@
   .navbar {
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
     box-sizing: border-box;
+    justify-content: space-between;
     align-items: flex-start;
   }
 
   .logo {
     height: auto;
     max-width: 160px;
-    margin-bottom: 5vh;
+    margin-bottom: 0.5rem;
 
     &__img {
       width: 100%;
@@ -50,9 +54,9 @@
 
   .menu {
     display: block;
-    padding-bottom: 3vh;
     box-sizing: border-box;
     padding: 0;
+    margin-bottom: 10vh;
 
     &__link {
       font-size: 40px;
@@ -91,19 +95,9 @@
   }
 
   .resume {
-    display: flex;
-    position: absolute;
     font-size: 40px;
-    padding: 15px auto;
-    bottom: 5vh;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    &:hover {
-      font-size: 40px;
-      padding: 15px auto;
-    }
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hero__title {
@@ -116,39 +110,34 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vw;
   }
 
   .certificate {
-    max-width: 90vw;
+    width: 88vw;
   }
 
   .article {
-    max-width: 550px;
+    width: 100%;;
+    margin-bottom: 2rem;
   }
 
   .footer {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  
     &__title {
       margin-bottom: 2rem;
     }
   }
 
-  .social {
-    flex-direction: column;
-
-    &__link {
-      margin: 5px 0;
-      font-size: 1.8rem;
-      margin: .5rem 0;
-    }
+  .social__link {
+    margin: 0.25rem 0;
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
   }
 }
 
 @media screen and (max-width: 640px) {
   h2 {
-    margin-bottom: 16px !important;
+    margin-bottom: 1rem !important;
   }
 
   .experience-wrapper{
@@ -157,8 +146,9 @@
 
   .experience{
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
     overflow: scroll;
+    width: 100%;
 
     &__input[type="radio"] {
       &[type="radio"]:checked + label {
@@ -175,9 +165,24 @@
     }
   }
 
-  .portfolio, .blog {
-    padding-right: 1rem;
-    padding-left: 1rem;
+  .company {
+    width: 100%
+  }
+
+  .stack-left {
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    &__figure {
+      width: 100%;
+      margin-right: 2rem;
+    }
+  }
+
+  .stack-right {
+    width: 100%;
   }
 
   .project {
@@ -192,6 +197,7 @@
       padding: 0;
       padding: 1rem;
       align-items: flex-start !important;
+      width: 100%;
     }
 
     &__header {
@@ -209,6 +215,7 @@
 
     &__figure {
       width: 100%;
+      height: auto;
     }
 
     &:nth-child(n+3) {
@@ -218,40 +225,28 @@
 }
 
 @media screen and (max-width: 480px) {
-  .section {
-    margin: 80px 0 !important;
-    height: auto;
-  }
-
-  .btn {
-    width: 95%;
-  }
-
   .hero {
     &__title {
       font-size: 52px;
-    }
-
-    &__messege {
-      font-size: 32px;
+      margin: 1.5rem 0;
     }
 
     &__quote {
       font-size: 26px;
     }
+
+    &__messege {
+      font-size: 32px;
+    }
   }
 
-  .photo__img {
-    max-width: 250px;
-  }
-
-  .stack-left {
-    display: flex;
-    overflow: scroll;
-
-    &__figure {
-      width: 100%;
-      margin-right: 40px;
+  .company {
+    &__job-title {
+      margin-left: 0.25rem;
+    }
+    &__job-description {
+      font-size: 14px;
+      margin-left: 1rem;
     }
   }
 
@@ -270,5 +265,9 @@
       width: 40%;
       margin-top: 1rem;
     }
+  }
+
+  .social {
+    flex-direction: column;
   }
 }

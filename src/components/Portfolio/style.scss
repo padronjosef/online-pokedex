@@ -6,6 +6,7 @@
   width: fit-content;
   border-radius: 4px;
   margin-bottom: 40px;
+  display: flex;
 
   &__input[type="radio"] {
     opacity: 0;
@@ -29,15 +30,15 @@
 
 .projects {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: 20px;
   margin-bottom: 40px;
 
   &__code {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   &__figure {
@@ -52,17 +53,21 @@
 
 .project {
   display: flex;
-  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
 
   &__details {
-    padding: 15px;
+    padding: 1rem;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
   }
 
   &__header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -78,7 +83,6 @@
   }
 
   &__link {
-    margin-left: 14px;
     display: flex;
     align-items: center;
     span {
@@ -102,8 +106,8 @@
 
   &__figure {
     background-color: rgba(0, 0, 0, 0.4);
-    width: 450px;
-    height: 240px;
+    width: 40%;
+    height: 200px;
     border-radius: 4px;
   }
 
@@ -113,7 +117,12 @@
     filter: grayscale(100%);
     opacity: 0.2;
     border-radius: 4px;
+    object-fit: coverz;
   }
+}
+
+.project:nth-child(-n+2) {
+  margin-bottom: 3rem;
 }
 
 .project:nth-child(2) {
@@ -131,7 +140,6 @@
     &__details {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
     }
 
     &__external-link-icon {
@@ -141,16 +149,10 @@
 }
 
 .project:nth-child(n + 3) {
-  max-width: 320px;
-  box-sizing: border-box;
-  flex-direction: column-reverse;
+  width: 32%;
   background-color: $bgText;
-  padding: 1.5rem;
-  margin: 10px 10px 40px;
-  box-sizing: border-box;
-  align-items: center;
+  padding: 1rem;
   border-radius: 4px;
-  justify-content: flex-end;
 
   .project {
     &__figure {
@@ -162,7 +164,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 100%;
+      width: 100%;
     }
 
     &__description {

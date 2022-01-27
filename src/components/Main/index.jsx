@@ -9,12 +9,10 @@ const Main = () => {
   return (
     <AnimatedDiv id='Main' className='main section'>
       <div className='hero'>
-        <div className='hero__wrapper'>
-          <span className='hero__span'>{span}</span>
-          <h1 className='hero__title'>{name}</h1>
-          <q className='hero__quote' cite=''>{quote}</q>
-          <p className='hero__messege'>{message}</p>
-        </div>
+        <span className='hero__span'>{span}</span>
+        <h1 className='hero__title'>{name}</h1>
+        <q className='hero__quote' cite=''>{quote}</q>
+        <p className='hero__messege'>{message}</p>
       </div>
     </AnimatedDiv>
   );

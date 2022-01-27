@@ -33,25 +33,6 @@ blockquote, q {
 //      general styles       //
 // _________________________ //
 
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section {
-  max-width: 1240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 1rem;
-  box-sizing: border-box;
-}
-
-.portfolio > h2 {
-  margin-bottom: 25px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -107,4 +88,26 @@ span {
 
 q {
   color: $gray;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.section {
+  max-width: 920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  box-sizing: border-box;
+  align-content: space-between;
+}
+
+.portfolio > h2 {
+  margin-bottom: 1rem;
 }

@@ -6,11 +6,13 @@ import CopyWrite from './components/CopyWrite';
 import './style.scss';
 
 const Footer = () => (
-  <AnimatedDiv id='Footer' className='footer'>
-    <Description />
-    <SocialNetworks />
-    <CopyWrite />
-  </AnimatedDiv>
+  <div className='background-div'>
+    <AnimatedDiv id='Footer' className='footer'>
+      <Description />
+      <SocialNetworks />
+      <CopyWrite />
+    </AnimatedDiv>
+  </div>
 );
 
 export default Footer;
