@@ -7,17 +7,37 @@ import './style.scss';
 
 const Blog = () => {
   const { blog } = DB;
-  const inititalState = blog.articles.slice(0, 3);
+
+  const innerWidth = window.innerWidth > 768;
+
+  const blogArtciles = blog.articles;
+
+  const articlesToRender = innerWidth ? blogArtciles.slice(0, 3) : blogArtciles.slice(0, -1);
+
+  const inititalState = articlesToRender;
 
   const [count, setCount] = useState(inititalState);
 
-  const hadlerClick = () => (count.length === 3 ? setCount(blog.articles) : setCount(inititalState));
+  const total = count.length;
+  const minimum = inititalState.length;
 
+  const hadlerClick = () => (
+    total === minimum ?
+      setCount(blogArtciles) :
+      setCount(inititalState)
+  );
   return (
     <AnimatedDiv id='Blog' className='blog section'>
       <h2>{blog.title}</h2>
       <Article totalToRender={count} />
-      <BtnShow minimun={3} total={count.length} value='articles' onClick={hadlerClick} />
+      {innerWidth && (
+        <BtnShow
+          minimun={3}
+          total={total}
+          value='articles'
+          onClick={hadlerClick}
+        />
+      )}
     </AnimatedDiv>
   );
 };

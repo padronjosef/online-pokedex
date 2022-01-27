@@ -8,20 +8,29 @@ import './style.scss';
 const Studies = () => {
   const { studies } = DB;
   const { certificates, title } = studies;
-  const inititalState = studies.certificates.slice(0, 6);
+
+  const inititalState = studies.certificates.slice(0, 20);
 
   const [certificate, setCertificate] = useState(inititalState);
 
-  const handleClick = () => (certificate.length === 6 ? setCertificate(certificates) : setCertificate(inititalState));
+  const total = certificate.length;
+  const minimum = inititalState.length;
+  const allTheCertificates = certificates.length;
+
+  const handleClick = () => (
+    total === minimum ?
+      setCertificate(certificates) :
+      setCertificate(inititalState)
+  );
 
   return (
     <AnimatedDiv id='Studies' className='section'>
       <h2>{title}</h2>
       <Certificates certificate={certificate} />
       <BtnShow
-        minimun={6}
-        total={certificate.length}
-        value={`${certificates.length}`}
+        minimun={minimum}
+        total={total}
+        value={`${allTheCertificates}`}
         onClick={handleClick}
       />
     </AnimatedDiv>

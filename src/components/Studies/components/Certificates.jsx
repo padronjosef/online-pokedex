@@ -6,7 +6,7 @@ const Certificates = ({ certificate }) => (
     {certificate.map(({ link, img, name, id }) => (
       <a key={id} className='certificate' target='__blank' href={link}>
         <img className='certificate__img' src={img} alt={name} />
-        <h3 className='certificate__name'>{name}</h3>
+        {/* <h3 className='certificate__name'>{name}</h3> */}
       </a>
     ))}
   </AnimatedDiv>

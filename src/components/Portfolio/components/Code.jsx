@@ -20,8 +20,10 @@ const Code = () => {
                 <img className='project__external-link-icon' src={ExternalLinkIcon} alt={github} />
               </a>
             </div>
-            <p className='project__description'>{description}</p>
-            <span className='project__stack'>{stack}</span>
+            <div className='project__description'>
+              <p className='project__paragraft'>{description}</p>
+              <span className='project__stack'>{stack}</span>
+            </div>
           </div>
           <figure className='project__figure'>
             <img className='project__img' src={img} alt={name} />

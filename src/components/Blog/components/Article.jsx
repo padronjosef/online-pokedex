@@ -5,7 +5,7 @@ const Article = ({ totalToRender } = props) => (
   <AnimatedDiv className='blog__wrapper'>
     {totalToRender.map(({ link, img, title, time, paragraph }) => (
       <a href={link} target='__black' className='article' key={title}>
-        <figure>
+        <figure className='article__figure'>
           <img className='article__img' src={img} alt={title} />
         </figure>
         <div className='article__details'>

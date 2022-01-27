@@ -1,33 +1,31 @@
 @import '/src/assets/variables.scss';
 
 .courses{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  row-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .certificate {
+  padding: 0.25rem;
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  background-color: $bgText;
-  width: 32%;
-  padding: 5px 20px;
-  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $certificatesColor;
 
   &__img {
-    width: 26px;
+    width: 100%;
     cursor: pointer;
     filter: grayscale(100%);
   }
 
-  &__name {
-    font-size: 18px;
-    margin-left: 12px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  // &__name {
+  //   font-size: 18px;
+  //   margin-left: 12px;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   text-overflow: ellipsis;
+  // }
 }
