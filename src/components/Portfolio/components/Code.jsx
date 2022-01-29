@@ -9,7 +9,7 @@ const Code = () => {
   return (
     <AnimatedDiv className='projects__code'>
       {projects.slice(0, 5).map(({ name, demo, description, stack, img, github }) => (
-        <a className='project' href={demo} target='__black' key={name}>
+        <div className='project' key={name}>
           <div className='project__details'>
             <div className='project__header'>
               <h3 className='project__title'>
@@ -25,10 +25,10 @@ const Code = () => {
               <span className='project__stack'>{stack}</span>
             </div>
           </div>
-          <figure className='project__figure'>
+          <a className='project__figure' href={demo} target='__black'>
             <img className='project__img' src={img} alt={name} />
-          </figure>
-        </a>
+          </a>
+        </div>
       ))}
     </AnimatedDiv>
   );
