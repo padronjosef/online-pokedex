@@ -6,14 +6,11 @@ import BtnShow from '../complements/BtwShow';
 import './style.scss';
 
 const Blog = () => {
-  const { blog } = DB;
-
+  const { blog: {title, articles} } = DB;
   const innerWidth = window.innerWidth > 768;
-
-  const blogArtciles = blog.articles;
+  const blogArtciles = articles;
 
   const articlesToRender = innerWidth ? blogArtciles.slice(0, 3) : blogArtciles.slice(0, -1);
-
   const inititalState = articlesToRender;
 
   const [count, setCount] = useState(inititalState);
@@ -21,14 +18,11 @@ const Blog = () => {
   const total = count.length;
   const minimum = inititalState.length;
 
-  const hadlerClick = () => (
-    total === minimum ?
-      setCount(blogArtciles) :
-      setCount(inititalState)
-  );
+  const hadlerClick = () => total === minimum ? setCount(blogArtciles) : setCount(inititalState)
+
   return (
     <AnimatedDiv id='Blog' className='blog section'>
-      <h2>{blog.title}</h2>
+      <h2>{title}</h2>
       <Article totalToRender={count} />
       {innerWidth && (
         <BtnShow
