@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <Scrollspy className='menu' id='menu' items={sections} currentClassName='menu__item--active' offset={-100}>
-      {sections.map(item => item && <ListItem item={item}/> )}
+      {sections.map(item => item && <ListItem key={item} item={item}/> )}
     </Scrollspy>
   )
 }
