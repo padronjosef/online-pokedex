@@ -1,13 +1,16 @@
 import React from 'react';
+import { ListItem } from './ListItem'
 import Scrollspy from 'react-scrollspy';
 import DB from '../../../DB';
 
-const Header = () => (
-  <Scrollspy className='menu' id='menu' items={DB.header.sections} currentClassName='menu__item--active' offset={-100}>
-    {DB.header.sections.map((section) => (
-      section && <li key={section} className='menu__item'><a href={`#${section}`} className='menu__link capitalize'>{section}</a></li>
-    ))}
-  </Scrollspy>
-);
+const Header = () => {
+  const sections = DB.header.sections;
+
+  return (
+    <Scrollspy className='menu' id='menu' items={sections} currentClassName='menu__item--active' offset={-100}>
+      {sections.map(item => item && <ListItem item={item}/> )}
+    </Scrollspy>
+  )
+}
 
 export default Header;

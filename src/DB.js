@@ -1,58 +1,5 @@
 const assets = {
   email: 'josepadron.go@gmail.com',
-  about: {
-    workPlaces: ['Bewe Software', 'Platzi', 'Sistema C3', 'Gden Technology', 'Sericincol'],
-    jobs: [
-      {
-        name: 'Bewe Software',
-        time: 'Jun 2021 - Present',
-        position: ['Frontend Developer'],
-        description: ['Currently working on the SaaS project, running on React.js and Backbone, Zustand, Mongo DB, styled components, less and tachyons.'],
-      },
-      {
-        name: 'Platzi',
-        time: 'Sep 2019 - Feb 2021',
-        position: ['Community Relations', 'Customer Success'],
-        description: [
-          'Leading developer communities, UX Interviewing, UI Designing and creating graphic assets',
-          'Student Coaching, Creating learning paths, Customer Experience and Training peers.',
-        ],
-      },
-      {
-        name: 'Sistema C3',
-        time: 'Jan 2019 - Oct 2019',
-        position: ['Fullstack Web Developer'],
-        description: ['Development Web application and SPAs using JavaScript, CSS and React.js, Deploy of developments in GitHub and GIT Pages and designing web interfaces using adobe XD.'],
-      },
-      {
-        name: 'Gden Technology',
-        time: 'Oct 2018 - Dec 2018',
-        position: ['Co-founder & CEO'],
-        description: ['My first steps as a designer, I created graphic assets and Develop landing pages.'],
-      },
-      {
-        name: 'Sericincol',
-        time: 'Sep 2017 - Oct 2018',
-        position: ['Computer Asistant'],
-        description: ['My firsts steps as a frontend developer. I created landing pages using javascript vanilla, html and css.'],
-      },
-    ],
-    summary: {
-      title: 'A short summary about me',
-      name: "Hello there! I'm Jose, a Frontend Developer based in Bogota. CO.",
-      description: 'I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finished my electronic engineering career, I started my journey in the tech industry having some failures and much more accomplishments, ',
-      footer: "But always working hard to constantly better myself and write great code. I'm a space and videogame fanatic, a retired pianist and a PC hardware lover.",
-      subTitle: "This is where I've worked",
-      storyLink: 'https://platzi.com/blog/mi-camino-a-platzi/',
-      readHere: 'you can read my story here.',
-    },
-  },
-  main: {
-    span: 'hello, my name is',
-    name: 'Jose Padron',
-    quote: 'Fake it until you make it',
-    message: 'Frontend Developer based in Bogota. CO. I Enjoy bulding web aplications, My goal is being a tech lead in web development.',
-  },
   header: {
     sections: ['', 'Main', 'About', 'Stack', 'Portfolio', 'Blog', 'Studies', 'Footer'],
     logo: {
@@ -63,6 +10,79 @@ const assets = {
       url: 'https://github.com/padronjosef/Portfolio-Assets/raw/main/HV%20Jose%20Padron.pdf',
       text: 'Resume',
     },
+  },
+  main: {
+    span: 'hello, my name is',
+    name: 'Jose Padron',
+    quote: 'Fake it until you make it',
+    message: 'Frontend Developer based in Bogota. CO. I Enjoy bulding web aplications, My goal is being a tech lead in web development.',
+  },
+  about: {
+    summary: {
+      title: 'A short summary about me',
+      name: "Hello there! I'm Jose, a Frontend Developer based in Bogota. CO.",
+      description: 'I Enjoy bulding web aplications, My goal is being a tech lead in web development. Shortly after I finished my electronic engineering career, I started my journey in the tech industry having some failures and much more accomplishments, ',
+      footer: "But always working hard to constantly better myself and write great code. I'm a space and videogame fanatic, a retired pianist and a PC hardware lover.",
+      subTitle: "This is where I've worked",
+      storyLink: 'https://platzi.com/blog/mi-camino-a-platzi/',
+      readHere: 'you can read my story here.',
+    },
+    jobs: [
+      {
+        name: 'Bewe Software',
+        time: 'Jun 2021 - Present',
+        positions: [
+          {
+            title: 'Frontend Developer',
+            description: 'Currently working on the SaaS project, running on React.js and Backbone, Zustand, Mongo DB, styled components, less and tachyons.',
+          }
+        ],
+      },
+      {
+        name: 'Platzi',
+        time: 'Sep 2019 - Feb 2021',
+        positions: [
+          {
+            title: 'Community Relations',
+            description: 'Leading developer communities, UX Interviewing, UI Designing and creating graphic assets',
+          },
+          {
+            title: 'Customer Success',
+            description: 'Student Coaching, Creating learning paths, Customer Experience and Training peers.'
+          }
+        ],
+      },
+      {
+        name: 'Sistema C3',
+        time: 'Jan 2019 - Oct 2019',
+        positions: [
+          {
+            title: 'Fullstack Web Developer',
+            description: 'Development Web application and SPAs using JavaScript, CSS and React.js, Deploy of developments in GitHub and GIT Pages and designing web interfaces using adobe XD.',
+          }
+        ],
+      },
+      {
+        name: 'Gden Technology',
+        time: 'Oct 2018 - Dec 2018',
+        positions: [
+          {
+            title: 'Co-founder & CEO',
+            description: 'My first steps as a designer, I created graphic assets and Develop landing pages.',
+          }
+        ],
+      },
+      {
+        name: 'Sericincol',
+        time: 'Sep 2017 - Oct 2018',
+        positions: [
+          {
+            title: 'Computer Asistant',
+            description: 'My firsts steps as a frontend developer. I created landing pages using javascript vanilla, html and css.',
+          }
+        ],
+      },
+    ]
   },
   stack: {
     title: "All the technologies I've use",
@@ -403,6 +423,67 @@ const assets = {
       },
     ],
   },
+  blog: {
+    title: "Things I've Written To The Internet",
+    articles: [
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp',
+        link: 'https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/',
+        time: '2020',
+        title: 'Cubo Rubik',
+        paragraph: '¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/mas%20rapido%20Todo%20sobre%20tu%20CPU.webp',
+        link: 'https://platzi.com/blog/fundamiento-cpu/',
+        time: '2020',
+        title: '¿Computador Lento?',
+        paragraph: 'En este artículo vas aprender el funcionamiento de un procesador de manera sencilla y rápida. Aunque las computadoras y los teléfonos son ya parte de nuestro día a día',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Git%20y%20GitHub.webp',
+        link: 'https://medium.com/@padronjosef/entiende-git-y-github-de-una-vez-f24178ecaf1c',
+        time: '2019',
+        title: 'Git & GitHub',
+        paragraph: 'Para resumir Git es un sistema de control de versiones. Es solo una manera elegante de decir que en vez de guardar una versión de cada archivo, guarda solo los',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Mi%20camino%20a%20Platzi.webp',
+        link: 'https://platzi.com/blog/mi-camino-a-platzi/',
+        time: '2020',
+        title: 'Mi Camino A Platzi',
+        paragraph: 'Recientemente cumpli mi primer año en Platzi y quiero compartir con ustedes cómo ha sido mi historia estos últimos 3 años en Colombia y cómo me reinventé para poder',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/haz%20felices%20a%20tus%20usuarios.webp',
+        link: 'https://platzi.com/blog/haz-felices-a-tus-usuarios/',
+        time: '2020',
+        title: 'Haz Felices A Tus Usuarios',
+        paragraph: 'Quizás creas que esta es otra charla de cómo ser bueno en una habilidad con la que pocas personas nacen pero no, dar un buen soporte y hacer felices a tus usuarios es',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%202.webp',
+        link: 'https://platzi.com/blog/gaming-news/',
+        time: '2020',
+        title: 'Gaming News 1',
+        paragraph: 'Ya tenemos las reviews y especificaciones de los nuevos procesadores Intel, si bien sigue utilizando la tecnología de 14nm, vienen con muchas mejoras con respecto a la',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%201.webp',
+        link: 'https://platzi.com/blog/noticias-videojuegos/',
+        time: '2020',
+        title: 'Gaming News 2',
+        paragraph: 'Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming',
+      },
+      {
+        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/platzi-recap.webp',
+        link: 'https://platzi.com/blog/recaps/',
+        time: '2020',
+        title: 'Platzi Recaps',
+        paragraph: '¿Te gustaría escuchar toda la información del curso en menos de lo que te tardas en escuchar una canción? ¿Quieres que te avisemos cuando este disponible el curso que',
+      },
+    ],
+  },
   studies: {
     title: 'Everything I have learned',
     certificates: [
@@ -725,67 +806,6 @@ const assets = {
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/45%20-%20Curso%20Basico%20de%20JavaScript.webp',
         link: 'https://www.udemy.com/course/curso-de-javascript-2020/',
         status: 'udemy',
-      },
-    ],
-  },
-  blog: {
-    title: "Things I've Written To The Internet",
-    articles: [
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/rubik.webp',
-        link: 'https://platzi.com/blog/7-pasos-para-resolver-y-memorizar-el-algoritmo-del-cubo-de-rubbik/',
-        time: '2020',
-        title: 'Cubo Rubik',
-        paragraph: '¿Sabías que a Erno Rubik, inventor del cubo, le tomó 1 mes resolver su propio rompecabezas? Esto es porque existen 43 252 003 274 489 856 000 de posibles combinaciones',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/mas%20rapido%20Todo%20sobre%20tu%20CPU.webp',
-        link: 'https://platzi.com/blog/fundamiento-cpu/',
-        time: '2020',
-        title: '¿Computador Lento?',
-        paragraph: 'En este artículo vas aprender el funcionamiento de un procesador de manera sencilla y rápida. Aunque las computadoras y los teléfonos son ya parte de nuestro día a día',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Git%20y%20GitHub.webp',
-        link: 'https://medium.com/@padronjosef/entiende-git-y-github-de-una-vez-f24178ecaf1c',
-        time: '2019',
-        title: 'Git & GitHub',
-        paragraph: 'Para resumir Git es un sistema de control de versiones. Es solo una manera elegante de decir que en vez de guardar una versión de cada archivo, guarda solo los',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/Mi%20camino%20a%20Platzi.webp',
-        link: 'https://platzi.com/blog/mi-camino-a-platzi/',
-        time: '2020',
-        title: 'Mi Camino A Platzi',
-        paragraph: 'Recientemente cumpli mi primer año en Platzi y quiero compartir con ustedes cómo ha sido mi historia estos últimos 3 años en Colombia y cómo me reinventé para poder',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/haz%20felices%20a%20tus%20usuarios.webp',
-        link: 'https://platzi.com/blog/haz-felices-a-tus-usuarios/',
-        time: '2020',
-        title: 'Haz Felices A Tus Usuarios',
-        paragraph: 'Quizás creas que esta es otra charla de cómo ser bueno en una habilidad con la que pocas personas nacen pero no, dar un buen soporte y hacer felices a tus usuarios es',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%202.webp',
-        link: 'https://platzi.com/blog/gaming-news/',
-        time: '2020',
-        title: 'Gaming News 1',
-        paragraph: 'Ya tenemos las reviews y especificaciones de los nuevos procesadores Intel, si bien sigue utilizando la tecnología de 14nm, vienen con muchas mejoras con respecto a la',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/videojuegos%201.webp',
-        link: 'https://platzi.com/blog/noticias-videojuegos/',
-        time: '2020',
-        title: 'Gaming News 2',
-        paragraph: 'Si creías que el desarrollo de hardware se iba a detener por la pandemia, Intel y AMD tienen mucho que contarnos. En este post exploraremos cómo la industria del gaming',
-      },
-      {
-        img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/blog/platzi-recap.webp',
-        link: 'https://platzi.com/blog/recaps/',
-        time: '2020',
-        title: 'Platzi Recaps',
-        paragraph: '¿Te gustaría escuchar toda la información del curso en menos de lo que te tardas en escuchar una canción? ¿Quieres que te avisemos cuando este disponible el curso que',
       },
     ],
   },

@@ -1,28 +1,33 @@
 import React, { Fragment } from 'react';
 import DB from '../../../DB';
 
-const Experience = ({ setExperience }) => (
-  <div className='experience'>
-    { DB.about.workPlaces.map((job) => (
-      <Fragment key={job}>
-        <input
-          className='experience__input'
-          type='radio'
-          id={job}
-          name='switchExperience'
-          value={job}
-          defaultChecked={job === DB.about.workPlaces[0]}
-        />
-        <label
-          className='experience__label'
-          onClick={() => setExperience(job)}
-          htmlFor={job}
-        >
-          {job}
-        </label>
-      </Fragment>
-    ))}
-  </div>
-);
+const Experience = ({ setExperience }) => {
+  const { jobs } = DB.about
+
+  const handleClick = item => () => setExperience(item)
+
+  return (
+    <div className='experience'>
+      { jobs.map((item) => {
+        const { name } = item
+        return (
+            <Fragment key={name}>
+              <input
+                className='experience__input'
+                type='radio'
+                id={name}
+                name='switchExperience'
+                value={name}
+                defaultChecked={name === jobs[0].name}
+              />
+              <label className='experience__label' onClick={handleClick(item)} htmlFor={name} >
+                {name}
+              </label>
+            </Fragment>
+          )
+        })}
+    </div>
+  );
+}
 
 export default Experience;

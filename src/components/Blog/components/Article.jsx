@@ -1,7 +1,7 @@
 import React from 'react';
 import AnimatedDiv from '../../complements/AnimatedDiv';
 
-const Article = ({ totalToRender } = props) => (
+const Article = ({ totalToRender }) => (
   <AnimatedDiv className='blog__wrapper'>
     {totalToRender.map(({ link, img, title, time, paragraph }) => (
       <a href={link} target='__black' className='article' key={title}>

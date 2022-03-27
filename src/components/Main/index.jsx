@@ -7,7 +7,7 @@ const Main = () => {
   const { span, name, quote, message } = DB.main;
 
   return (
-    <AnimatedDiv id='Main' className='main section'>
+    <AnimatedDiv id='Main' className='main section hero'>
       <div className='hero'>
         <span className='hero__span'>{span}</span>
         <h1 className='hero__title'>{name}</h1>
