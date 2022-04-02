@@ -22,7 +22,13 @@ export function Portfolio () {
       <div className='switch'>
         {sections.map((section) => (
           <Fragment key={section}>
-            <input className='switch__input' type='radio' id={section} name='switchPortfolio' value={section} defaultChecked={section === sections[0]} />
+            <input
+              className='switch__input'
+              type='radio' id={section}
+              name='switchPortfolio'
+              value={section}
+              defaultChecked={section === sections[0]}
+            />
             <label className='switch__label' onClick={() => setRenderSecction(section)} htmlFor={section}>
               {section}
             </label>
@@ -33,7 +39,6 @@ export function Portfolio () {
       <Suspense fallback={<Spinner />} >
         <ToRender />
       </Suspense>
-      <Spinner />
     </Animation>
   );
 };
