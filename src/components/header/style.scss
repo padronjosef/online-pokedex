@@ -1,0 +1,64 @@
+@import "/src/assets/variables.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+
+  background-color: $headerFooter;
+  box-shadow: 0px 1px 20px #060F1C;
+
+  &--toogle {
+    visibility: visible !important;
+    left: 0 !important;
+  }
+}
+
+.navbar {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 1rem;
+  display: flex;
+
+  &__img {
+    height: 100%;
+  }
+}
+
+.menu {
+  display: flex;
+
+  &__item {
+    padding: 0.25rem 0.5rem;
+
+    &::before {
+      padding-right: 5px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+  }
+}
+
+.resume {
+  font-size: 16px;
+  padding: 0.25rem 1.5rem;
+  border: $secondaryColor solid 1px;
+  border-radius: 4px;
+}

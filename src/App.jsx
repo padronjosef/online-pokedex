@@ -1,21 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
-import Header from './components/Header';
-import Main from './components/Main';
-import About from './components/About';
-import Stack from './components/Stack';
-import Portfolio from './components/Portfolio';
-import Studies from './components/Studies';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
+import { BurgerBtn, Header, Main, About, Stack, Portfolio, Studies, Blog, Footer } from './components';
 import './assets/style.scss';
 
 const App = () => {
+  const [showHeader, setshowHeader] = useState(false)
+
+  const toogleHeader = () => setshowHeader(!showHeader)
+
   AOS.init();
 
   return (
     <div className='app'>
-      <Header />
+      <BurgerBtn toogleHeader={toogleHeader} />
+      <Header showHeader={showHeader} toogleHeader={toogleHeader} />
       <Main />
       <About />
       <Stack />
