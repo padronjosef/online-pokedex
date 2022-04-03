@@ -7,6 +7,7 @@ import './style.scss';
 export function Header ({showHeader, toogleHeader}) {
   const { logo, resume, moon, sun } = DB.header;
   const icon = getTheme() ==='dark' ? moon : sun
+
   return (
     <header 
       id='header'

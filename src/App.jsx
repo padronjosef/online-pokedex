@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className='app'>
-      <BurgerBtn toogleHeader={toogleHeader} />
+      <BurgerBtn showHeader={showHeader} toogleHeader={toogleHeader} />
       <Header showHeader={showHeader} toogleHeader={toogleHeader} />
       <Main />
       <About />
