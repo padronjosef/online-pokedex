@@ -1,5 +1,4 @@
 import React from 'react';
-import { ListItem } from './ListItem'
 import Scrollspy from 'react-scrollspy';
 import DB from '../../../DB';
 
@@ -8,7 +7,13 @@ export function Menu () {
 
   return (
     <Scrollspy className='menu' id='menu' items={sections} currentClassName='menu__item--active' offset={-100}>
-      {sections.map(item => item && <ListItem key={item} item={item}/> )}
+      {sections.map(item => item && (
+        <li key={item} className='menu__item'>
+          <a href={`#${item}`} className='menu__link capitalize'>
+            {item}
+          </a>
+        </li>
+      ))}
     </Scrollspy>
   )
 }

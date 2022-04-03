@@ -20,8 +20,8 @@ export function Header ({showHeader, toogleHeader}) {
 
         <Menu />
         <div className='header__complements'>
-          <a className='header__resume' href={resume.url}>{resume.text}</a>
           <img className='header__theme' onClick={toogleTheme} src={icon.src} alt={icon.name} />
+          <a className='header__resume' href={resume.url}>{resume.text}</a>
         </div>
       </nav>
     </header>

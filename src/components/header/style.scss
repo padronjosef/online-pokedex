@@ -20,7 +20,8 @@
 
   &__complements {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
+    align-items: center;
   }
 
   &__resume {
@@ -31,7 +32,7 @@
   }
 
   &__theme {
-    width: 24px;
+    width: 20px;
     cursor: pointer;
   }
 }
@@ -60,12 +61,6 @@
 
   &__item {
     padding: 0.25rem 0.5rem;
-
-    &::before {
-      padding-right: 5px;
-      font-size: 14px;
-      font-weight: bold;
-    }
   }
 
   &__link {
