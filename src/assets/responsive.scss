@@ -7,7 +7,7 @@
 
   .hamburger {
     display: flex;
-    background: $background;
+    background: var(--color-background-primary);
     border: 2px solid white;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,27 @@
       visibility: visible;
       left: 0;
       transition: all 400ms ease-out;
+    }
+
+    &__complements {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    &__resume {
+      padding: 0.5rem;
+      font-size: 32px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    &__theme {
+      width: 30px;
+      padding: 0.5rem;
+      border: 3px solid var(--color-secondary);
+      border-radius: 50%;
     }
   }
 
@@ -77,7 +98,7 @@
         border: transparent;
 
         .menu__link {
-          color: $primaryColor;
+          color: var(--color-primary);
         }
       }
 
@@ -92,13 +113,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  .resume {
-    padding: 0.5rem;
-    font-size: 32px;
-    width: 100%;
-    box-sizing: border-box;
   }
 
   .hero__title {
@@ -119,7 +133,7 @@
 
   .project {
     flex-direction: column-reverse !important;
-    background: $bgText;
+    background: var(--color-secondary-button);
     max-width: 220px;
 
     &__code {
@@ -249,12 +263,12 @@
     &__input[type="radio"] {
       &[type="radio"]:checked + label {
         border-left: 0;
-        border-bottom: 4px solid $primaryColor;
+        border-bottom: 4px solid var(--color-primary);
       }
     }
     &__label {
       border-left: 0;
-      border-bottom: 3px solid $gray;
+      border-bottom: 3px solid var(--color-neutral);
       display: flex !important;
       text-align: center;
       align-items: center;

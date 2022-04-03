@@ -19,17 +19,17 @@ body {
 
   .menu__item {
     &--active {
-      color: $primaryColor;
-      border: $primaryColor solid 1px;
+      color: var(--color-primary);
+      border: var(--color-primary) solid 1px;
       transition: background-color 0.5s;
-      background-color: $bgButtons;
+      background-color: var(--color-primary-button);
       border-radius: 0.25rem;
       transition: color 0.5s;
       margin: 0;
     }
   
     &:hover > .menu__link {
-      color: $primaryColor;
+      color: var(--color-primary);
       transition: color 0.5s;
     }
   
@@ -39,8 +39,8 @@ body {
   }
 
   .resume:hover {
-    color: $primaryColor;
-    border: $primaryColor solid 1px;
+    color: var(--color-primary);
+    border: var(--color-primary) solid 1px;
     transition: 0.5s;
   }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .certificate:hover > .certificate__name {
-  color: $primaryColor;
+  color: var(--color-primary);
   transition: .5s;
 }
 

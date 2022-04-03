@@ -26,8 +26,8 @@
 }
 
 .stack-right {
-  border: $primaryColor solid 1px;
-  background: $bgButtons;
+  border: var(--color-primary) solid 1px;
+  background: var(--color-primary-button);
   border-radius: 4px;
   padding: 1rem;
   width: 50%;
@@ -61,7 +61,7 @@
   &__link {
     display: block;
     width: 100%;
-    color: $primaryColor;
+    color: var(--color-primary);
     font-size: 14px;
   }
 

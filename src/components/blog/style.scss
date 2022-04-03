@@ -13,7 +13,7 @@
 }
 
 .article {
-  background-color: $bgText;
+  background-color: var(--color-secondary-button);
   border-radius: 4px;
   width: 100%;
   cursor: pointer;
@@ -34,7 +34,7 @@
   &__time {
     display: inline-block;
     font-size: 12px;
-    color: $primaryColor;
+    color: var(--color-primary);
     margin-bottom: 0.25rem;
   }
 

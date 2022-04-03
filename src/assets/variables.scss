@@ -1,11 +1,33 @@
-$primaryColor: #2680EB;
-$secondaryColor: #CCD6F6;
-$gray: #8892B0;
-$background: #0A192F;
-$headerFooter: #08162B;
-$bgButtons: #0262e010;
-$bgText: #00000050;
-$certificatesColor: #1b3d66;
+:root[data-color-theme=dark]{
+  --color-primary: #2680EB;
+  --color-secondary: #CCD6F6;
+  --color-tertiary: #1b3d66;
 
-$primaryFont: 'Space Mono', monospace;
-$secondaryFont: 'Raleway', sans-serif;
+  --color-neutral: #8892B0;
+
+  --color-background-primary: #0A192F;
+  --color-background2-secondary: #08162B;
+
+  --color-primary-button: #0262e010;
+  --color-secondary-button: #00000050;
+  
+  --font-primary: 'Space Mono', monospace;
+  --font-secondary: 'Raleway', sans-serif;
+}
+
+:root[data-color-theme=light]{
+  --color-primary: #6080a5;
+  --color-secondary: #ffffff;
+  --color-tertiary: #6080a5;
+
+  --color-neutral: #cacaca;
+
+  --color-background-primary: #2b2b2b;
+  --color-background2-secondary: #222e3b;
+
+  --color-primary-button: #6080a550;
+  --color-secondary-button: #00000010;
+  
+  --font-primary: 'Space Mono', monospace;
+  --font-secondary: 'Raleway', sans-serif;
+}

@@ -6,6 +6,14 @@ const assets = {
       img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/logo-gaiden.png',
       alt: 'logo Gaiden',
     },
+    moon: {
+      src: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/moon.webp',
+      alt: 'moon icon',
+    },
+    sun: {
+      src: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/sun.webp',
+      alt: 'sun icon',
+    },
     resume: {
       url: 'https://github.com/padronjosef/Portfolio-Assets/raw/main/HV%20Jose%20Padron.pdf',
       text: 'Resume',

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import AOS from 'aos';
 import { BurgerBtn, Header, Main, About, Stack, Portfolio, Studies, Blog, Footer } from './components';
 import './assets/style.scss';

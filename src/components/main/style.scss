@@ -12,7 +12,7 @@
 
   &__span {
     font-size: 20px;
-    font-family: $primaryFont;
+    font-family: var(--font-primary);
   }
 
   &__title {
