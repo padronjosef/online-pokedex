@@ -8,7 +8,9 @@ export function Studies () {
   const { studies } = DB;
   const { certificates, title } = studies;
 
-  const inititalState = studies.certificates.slice(0, 20);
+  const inititalToShow = window.innerWidth >= 768 ? 14 : 9
+
+  const inititalState = studies.certificates.slice(0, inititalToShow);
 
   const [certificate, setCertificate] = useState(inititalState);
 

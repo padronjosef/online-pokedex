@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 @media screen and (max-width: 768px) {
-  .app {
+  .theme {
     padding: 0 7vw !important;
   }
 
@@ -188,8 +188,9 @@
   }
 
   .courses {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     max-width: 300px;
+    gap: 1rem;
   }
 
   .blog__wrapper {

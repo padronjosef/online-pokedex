@@ -1,11 +1,11 @@
 @import '/src/assets/variables.scss';
 
-.courses{
+.courses {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
   margin-bottom: 2rem;
-  max-width: 600px;
+  // max-width: 600px;
 }
 
 .certificate {

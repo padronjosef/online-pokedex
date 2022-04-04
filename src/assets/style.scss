@@ -51,6 +51,7 @@ body {
   display: flex ;
   flex-direction: column;
   align-items: center;
+  padding: 0 2vw;
 
   &--animation {
     opacity: 1;
@@ -102,13 +103,6 @@ span {
 
 q {
   color: var(--color-neutral);
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 2vw;
 }
 
 .section {
