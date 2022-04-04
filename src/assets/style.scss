@@ -45,6 +45,20 @@ body {
   background: var(--color-background-primary);
 }
 
+.theme {
+  opacity: 0;
+  visibility: hidden;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+
+  &--animation {
+    opacity: 1;
+    visibility: visible;
+    transition: all 500ms linear;
+  }
+}
+
 a {
   color: var(--color-secondary);
   text-decoration: none;

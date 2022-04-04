@@ -11,9 +11,15 @@ export function toogleTheme() {
   const newTheme = getTheme() === 'dark' ? 'light' : 'dark'
 
   setTheme(newTheme)
+
+  // fade in animation
+  const theme = document.getElementById("theme");
+
+  theme.classList.remove("theme--animation");
+  setTimeout(() => theme.classList.add("theme--animation"), 300);
 };
 
-(function(){
+(function () {
   // the default preferred theme in the browser
   const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 

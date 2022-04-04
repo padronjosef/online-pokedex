@@ -11,7 +11,7 @@ const App = () => {
   AOS.init();
 
   return (
-    <div className='app'>
+    <div id='theme' className='theme theme--animation'>
       <BurgerBtn showHeader={showHeader} toogleHeader={toogleHeader} />
       <Header showHeader={showHeader} toogleHeader={toogleHeader} />
       <Main />
