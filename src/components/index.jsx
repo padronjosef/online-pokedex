@@ -1,5 +1,3 @@
-
-
 export {BurgerBtn} from './burgerBtn';
 export {About} from './about';
 export {Main} from './main';

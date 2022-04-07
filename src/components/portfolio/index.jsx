@@ -1,4 +1,4 @@
-import React, {Fragment, useState, lazy, Suspense } from 'react';
+import React, { Fragment, useState, lazy, Suspense } from 'react';
 import { Animation, Spinner } from '../helpers';
 import DB from '../../DB';
 import './style.scss';
