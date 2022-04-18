@@ -1,0 +1,29 @@
+@import 'src/assets/variables.sass'
+
+.progress-bar
+  gap: 0.5rem
+  &__bar
+    background-color: $btn-color2
+    border-radius: 20px
+    width: 100%
+  &__fill
+    height: 16px
+    border-radius: 19px
+    border-top-right-radius: 20px
+    border-bottom-right-radius: 20px
+    position: relative
+    padding: 2px
+  &__value
+    color: $btn-color2
+    position: absolute
+    font-size: 12px
+    top: 50%
+    transform: translateY(-50%)
+    right: 20%
+  &__text
+    gap: 0.5rem
+    font-weight: 600
+    width: 100%
+    white-space: nowrap
+    display: flex
+    justify-content: space-between

@@ -1,0 +1,43 @@
+@import 'src/assets/variables.sass'
+
+/* Tooltip container */
+.tooltip
+  position: relative
+  display: inline-block
+
+/* Tooltip text */
+.tooltip .tooltip__text
+  background-color: $tertiary-color
+  color: $btn-color2
+  text-align: center
+  padding: 5px 0
+  border-radius: 6px
+  font-size: 12px
+  padding: 0.5rem
+  width: fit-content
+
+  /* Position the tooltip text */
+  position: absolute
+  z-index: 1
+  top: calc(100% + 5px)
+  left: 50%
+  transform: translateX(-50%)
+
+.tooltip__text
+  display: none
+  white-space: nowrap
+
+/* Tooltip arrow */
+.tooltip .tooltip__text::after
+  content: ""
+  position: absolute
+  top: -10px
+  left: 50%
+  margin-left: -5px
+  border-width: 5px
+  border-style: solid
+  border-color: transparent transparent $tertiary-color transparent
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip__text
+  display: block

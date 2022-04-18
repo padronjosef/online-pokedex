@@ -1,0 +1,173 @@
+@import 'src/assets/variables.sass'
+
+.pokedex
+  display: flex
+  text-transform: uppercase
+  gap: 1rem
+  justify-content: space-between
+
+  &__info
+    color: $primary-color
+    display: flex
+    flex-direction: column
+    font-family: $family
+    box-sizing: border-box
+    align-items: center
+
+    &:nth-child(2)
+      padding: 1rem 0
+      gap: 1.5rem
+    &:nth-child(1),
+    &:nth-child(3)
+      top: 0
+      justify-content: space-between
+      background-color: $bg-color2
+      width: 12rem
+      position: sticky
+      height: 100vh
+      align-items: flex-start
+
+.types
+  display: flex
+  align-items: center
+  gap: 1rem
+  height: 100%
+  width: 100%
+  cursor: pointer
+  padding: 0 1rem
+  color: $bg-color4
+  transition: all 0.5s
+  &__img
+    width: 1.5rem
+  &__text
+    font-weight: 600
+  &--active
+    background-color: $tertiary-color
+    color: $btn-color2
+    padding-left: 1.4rem
+    transition: background-color 0.5s, padding 1s
+
+.filters
+  display: flex
+  flex-direction: column
+  gap: 0.5rem
+  padding: 0 1rem
+  &--active
+    background-color: $tertiary-color
+    color: $btn-color2
+  &__header
+    padding: 1rem
+    width: 100%
+    background-color: $tertiary-color
+    color: $btn-color2
+  &__input
+    width: 100%
+    border: none
+    padding: 0.5rem 0.5rem
+    color: $bg-color4
+    font-weight: 600
+    border-radius: 4px
+    &:focus
+      outline: none
+  &__text
+    font-weight: 600
+    color: $bg-color4
+  &__wrapper
+    width: 100%
+    padding: 1rem
+  &__button
+    padding: .5rem 1.5rem
+    font-family: $family
+    background: $bg-color1
+    color: $btn-color2
+    cursor: pointer
+    border: none
+    border-radius: 8px
+    width: 100%
+    font-weight: 600
+
+.header
+  display: flex
+  align-items: center
+  font-weight: 600
+  padding: 1rem
+  justify-content: center
+  font-size: 30px
+  gap: 0.5rem
+  color: $bg-color4
+
+.searcher
+  width: 100%
+  max-width: 40rem
+  display: flex
+  position: relative
+
+  &__bar
+    width: 100% 
+    padding: .5rem 1.5rem
+    border: 1px solid $btn-color3
+    border-radius: 20px
+    background-color: transparent
+    font-family: $family
+    font-size: 1rem
+    font-weight: 600
+    color: $bg-color4
+    &:focus
+      outline: none
+    &::placeholder
+      font-weight: 600
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration
+      display: none
+
+
+
+  &__btn
+    font-weight: 600
+    font-family: $family
+    font-size: 1rem
+    padding: .5rem 1.5rem
+    cursor: pointer
+    border: none
+    background-color: transparent
+    position: absolute
+    right: 0
+    color: $bg-color4
+
+.not-found
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  width: 100%
+  height: 60vh
+  border: 1px solid $tertiary-color
+  border-radius: 4px
+  margin-top: 2rem
+  font-weight: 800
+  text-align: center
+  &__numbers
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Rubik Mono One', sans-serif
+    color: $tertiary-color
+  &__span
+    font-size: 80px
+  &__uh-oh
+    margin-top: 0.5rem
+  &__description
+    color: $tertiary-color
+    margin-top: 0.2rem
+  &__button
+    padding: .5rem 1.5rem
+    font-family: $family
+    font-size: 16px
+    background: $bg-color1
+    color: $btn-color2
+    cursor: pointer
+    border: none
+    border-radius: 8px
+    margin-top: 2rem
