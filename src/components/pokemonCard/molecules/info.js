@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { contextApi } from '/src/useContext';
 import { fullHeight, fullWeight } from '/src/helpers/formatData';
-import { Types } from '../atoms/types';
+import { Types, Abilities } from '../atoms';
 
-export const Info = ({ info }) => {
-  const { id, height, weight, abilities, types } = info
+export const Info = () => {
+  const { cardData } = useContext(contextApi);
+  const { id, height, weight } = cardData
 
   return (
     <div className='pokemonCard__info' >
@@ -18,16 +20,8 @@ export const Info = ({ info }) => {
         <p>#{id}</p>
         <p>{fullHeight(height)}</p>
         <p>{fullWeight(weight)}</p>
-        <div className='abilities'>
-          {
-            abilities.map(({ ability }) =>
-              <span className='highlight abilities__item' key={ability.name} >
-                {ability.name.replace("-", " ")}
-              </span>
-            )
-          }
-        </div>
-        <Types types={types} />
+        <Abilities />
+        <Types />
       </div>
     </div >
   );

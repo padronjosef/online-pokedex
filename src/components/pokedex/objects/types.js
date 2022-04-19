@@ -3,18 +3,18 @@ import { contextApi } from '/src/useContext';
 import { TypesIcon } from '../atoms';
 
 export function Types() {
-  const { types, activeType, effects: { handleChangeType } } = useContext(contextApi);
+  const { types, filters, effects: { handleFilters } } = useContext(contextApi);
 
   return (
     <section className='pokedex__info highlight'>
-      {types.map(type => (
+      {types.map(({ name }) => (
         <div
-          className={`types ${type.name === activeType ? 'types--active highlight' : ''}`}
-          onClick={() => handleChangeType(type.name)}
-          key={type.name}
+          className={`types ${name === filters.type ? 'types--active highlight' : ''}`}
+          onClick={() => handleFilters("type", name)}
+          key={name}
         >
-          <TypesIcon type={type} />
-          <p className="types__text">{type.name}</p>
+          <TypesIcon type={name} />
+          <p className="types__text">{name}</p>
         </div>
       ))}
     </section>

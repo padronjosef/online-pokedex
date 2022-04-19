@@ -2,43 +2,26 @@ import React, { useContext } from 'react';
 import { contextApi } from '/src/useContext';
 
 export function Options() {
-  const { showShiny, showGenders, showFront, toogleUnits, effects, showColors } = useContext(contextApi);
-  const { setShowShiny, setShowGenders, setShowFront, setToogleUnits, setShowColors } = effects
+  const {
+    options: { op_color, op_shiny, op_rotate, op_gender, op_units },
+    effects: { handleOptions }
+  } = useContext(contextApi);
 
   const buttons = [
-    {
-      text: "Colors",
-      logic: () => setShowColors(!showColors),
-      active: showColors
-    },
-    {
-      text: "Shinny",
-      logic: () => setShowShiny(!showShiny),
-      active: showShiny
-    },
-    {
-      text: "Rotate",
-      logic: () => setShowFront(!showFront),
-      active: !showFront
-    },
-    {
-      text: showGenders ? "Female" : "Male",
-      logic: () => setShowGenders(!showGenders),
-      active: showGenders
-    },
-    {
-      text: toogleUnits ? "Metric" : "Imperial",
-      logic: () => setToogleUnits(!toogleUnits),
-      active: !toogleUnits
-    },
+    { state: "op_color", text: "color", active: op_color },
+    { state: "op_shiny", text: "shiny", active: op_shiny },
+    { state: "op_rotate", text: "rotate", active: op_rotate },
+    { state: "op_gender", text: "gender", active: op_gender },
+    { state: "op_units", text: op_units ? "imperial" : "metric", active: op_units },
   ]
 
   return (
     <div className='options'>
-      {buttons.map(({ text, logic, active }) => (
+      {buttons.map(({ state, text, active }) => (
         <button
+          key={text}
           className={`options__btn highlight ${active ? "options__btn--active" : ''}`}
-          onClick={logic} key={text}
+          onClick={() => handleOptions(state, !active)}
         >
           {text}
         </button>

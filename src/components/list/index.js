@@ -5,9 +5,10 @@ import { Spinner } from '/src/helpers';
 import './style.sass';
 
 export function List() {
-  const { pokemons } = useContext(contextApi);
+  const { pokemons, NotFound } = useContext(contextApi);
 
   if (!pokemons) return <Spinner />
+  if (NotFound) return <NotFound />
 
   return (
     <ul className='pokelist'>

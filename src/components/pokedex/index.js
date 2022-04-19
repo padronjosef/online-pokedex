@@ -4,9 +4,9 @@ import { Filters, Main, Types } from './objects';
 import './style.sass';
 
 export function Pokedex() {
-	const { pageNumbers, activeType, effects: { getPokemons } } = useContext(contextApi);
+	const { effects: { fetchPokemons } } = useContext(contextApi);
 
-	useEffect(() => getPokemons(), [pageNumbers, activeType]);
+	useEffect(() => fetchPokemons(), []);
 
 	return (
 		<div className='pokedex'>

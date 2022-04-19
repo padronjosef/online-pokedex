@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { contextApi } from '/src/useContext';
 import { getAsset } from '/src/helpers';
 
-export function Types({ types = [] }) {
+export function Types() {
+  const { cardData: { types } } = useContext(contextApi);
+
   return (
     <div className='pokemonCard__types'>
       {types.map(({ type: { name } }) => (

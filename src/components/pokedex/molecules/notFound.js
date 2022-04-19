@@ -3,7 +3,7 @@ import { contextApi } from '/src/useContext';
 import { Pokeball } from '/src/helpers'
 
 export function NotFound() {
-  const { effects: { getPokemons } } = useContext(contextApi);
+  const { effects: { fetchPokemons } } = useContext(contextApi);
   return (
     <div className='not-found'>
       <div className='not-found__numbers'>
@@ -21,7 +21,7 @@ export function NotFound() {
       </div>
       <button
         className='not-found__button'
-        onClick={getPokemons}
+        onClick={fetchPokemons}
       >
         Go Back Home
       </button>

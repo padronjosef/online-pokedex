@@ -1,16 +1,26 @@
 import React, { useContext } from 'react';
 import { contextApi } from '/src/useContext';
 import back from '/src/assets/back.svg'
+import { normalize } from '/src/helpers';
 
-export const Header = ({ name }) => {
-  const { subStitle, pokemonType, effects: { closeModal } } = useContext(contextApi);
+export const Header = () => {
+  const { cardData, effects: { closeCard } } = useContext(contextApi);
+  const { name, type, subTitle } = cardData
 
   return (
     <div className='pokemonCard__header' >
-      <img className={`pokemonCard__back highlight ${pokemonType}`} onClick={closeModal} src={back} />
+      <img
+        className={`pokemonCard__back highlight ${type}`}
+        onClick={closeCard}
+        src={back}
+      />
       <div className='pokemonCard__title-wrapper'>
-        <p className='pokemonCard__title'>{name.split("-").join(" ")}</p>
-        <p className={`highlight pokemonCard__sub-title ${pokemonType}`}>{subStitle}</p>
+        <p className='pokemonCard__title'>
+          {normalize(name)}
+        </p>
+        <p className={`highlight pokemonCard__sub-title ${type}`} >
+          {subTitle}
+        </p>
       </div>
     </div >
   );

@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { contextApi } from '/src/useContext';
 
 export function Filters() {
-  const { filters } = useContext(contextApi);
+  const { FILTERS } = useContext(contextApi);
 
   return (
     <section className='pokedex__info highlight'>
       <div className='filters__header highlight'>
         Order by
       </div>
-      {filters.map(filter => (
+      {FILTERS.map(filter => (
         <div className='filters' key={filter}>
           <p className='filters__text'>{filter}</p>
           <input

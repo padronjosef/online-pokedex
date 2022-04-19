@@ -3,12 +3,13 @@ import { contextApi } from '/src/useContext';
 import { Tooltip, getAsset } from '/src/helpers';
 
 export function Stats({ stats = [] }) {
-  const { showColors } = useContext(contextApi);
-  const showShadow = showColors ? "color-white" : ''
+  const { options: { op_color }, } = useContext(contextApi);
+  const showShadow = op_color ? "color-white" : ''
+
   return (
     <div className='stats'>
       {stats.map(({ base_stat, stat: { name } }) => {
-        const lightIcons = showColors ? name + "-white" : name
+        const lightIcons = op_color ? name + "-white" : name
 
         return (
           <Tooltip text={name} key={name}>

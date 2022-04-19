@@ -1,5 +1,5 @@
 import React from "react";
-import { formatstat } from "/src/helpers";
+import { normalize } from "/src/helpers";
 import './style.sass'
 
 export function Tooltip({ children, text }) {
@@ -7,7 +7,7 @@ export function Tooltip({ children, text }) {
     <div className="tooltip">
       {children}
       <span className="tooltip__text">
-        {formatstat(text)}
+        {normalize(text)}
       </span>
     </div>
   );

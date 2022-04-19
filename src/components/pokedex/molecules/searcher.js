@@ -3,7 +3,7 @@ import { contextApi } from '/src/useContext';
 
 export function Searcher() {
   const { inputSearch, effects } = useContext(contextApi);
-  const { getAPokemon, setInputSearch, handleKeyDown } = effects
+  // const { getAPokemon, setInputSearch, handleKeyDown } = effects
 
   return (
     <div className='searcher'>
@@ -11,11 +11,14 @@ export function Searcher() {
         className='searcher__bar highlight'
         type='search'
         placeholder='Search your pokemon!'
-        onChange={(e) => setInputSearch(e.target.value)}
-        onKeyDown={handleKeyDown}
+        // onChange={(e) => setInputSearch(e.target.value)}
+        // onKeyDown={handleKeyDown}
         value={inputSearch}
       />
-      <button onClick={getAPokemon} className='searcher__btn' >
+      <button
+        // onClick={getAPokemon}
+        className='searcher__btn'
+      >
         GO
       </button>
     </div>

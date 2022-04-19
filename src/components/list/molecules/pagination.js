@@ -1,42 +1,38 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import { contextApi } from '/src/useContext';
-import { actualPage, totalPages, lastPokemons } from '/src/helpers';
+import { actualPage, totalPages, getLast } from '/src/helpers';
 
 export const Pagination = () => {
-	const { pokemons, pageNumbers, totalOfPokemons, effects } = useContext(contextApi);
-	const { setPageNumbers, getPokemons } = effects
-
-	const [showInput, setShowInput] = useState(false)
+	const { totalOfPokemon, filters: { page }, pokemons, effects } = useContext(contextApi);
+	const { handleFilters, setPageNumbers, } = effects
 
 	const buttons = [
 		{
 			name: 'First',
-			logic: () => setPageNumbers(0),
-			disabled: !pageNumbers
+			logic: () => handleFilters("page", 0),
+			disabled: !page
 		},
 		{
 			name: 'Previous',
-			logic: () => setPageNumbers(pageNumbers - 10),
-			disabled: !pageNumbers
+			logic: () => handleFilters("page", page - 10),
+			disabled: !page
 		},
 		{
-			name: actualPage(pageNumbers) + " / " + totalPages(totalOfPokemons),
+			name: actualPage(page) + " / " + totalPages(totalOfPokemon),
 			className: "counter",
-			logic: () => setShowInput(!showInput)
 		},
 		{
 			name: 'Next',
-			logic: () => setPageNumbers(pageNumbers + 10),
-			disabled: pageNumbers >= totalOfPokemons,
+			logic: () => handleFilters("page", page + 10),
+			disabled: page >= totalOfPokemon,
 		},
 		{
 			name: 'Last',
-			logic: () => setPageNumbers(lastPokemons(totalOfPokemons)),
-			disabled: pageNumbers >= totalOfPokemons,
+			logic: () => handleFilters("page", getLast(totalOfPokemon)),
+			disabled: page >= totalOfPokemon,
 		},
 	]
 
-	if (pokemons.length === 1) return <button className="go-back-btn" onClick={getPokemons}>go back</button>
 
 	return (
 		<nav className='navbar'>

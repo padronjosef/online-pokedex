@@ -9,16 +9,18 @@
   justify-items: center
   align-items: center
 
-  &__info, &__stats
-    height: 250px
-
   &__info
-    display: flex
-    z-index: 100
     gap: 1rem
-    color: $bg-color4
+    box-sizing: border-box
+  &__info, &__stats
+    height: 300px
+    display: flex
     font-weight: 600
-  &__keys
+    justify-content: space-between
+    z-index: 100
+    color: $bg-color4
+  &__stats
+    flex-direction: column
   &__keys, &__values
     display: grid
     grid-template-rows: repeat(6, 1fr)
@@ -29,15 +31,17 @@
     font-size: .8rem
   &__types
     display: flex
+    flex-direction: column
     gap: 0.5rem
   &__type
     display: flex
     align-items: center
-    padding: 1px 0.5rem
+    padding: 0 0.5rem
     border-radius: 4px
     color: $btn-color2
     font-size: 10px
-    gap: 4px
+    gap: 0.2rem
+    width: fit-content
   &__img
     width: 22px
 
@@ -62,7 +66,6 @@
     align-items: center
     justify-content: center
     font-size: 2rem
-    margin-bottom: 2rem
   &__title-wrapper
     display: flex
     flex-direction: column
@@ -80,13 +83,6 @@
     padding: 0.5rem 2rem
     color: $btn-color2
     border-radius: 4px
-
-  &__stats
-    display: flex
-    flex-direction: column
-    z-index: 100
-    gap: 0.5rem
-    color: $bg-color4
 
 .abilities
   display: flex
@@ -109,6 +105,15 @@
   &:hover &__edges
     opacity: 1
     transition: all 2s ease
+
+  &__img
+    width: 400px
+    padding: 2rem
+    cursor: pointer
+    object-fit: contain
+    z-index: 100
+    @media screen and (min-width: 1200px)
+      height: 400px
 
   &__id
     position: absolute
@@ -144,17 +149,9 @@
     border: 1px solid $btn-color3
     opacity: 0
     transition: all 1s ease
-  &__img
-    width: 400px
-    padding: 2rem
-    cursor: pointer
-    object-fit: contain
-    z-index: 100
-    @media screen and (min-width: 1200px)
-      height: 400px
+
   &__edges
     position: absolute
-    background-color: transparent
     opacity: 0
     width: 50%
     height: 100%
@@ -165,18 +162,13 @@
     user-select: none
     transition: all 1s ease
     z-index: 200
-    &--left
-      display: flex
+    &:first-of-type
       justify-content: flex-start
       left: 0
-      border-top-left-radius: 20px 
-      border-bottom-left-radius: 20px
-    &--right
-      display: flex
+    &:last-of-type
       justify-content: flex-end
       right: 0
-      border-top-right-radius: 20px 
-      border-bottom-right-radius: 20px 
+
   &__btn
     font-size: 20px
     border: none
@@ -186,4 +178,3 @@
     background-color: $btn-color1
     border-radius: 50%
     cursor: pointer
-

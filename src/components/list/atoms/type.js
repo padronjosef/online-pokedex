@@ -3,8 +3,11 @@ import { contextApi } from '/src/useContext';
 import { Tooltip, getAsset } from '/src/helpers';
 
 export function Types({ types = [] }) {
-  const { showColors } = useContext(contextApi);
-  const showShadow = showColors ? "highlight" : ''
+  const { options: { op_color } } = useContext(contextApi);
+
+  // const showShadow = op_color ? "highlight" : ''
+  const showShadow = true ? "highlight" : ''
+
   return (
     <div className={`pokeitem__icons`}>
       {types.map(({ type: { name } }) => (

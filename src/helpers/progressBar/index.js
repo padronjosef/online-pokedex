@@ -1,17 +1,25 @@
 import React from 'react';
-import { formatstat } from "/src/helpers";
+import { normalize } from "/src/helpers";
 import './style.sass';
 
-export const ProgressBar = ({ name, value, pokemonType }) => {
-  const pogress = (value / 200) * 100
+export const ProgressBar = ({
+  name = "",
+  value = 0,
+  max = 100,
+  color = ""
+}) => {
+  const pogress = (value / max) * 100
 
   return (
-    <div className='progress-bar' key={name} >
+    <div className='progress-bar' >
       <p className='progress-bar__text'>
-        {formatstat(name) + ": "}
+        {normalize(name) + ": "}
       </p>
       <div className='progress-bar__bar'>
-        <div style={{ width: pogress + "%" }} className={`progress-bar__fill ${pokemonType}`} >
+        <div
+          className={`progress-bar__fill ${color}`}
+          style={{ width: pogress + "%" }}
+        >
           <span className='progress-bar__value'>
             {value}
           </span>

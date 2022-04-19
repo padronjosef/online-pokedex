@@ -2,12 +2,12 @@ import React, { Fragment, useContext } from 'react';
 import { contextApi } from '/src/useContext';
 
 export function FemaleSprite({ sprite = false }) {
-  const { showGenders } = useContext(contextApi);
+  const { options: { op_gender }, } = useContext(contextApi);
 
   return (
     <Fragment>
-      {showGenders && sprite &&
-        <span className='sprites__female'> &#9794; </span>
+      {op_gender && sprite &&
+        <span className='female__simbol'> &#9794; </span>
       }
     </Fragment>
   );

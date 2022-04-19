@@ -23,7 +23,7 @@ export function constants() {
 
   const filds = ["image", "id", "name", "height", "weight", "type", "stats"]
 
-  const filters = [
+  const FILTERS = [
     "hp",
     "attack",
     "defense",
@@ -39,6 +39,6 @@ export function constants() {
   return {
     types,
     filds,
-    filters
+    FILTERS
   }
 }
