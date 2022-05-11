@@ -42,7 +42,7 @@ const assets = {
         positions: [
           {
             title: 'Frontend Developer',
-            description: 'Currently working on the SaaS project, running on React.js and Backbone, Zustand, Mongo DB, styled components, less and tachyons.',
+            description: 'Currently working on the SaaS project, running on React.js and Backbone, Zustand, Node.js and Mongo DB, styled components, less and tachyons.',
           }
         ],
       },
@@ -51,11 +51,11 @@ const assets = {
         time: 'Sep 2019 - Feb 2021',
         positions: [
           {
-            title: 'Community Relations',
+            title: 'Developer Advocate',
             description: 'Leading developer communities, UX Interviewing, UI Designing and creating graphic assets',
           },
           {
-            title: 'Customer Success',
+            title: 'Community Relations',
             description: 'Student Coaching, Creating learning paths, Customer Experience and Training peers.'
           }
         ],
