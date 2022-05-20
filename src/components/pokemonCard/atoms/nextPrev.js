@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export const NextPrev = ({ icon, onClick }) => {
   return (
@@ -7,5 +7,5 @@ export const NextPrev = ({ icon, onClick }) => {
         {icon}
       </button>
     </div>
-  );
-};
+  )
+}

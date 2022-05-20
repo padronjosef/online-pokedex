@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
 
 export function Filters() {
-  const { FILTERS } = useContext(contextApi);
+  const { FILTERS } = useContext(contextApi)
 
   return (
     <section className='pokedex__info highlight'>
@@ -23,5 +23,5 @@ export function Filters() {
         <button className='filters__button highlight'>Apply Filters</button>
       </div>
     </section>
-  );
-};
+  )
+}

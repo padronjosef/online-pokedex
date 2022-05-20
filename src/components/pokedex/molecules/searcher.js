@@ -1,8 +1,8 @@
-import React, { useContext, useState } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext, useState } from 'react'
+import { contextApi } from '/src/useContext'
 
 export function Searcher() {
-  const { inputSearch, effects: { searchPokemons, handleKeyDown, setInputSearch } } = useContext(contextApi);
+  const { inputSearch, effects: { searchPokemons, handleKeyDown, setInputSearch } } = useContext(contextApi)
 
   return (
     <div className='searcher'>
@@ -21,5 +21,5 @@ export function Searcher() {
         GO
       </button>
     </div>
-  );
-};
+  )
+}

@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { Spinner } from "/src/helpers";
-import { Header, Slider, Info, Stats } from './molecules';
-import './style.sass';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { Spinner } from "/src/helpers"
+import { Header, Slider, Info, Stats } from './molecules'
+import './style.sass'
 
 export const PokemonCard = () => {
-  const { cardData } = useContext(contextApi);
+  const { cardData } = useContext(contextApi)
   
   if (!cardData) return <Spinner />
 
@@ -19,5 +19,5 @@ export const PokemonCard = () => {
         <Stats />
       </div>
     </div >
-  );
-};
+  )
+}

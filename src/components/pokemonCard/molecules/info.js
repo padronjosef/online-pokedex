@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { fullHeight, fullWeight } from '/src/helpers/formatData';
-import { Types, Abilities } from '../atoms';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { fullHeight, fullWeight } from '/src/helpers/formatData'
+import { Types, Abilities } from '../atoms'
 
 export const Info = () => {
-  const { cardData } = useContext(contextApi);
+  const { cardData } = useContext(contextApi)
   const { id, height, weight } = cardData
 
   return (
@@ -24,5 +24,5 @@ export const Info = () => {
         <Types />
       </div>
     </div >
-  );
-};
+  )
+}

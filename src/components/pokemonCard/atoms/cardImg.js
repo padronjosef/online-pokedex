@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext, useEffect } from 'react'
+import { contextApi } from '/src/useContext'
 
 export const CardImg = ({ index = 0 }) => {
-  const { spritesLength, cardData, effects: { setSpritesLength } } = useContext(contextApi);
+  const { spritesLength, cardData, effects: { setSpritesLength } } = useContext(contextApi)
 
   const {
     official, dream_world, home,
@@ -30,5 +30,5 @@ export const CardImg = ({ index = 0 }) => {
 
   return (
     <img className='slider__img' src={carrousel[index]} />
-  );
-};
+  )
+}

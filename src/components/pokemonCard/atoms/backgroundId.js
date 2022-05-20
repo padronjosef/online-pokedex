@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
 
 export const BackgroundId = () => {
-  const { cardData: { id } } = useContext(contextApi);
+  const { cardData: { id } } = useContext(contextApi)
 
   const idLength = () => {
     const digits = id.toString().length
@@ -16,5 +16,5 @@ export const BackgroundId = () => {
     <div className={`slider__id ${idLength()}`} >
       #{id}
     </div>
-  );
-};
+  )
+}

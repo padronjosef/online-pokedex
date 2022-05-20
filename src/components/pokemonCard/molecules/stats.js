@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { ProgressBar } from "/src/helpers";
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { ProgressBar } from "/src/helpers"
 
 export const Stats = () => {
-  const { cardData: { types, stats, power } } = useContext(contextApi);
+  const { cardData: { types, stats, power } } = useContext(contextApi)
   const type = types[0]
 
   return (
@@ -13,5 +13,5 @@ export const Stats = () => {
       ))}
       <p className='progress-bar__text'> total: {power} </p>
     </div >
-  );
-};
+  )
+}

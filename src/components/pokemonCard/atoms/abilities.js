@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { normalize } from '/src/helpers/formatData';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { normalize } from '/src/helpers/formatData'
 
 export const Abilities = () => {
-  const { cardData: { abilities } } = useContext(contextApi);
+  const { cardData: { abilities } } = useContext(contextApi)
 
   return (
     <div className='abilities'>
@@ -13,5 +13,5 @@ export const Abilities = () => {
         </span>
       )}
     </div>
-  );
-};
+  )
+}

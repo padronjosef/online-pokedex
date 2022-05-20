@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
-import { NextPrev, BackgroundId, CardImg } from '../atoms';
-import { contextApi } from '/src/useContext';
+import React, { useContext, useState } from 'react'
+import { NextPrev, BackgroundId, CardImg } from '../atoms'
+import { contextApi } from '/src/useContext'
 
 export const Slider = () => {
-  const { spritesLength } = useContext(contextApi);
+  const { spritesLength } = useContext(contextApi)
 
   const [index, setIndex] = useState(0)
   const handleNext = () => index + 1 === spritesLength ? setIndex(0) : setIndex(index + 1)
@@ -23,5 +23,5 @@ export const Slider = () => {
         {index + 1 + " / " + spritesLength}
       </span>
     </div >
-  );
-};
+  )
+}

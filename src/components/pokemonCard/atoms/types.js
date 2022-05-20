@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { getAsset } from '/src/helpers';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { getAsset } from '/src/helpers'
 
 export function Types() {
-  const { cardData: { types } } = useContext(contextApi);
+  const { cardData: { types } } = useContext(contextApi)
 
   return (
     <div className='pokemonCard__types'>
@@ -14,5 +14,5 @@ export function Types() {
         </div>
       ))}
     </div>
-  );
+  )
 }

@@ -1,6 +1,6 @@
-import React from 'react';
-import { normalize } from "/src/helpers";
-import './style.sass';
+import React from 'react'
+import { normalize } from "/src/helpers"
+import './style.sass'
 
 export const ProgressBar = ({
   name = "",
@@ -27,4 +27,4 @@ export const ProgressBar = ({
       </div>
     </div>
   )
-};
+}

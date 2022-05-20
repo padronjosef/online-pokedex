@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
 
 export function ListImg({ sprites }) {
-  const { options: { op_shiny, op_rotate, op_gender } } = useContext(contextApi);
+  const { options: { op_shiny, op_rotate, op_gender } } = useContext(contextApi)
 
   const {
     official, dream_world, home,
@@ -37,5 +37,5 @@ export function ListImg({ sprites }) {
       className='sprites__img'
       src={getSprite() || tryAll}
     />
-  );
+  )
 }

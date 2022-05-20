@@ -36,7 +36,7 @@ export function constants() {
     "held items",
   ]
 
-  const ROMANNUMERALS = {
+  const ROMAN_NUMBERS = {
     i: 1,
     ii: 2,
     iii: 3,
@@ -58,6 +58,6 @@ export function constants() {
     types,
     filds,
     FILTERS,
-    ROMANNUMERALS
+    ROMAN_NUMBERS
   }
 }

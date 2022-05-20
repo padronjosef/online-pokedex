@@ -1,5 +1,5 @@
-import React from "react";
-import { normalize } from "/src/helpers";
+import React from "react"
+import { normalize } from "/src/helpers"
 import './style.sass'
 
 export function Tooltip({ children, text }) {
@@ -10,6 +10,6 @@ export function Tooltip({ children, text }) {
         {normalize(text)}
       </span>
     </div>
-  );
-};
+  )
+}
 

@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
 import { Pokeball } from '/src/helpers'
 
 export function NotFound() {
-  const { effects: { fetchPokemons } } = useContext(contextApi);
+  const { effects: { fetchPokemons } } = useContext(contextApi)
   return (
     <div className='not-found'>
       <div className='not-found__numbers'>
@@ -26,5 +26,5 @@ export function NotFound() {
         Go Back Home
       </button>
     </div>
-  );
-};
+  )
+}

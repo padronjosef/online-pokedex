@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
 
 export function Options() {
   const {
     options: { op_color, op_shiny, op_rotate, op_gender, op_units },
     effects: { handleOptions }
-  } = useContext(contextApi);
+  } = useContext(contextApi)
 
   const buttons = [
     { state: "op_color", text: "color", active: op_color },
@@ -16,7 +16,7 @@ export function Options() {
   ]
 
   return (
-    <div className='options'>
+    <div className='options stickers'>
       {buttons.map(({ state, text, active }) => (
         <button
           key={text}
@@ -27,5 +27,5 @@ export function Options() {
         </button>
       ))}
     </div>
-  );
+  )
 }

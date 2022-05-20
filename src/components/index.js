@@ -1,3 +1,3 @@
-export * from './pokedex';
-export * from './list';
-export * from './pokemonCard';
+export * from './pokedex'
+export * from './list'
+export * from './pokemonCard'

@@ -1,14 +1,14 @@
-import React, { useContext } from 'react';
-import { contextApi } from '/src/useContext';
-import { FemaleSprite, ListImg, Stats, Types } from '../atoms';
-import { formatHeight, formatWeight, Tooltip } from '/src/helpers';
+import React, { useContext } from 'react'
+import { contextApi } from '/src/useContext'
+import { FemaleSprite, ListImg, Stats, Types } from '../atoms'
+import { formatHeight, formatWeight, Tooltip } from '/src/helpers'
 
 export function ListItem() {
   const {
     pokemons,
     options: { op_color, op_units },
     effects: { handleCardData },
-  } = useContext(contextApi);
+  } = useContext(contextApi)
 
   return (
     <ul className='pokelist'>
@@ -41,5 +41,5 @@ export function ListItem() {
         )
       })}
     </ul>
-  );
+  )
 }

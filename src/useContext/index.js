@@ -1,25 +1,29 @@
-import React, { createContext, useState } from 'react';
-import { toQuery } from '/src/helpers/formatData';
-import { constants } from './constants';
-import { applyFilters, totalOfPokemon, reduceData } from './fillterEffects';
+import React, { createContext, useState } from 'react'
+import { toQuery } from '/src/helpers/formatData'
+import { constants } from './constants'
+import { applyFilters, totalOfPokemon } from './fillterEffects'
+import { getChunks } from './fetchEffects'
 
-export const contextApi = createContext();
+export const contextApi = createContext()
 
 export const ContextProvider = ({ children }) => {
-  const setLocal = (key, value) => localStorage.setItem(key, JSON.stringify(value));
+  const setLocal = (key, value) => localStorage.setItem(key, JSON.stringify(value))
   const getLocal = (key) => JSON.parse(localStorage.getItem(key))
   const deleteLocal = (key) => localStorage.removeItem(key)
 
-  const [firstFetch, setFirstFetch] = useState([]);
-  const [pokemons, setPokemons] = useState([]);
+  const [firstFetch, setFirstFetch] = useState([])
+  const [pokemons, setPokemons] = useState([])
 
-  const [cardData, setCardData] = useState();
-  const [spritesLength, setSpritesLength] = useState(0);
-  const [notFound, setNotFound] = useState(false);
+  const [cardData, setCardData] = useState()
+  const [spritesLength, setSpritesLength] = useState(0)
+  const [notFound, setNotFound] = useState(false)
+  const [toggle, setToggle] = useState(false)
+
+  const handleToogle = () => setToggle(!toggle)
 
   const [inputSearch, setInputSearch] = useState('')
 
-  const isMobile = window.innerWidth <= 720
+  const isMobile = window.screen.width < 720
 
   // options
   const [options, setOptions] = useState({
@@ -41,61 +45,47 @@ export const ContextProvider = ({ children }) => {
   })
 
   const handleFilters = (name, value) => {
+    const noPage = (name === 'type' && getLocal("type") === value) && { 'page': 0 }
+
+    if(noPage) setLocal('page', 0)
     setLocal(name, value)
-    setFilters({ ...filters, [name]: value })
+    setFilters({ ...filters, ...noPage, [name]: value })
 
     setCardData(false)
-    // if (name !== 'page') {
-    //   setFilters({ ...filters, page: 0 })
-    //   deleteLocal('page')
-    // }
 
     const result = applyFilters(firstFetch, { ...filters, [name]: value })
     setPokemons(result)
   }
 
-  const fetchPokemons = async () => {
-    const URL_PAGE = "https://pokeapi.co/api/v2/"
-    const limit = 30;
+  const URL_PAGE = (limit = 0, offset = 0) => {
+    return `https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`
+  }
 
+  const fetchPokemons = async () => {
     setNotFound(false)
     setPokemons(false)
     setCardData(false)
 
     // first fetch
-    const url = URL_PAGE + `pokemon/?limit=${limit}&offset=${0}`
-    const res = await fetch(url);
-    const rawData = await res.json();
+    const firstFetch = await fetch(URL_PAGE())
+    const firstJson = await firstFetch.json()
+    const getTotal = await firstJson.count
+    // const getTotal = 100
+
+    // fetch them all
+    const url = URL_PAGE(getTotal)
+    const res = await fetch(url)
+    const rawData = await res.json()
+    const results = rawData.results
 
     // getting basic info
-    const basicData = await Promise.all(
-      await rawData.results.map(async ({ url }) => {
-        const data = await fetch(url)
-        return data.json()
-      }),
-    );
-
-    // getting full info
-    const fullData = basicData.map(async (pokemon) => {
-      const fetch_specie = await fetch(pokemon.species.url);
-      const specieResult = await fetch_specie.json();
-
-      const fetch_evolution_chain = await fetch(specieResult.evolution_chain.url)
-      const evolution_chain = await fetch_evolution_chain.json()
-
-      const fullData = { ...pokemon, species: specieResult, evolution_chain }
-
-      return reduceData(fullData)
-    })
-
-    const pokemons = await Promise.all(fullData).then(data => data)
+    const pokemons = await getChunks(results, fetch)
 
     const filteredpokemons = await applyFilters(pokemons, { ...filters })
 
-    setPokemons(filteredpokemons);
-
-    setFirstFetch(pokemons);
-  };
+    setPokemons(filteredpokemons)
+    setFirstFetch(pokemons)
+  }
 
   const closeCard = () => {
     setCardData(false)
@@ -130,7 +120,8 @@ export const ContextProvider = ({ children }) => {
     notFound,
     totalOfPokemon,
     inputSearch,
-    isMobile
+    isMobile,
+    toggle
   }
 
   function effects() {
@@ -154,7 +145,8 @@ export const ContextProvider = ({ children }) => {
 
       searchPokemons,
       handleKeyDown,
-      setInputSearch
+      setInputSearch,
+      handleToogle
     }
   }
 
@@ -166,5 +158,9 @@ export const ContextProvider = ({ children }) => {
     },
   }
 
-  return <contextApi.Provider value={state}>{children}</contextApi.Provider>;
-};
+  return (
+    <contextApi.Provider value={state}>
+      {children}
+    </contextApi.Provider>
+  )
+}
