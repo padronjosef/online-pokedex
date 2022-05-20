@@ -1,6 +1,7 @@
 import React, { createContext, useState } from 'react';
+import { toQuery } from '/src/helpers/formatData';
 import { constants } from './constants';
-import { applyFilters, totalOfPokemon } from './fillterEffects';
+import { applyFilters, totalOfPokemon, reduceData } from './fillterEffects';
 
 export const contextApi = createContext();
 
@@ -15,6 +16,10 @@ export const ContextProvider = ({ children }) => {
   const [cardData, setCardData] = useState();
   const [spritesLength, setSpritesLength] = useState(0);
   const [notFound, setNotFound] = useState(false);
+
+  const [inputSearch, setInputSearch] = useState('')
+
+  const isMobile = window.innerWidth <= 720
 
   // options
   const [options, setOptions] = useState({
@@ -51,7 +56,7 @@ export const ContextProvider = ({ children }) => {
 
   const fetchPokemons = async () => {
     const URL_PAGE = "https://pokeapi.co/api/v2/"
-    const limit = 100;
+    const limit = 30;
 
     setNotFound(false)
     setPokemons(false)
@@ -73,26 +78,14 @@ export const ContextProvider = ({ children }) => {
     // getting full info
     const fullData = basicData.map(async (pokemon) => {
       const fetch_specie = await fetch(pokemon.species.url);
-      const specie = await fetch_specie.json();
+      const specieResult = await fetch_specie.json();
 
-      const speciesFetched = { ...pokemon.species, ...specie }
-
-      const fetch_evolution_chain = await fetch(specie.evolution_chain.url)
+      const fetch_evolution_chain = await fetch(specieResult.evolution_chain.url)
       const evolution_chain = await fetch_evolution_chain.json()
 
-      const type = pokemon.types[0].type.name
-      const power = pokemon.stats.reduce((acum, value) => acum + value.base_stat, 0)
+      const fullData = { ...pokemon, species: specieResult, evolution_chain }
 
-      const generaEN = speciesFetched.genera.filter(item => item.language.name === "en")
-      const subTitle = generaEN[0].genus
-
-      const extraData = {
-        type,
-        power,
-        subTitle
-      }
-
-      return { ...pokemon, ...extraData, species: speciesFetched, evolution_chain }
+      return reduceData(fullData)
     })
 
     const pokemons = await Promise.all(fullData).then(data => data)
@@ -115,7 +108,12 @@ export const ContextProvider = ({ children }) => {
   }
 
   const searchPokemons = () => {
+    const query = toQuery(inputSearch)
 
+    if (!query) return handleFilters("page", 0)
+
+    const pokemonsFiltered = firstFetch.filter(pokemon => (pokemon.name || pokemon.id).includes(query))
+    setPokemons(pokemonsFiltered)
   }
 
   const handleKeyDown = (e) => e.key === 'Enter' && searchPokemons()
@@ -131,6 +129,8 @@ export const ContextProvider = ({ children }) => {
     spritesLength,
     notFound,
     totalOfPokemon,
+    inputSearch,
+    isMobile
   }
 
   function effects() {
@@ -151,6 +151,10 @@ export const ContextProvider = ({ children }) => {
       handleKeyDown,
       handleFilters,
       handleOptions,
+
+      searchPokemons,
+      handleKeyDown,
+      setInputSearch
     }
   }
 

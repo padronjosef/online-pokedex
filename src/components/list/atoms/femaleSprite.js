@@ -7,7 +7,7 @@ export function FemaleSprite({ sprite = false }) {
   return (
     <Fragment>
       {op_gender && sprite &&
-        <span className='female__simbol'> &#9794; </span>
+        <span className='female__simbol'> &#9792; </span>
       }
     </Fragment>
   );

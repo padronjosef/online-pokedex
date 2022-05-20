@@ -7,7 +7,7 @@ export function Types() {
 
   return (
     <div className='pokemonCard__types'>
-      {types.map(({ type: { name } }) => (
+      {types.map(name => (
         <div className={`highlight pokemonCard__type ${name}`} key={name}>
           <p>{name}</p>
           <img className='pokemonCard__img' src={getAsset("types", name)} alt={name} />

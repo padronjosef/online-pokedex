@@ -8,13 +8,13 @@ export function Stats({ stats = [] }) {
 
   return (
     <div className='stats'>
-      {stats.map(({ base_stat, stat: { name } }) => {
+      {stats.map(({ name, value }) => {
         const lightIcons = op_color ? name + "-white" : name
 
         return (
           <Tooltip text={name} key={name}>
             <img className="stats__img" src={getAsset("stats", lightIcons)} alt={name} />
-            <p className={`stats__text ${showShadow}`}>{base_stat}</p>
+            <p className={`stats__text ${showShadow}`}>{value}</p>
           </Tooltip>
         )
       })}

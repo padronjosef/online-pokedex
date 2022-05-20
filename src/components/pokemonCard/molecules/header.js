@@ -5,7 +5,8 @@ import { normalize } from '/src/helpers';
 
 export const Header = () => {
   const { cardData, effects: { closeCard } } = useContext(contextApi);
-  const { name, type, subTitle } = cardData
+  const { name, types, subTitle } = cardData
+  const type = types[0]
 
   return (
     <div className='pokemonCard__header' >
@@ -22,6 +23,6 @@ export const Header = () => {
           {subTitle}
         </p>
       </div>
-    </div >
+    </div>
   );
 };

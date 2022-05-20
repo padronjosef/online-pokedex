@@ -3,17 +3,18 @@ import { contextApi } from '/src/useContext';
 import { actualPage, totalPages, getLast } from '/src/helpers';
 
 export const Pagination = () => {
-	const { totalOfPokemon, filters: { page }, pokemons, effects } = useContext(contextApi);
+	const { totalOfPokemon, filters: { page }, isMobile, effects } = useContext(contextApi);
 	const { handleFilters, setPageNumbers, } = effects
+  console.log("🚀 ~ file: pagination.js ~ line 9 ~ Pagination ~ getLast(totalOfPokemon)", getLast(totalOfPokemon))
 
 	const buttons = [
 		{
-			name: 'First',
+			name: isMobile ? 1 :'First',
 			logic: () => handleFilters("page", 0),
 			disabled: !page
 		},
 		{
-			name: 'Previous',
+			name: isMobile ? '<' : 'Previous',
 			logic: () => handleFilters("page", page - 10),
 			disabled: !page
 		},
@@ -22,12 +23,12 @@ export const Pagination = () => {
 			className: "counter",
 		},
 		{
-			name: 'Next',
+			name: isMobile ? '>' : 'Next',
 			logic: () => handleFilters("page", page + 10),
 			disabled: page >= totalOfPokemon,
 		},
 		{
-			name: 'Last',
+			name: isMobile ?  totalPages(totalOfPokemon) : 'Last',
 			logic: () => handleFilters("page", getLast(totalOfPokemon)),
 			disabled: page >= totalOfPokemon,
 		},

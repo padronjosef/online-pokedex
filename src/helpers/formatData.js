@@ -18,6 +18,11 @@ export const normalize = (text = '') => {
   return text.replace("-", " ").replace("special", "sp")
 }
 
+export const toQuery = (query = '') => {
+  if( typeof query === "number") return Math.abs(query).trim()
+  return query.trim().replace(" ", "-")
+}
+
 export const formatHeight = (height = 1000, imperials = false) => {
   const mToFt = 0.32
   const cmToIn = 0.254

@@ -14,7 +14,7 @@ export function ListItem() {
     <ul className='pokelist'>
       {pokemons.map(pokemon => {
         const { sprites, id, name, height, weight, types, stats, subTitle } = pokemon
-        const typeColor = op_color ? types[0].type.name + " active-colors" : ''
+        const typeColor = op_color ? types[0] + " active-colors" : ''
 
         return (
           <li
@@ -27,12 +27,14 @@ export function ListItem() {
               <FemaleSprite sprite={sprites.front_female} />
             </figure>
 
-            <p>{id}</p>
-            <Tooltip text={subTitle}>
-              <p>{name.split("-").join(" ")}</p>
-            </Tooltip>
-            <p>{formatHeight(height, op_units)}</p>
-            <p>{formatWeight(weight, op_units)}</p>
+            <p className='pokeitem__id'>{id}</p>
+            <div className='pokeitem__name'>
+              <Tooltip text={subTitle}>
+                <p>{name.split("-").join(" ")}</p>
+              </Tooltip>
+            </div>
+            <p className='pokeitem__height'>{formatHeight(height, op_units)}</p>
+            <p className='pokeitem__weight'>{formatWeight(weight, op_units)}</p>
             <Types types={types} typeColor={typeColor} />
             <Stats stats={stats} />
           </li>

@@ -5,15 +5,13 @@ export const CardImg = ({ index = 0 }) => {
   const { spritesLength, cardData, effects: { setSpritesLength } } = useContext(contextApi);
 
   const {
+    official, dream_world, home,
     front_default, back_default, front_shiny, back_shiny,
     front_female, back_female, front_shiny_female, back_shiny_female,
-    other: { dream_world, home }
   } = cardData.sprites
 
-  const oficial = cardData.sprites.other["official-artwork"].front_default;
-
   const carrousel = [
-    oficial,
+    official.front_default,
     front_default, back_default,
     front_shiny, back_shiny,
     front_female, back_female,

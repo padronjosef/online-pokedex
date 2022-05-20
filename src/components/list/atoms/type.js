@@ -10,9 +10,9 @@ export function Types({ types = [] }) {
 
   return (
     <div className={`pokeitem__icons`}>
-      {types.map(({ type: { name } }) => (
-        <Tooltip text={name} key={name}>
-          <img className={`pokeitem__icon ${showShadow}`} src={getAsset("types", name)} alt={name} />
+      {types.map(item => (
+        <Tooltip text={item} key={item}>
+          <img className={`pokeitem__icon ${showShadow}`} src={getAsset("types", item)} alt={item} />
         </Tooltip>
       ))}
     </div>

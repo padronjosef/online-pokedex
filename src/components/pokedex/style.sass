@@ -5,6 +5,12 @@
   text-transform: uppercase
   gap: 1rem
   justify-content: space-between
+  @media screen and (max-width: 864px)
+    justify-content: center
+    width: 100%
+    padding: 0 1rem
+  @media screen and (max-width: 720px)
+    padding: 0 0.5rem
 
   &__info
     color: $primary-color
@@ -17,6 +23,8 @@
     &:nth-child(2)
       padding: 1rem 0
       gap: 1.5rem
+      @media screen and (max-width: 720px)
+        width: 100%
     &:nth-child(1),
     &:nth-child(3)
       top: 0
@@ -26,6 +34,8 @@
       position: sticky
       height: 100vh
       align-items: flex-start
+      @media screen and (max-width: 864px)
+        display: none
 
 .types
   display: flex
@@ -95,6 +105,12 @@
   font-size: 30px
   gap: 0.5rem
   color: $bg-color4
+  @media screen and (max-width: 720px)
+    padding: 0
+    width: 100%
+    gap: 0
+    &__name
+      font-size: 1.8rem
 
 .searcher
   width: 100%
@@ -121,8 +137,6 @@
     &::-webkit-search-results-button,
     &::-webkit-search-results-decoration
       display: none
-
-
 
   &__btn
     font-weight: 600

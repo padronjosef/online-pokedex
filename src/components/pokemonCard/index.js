@@ -12,6 +12,7 @@ export const PokemonCard = () => {
   return (
     <div className='pokemonCard' >
       <Header />
+      <p className='pokemonCard__description'>{cardData.description}</p>
       <div className='pokemonCard__main'>
         <Info />
         <Slider />
