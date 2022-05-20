@@ -96,7 +96,7 @@ export const getSeries = async (items, fn) => {
   return data
 }
 
-export const getSplits = async (items, chunkSize = 10) => {
+export const getSplits = async (items, chunkSize) => {
   const result = []
   for (let i = 0; i < items.length; i += chunkSize) {
     result.push(items.slice(i, i + chunkSize))

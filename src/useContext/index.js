@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import { toQuery } from '/src/helpers/formatData'
 import { constants } from './constants'
 import { applyFilters, totalOfPokemon } from './fillterEffects'
@@ -18,12 +18,21 @@ export const ContextProvider = ({ children }) => {
   const [spritesLength, setSpritesLength] = useState(0)
   const [notFound, setNotFound] = useState(false)
   const [toggle, setToggle] = useState(false)
+  const [isMobile, setIsMobile] = useState(window.screen.width < 720)
 
   const handleToogle = () => setToggle(!toggle)
 
   const [inputSearch, setInputSearch] = useState('')
 
-  const isMobile = window.screen.width < 720
+  useEffect(() => {
+    const resizer = () => {
+      setIsMobile(window.screen.width < 720)
+    }
+    addEventListener('resize', resizer)
+
+    return () => removeEventListener('resize', resizer)
+  }, [])
+
 
   // options
   const [options, setOptions] = useState({
@@ -45,15 +54,19 @@ export const ContextProvider = ({ children }) => {
   })
 
   const handleFilters = (name, value) => {
-    const noPage = (name === 'type' && getLocal("type") === value) && { 'page': 0 }
+    let verifyFilters = () => {
+      if (name !== 'page') {
+        setLocal('page', 0)
+        return { ...filters, 'page': 0 }
+      }
+      return filters
+    }
 
-    if(noPage) setLocal('page', 0)
     setLocal(name, value)
-    setFilters({ ...filters, ...noPage, [name]: value })
-
+    setFilters({ ...verifyFilters(), [name]: value })
     setCardData(false)
 
-    const result = applyFilters(firstFetch, { ...filters, [name]: value })
+    const result = applyFilters(firstFetch, { ...verifyFilters(), [name]: value })
     setPokemons(result)
   }
 
@@ -67,10 +80,10 @@ export const ContextProvider = ({ children }) => {
     setCardData(false)
 
     // first fetch
-    const firstFetch = await fetch(URL_PAGE())
-    const firstJson = await firstFetch.json()
-    const getTotal = await firstJson.count
-    // const getTotal = 100
+    // const firstFetch = await fetch(URL_PAGE())
+    // const firstJson = await firstFetch.json()
+    // const getTotal = await firstJson.count
+    const getTotal = 100
 
     // fetch them all
     const url = URL_PAGE(getTotal)
