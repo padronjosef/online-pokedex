@@ -12,4 +12,4 @@ export function App () {
 	)
 }
 
-serviceWorkerRegistration.register();
+// serviceWorkerRegistration.register()

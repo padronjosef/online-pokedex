@@ -1,7 +1,7 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const path = require("path")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require("path");
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -28,6 +28,11 @@ module.exports = {
         type: "asset",
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
       },
+      {
+        test: /\.(ico|json)$/,
+        exclude: /node_modules/,
+        use: ["file-loader?name=[name].[ext]"]
+      }
     ],
   },
   resolve: {
@@ -35,13 +40,15 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './public/index.html',
-      filename: './index.html',
-      favicon: './src/assets/favicon/favicon.ico',
+      template: "public/index.html",
+      filename: "index.html",
+      inject: true,
+      favicon: "public/icons/favicon.ico",
+      manifest: "public/manifest.json",
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
   ],
-}
+};

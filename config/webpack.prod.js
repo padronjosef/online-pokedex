@@ -9,7 +9,25 @@ const prodConfig = {
   module: {
     rules: [
       {
-        test: /\.(css|scss|sass)$/,
+        test: '/\.css$/',
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: '/\.(scss|sass)$/',
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "../../",
+            },
+          },
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
+      },
+      {
+        test: '/\.css$/',
         use: [
           {
             loader: MiniCssExtractPlugin.loader,

@@ -6,7 +6,9 @@ import './style.sass'
 export function Pokedex() {
 	const { effects: { fetchPokemons } } = useContext(contextApi)
 
-	useEffect(() => fetchPokemons(), [])
+	useEffect(() => {
+		fetchPokemons()
+	}, [])
 
 	return (
 		<div className='pokedex'>

@@ -83,7 +83,7 @@ export const ContextProvider = ({ children }) => {
     // const firstFetch = await fetch(URL_PAGE())
     // const firstJson = await firstFetch.json()
     // const getTotal = await firstJson.count
-    const getTotal = 100
+    const getTotal = 30
 
     // fetch them all
     const url = URL_PAGE(getTotal)
