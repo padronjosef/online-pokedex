@@ -14,7 +14,7 @@ function Design () {
           </figure>
         ))}
       </div>
-      <a className='btn' href={behance}>
+      <a className='btn' target="_blank" href={behance}>
         {ViewMore}
       </a>
     </Animation>

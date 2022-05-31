@@ -1,4 +1,4 @@
-const assets = {
+export const enLang  = {
   email: 'josepadron.go@gmail.com',
   header: {
     sections: ['', 'Main', 'About', 'Stack', 'Portfolio', 'Blog', 'Studies', 'Footer'],
@@ -494,7 +494,6 @@ const assets = {
   },
   studies: {
     title: 'Everything I have learned',
-    inputPlaceholder : 'Search a course by name',
     certificates: [
       {
         id: 'carrear1',
@@ -566,12 +565,14 @@ const assets = {
         id: 'course10',
         name: 'WPO - Website Load Optimization Course',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/10%20-%20Curso%20de%20WPO%20Optimizaci%C3%B3n%20de%20Carga%20de%20Sitios%20Web.webp',
+        link: '',
         status: 'deleted',
       },
       {
         id: 'course11',
         name: 'Professional Webpack Course',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/11%20-%20Curso%20de%20Webpack%202017.webp',
+        link: '',
         status: 'deleted',
       },
       {
@@ -590,6 +591,7 @@ const assets = {
         id: 'course14',
         name: 'Responsive Design Course',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/14%20-%20Curso%20de%20Responsive%20Design.webp',
+        link: 'https://platzi.com/clases/mobile-first/',
         status: 'deleted',
       },
       {
@@ -614,6 +616,7 @@ const assets = {
         id: 'course18',
         name: 'Professional PostCSS Course',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/18%20-%20Curso%20de%20PostCSS.webp',
+        link: '',
         status: 'deleted',
       },
       {
@@ -626,6 +629,7 @@ const assets = {
         id: 'course20',
         name: 'JQuery to JavaScript course 2018',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/20%20-%20Curso%20de%20jQuery%20a%20JavaScript%202018.webp',
+        link: 'https://platzi.com/clases/javascript-jquery-2015/',
         status: 'deleted',
       },
       {
@@ -690,8 +694,9 @@ const assets = {
       },
       {
         id: 'course31',
-        name: 'HTML and CSS course',
+        name: 'https://platzi.com/p/padronjosef/curso/1492-html-css-2019/diploma/detalle/',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/31%20-%20Curso%20de%20HTML%20y%20CSS.webp',
+        link: 'HTML and CSS course',
         status: 'deleted',
       },
       {
@@ -767,6 +772,7 @@ const assets = {
         id: 'course43',
         name: 'Web Animations Course',
         img: 'https://raw.githubusercontent.com/padronjosef/Portfolio-Assets/main/courses/43%20-%20Curso%20de%20Animaciones%20para%20la%20Web.webp',
+        link: '',
         status: 'deleted',
       },
       {
@@ -845,5 +851,3 @@ const assets = {
     ],
   },
 };
-
-export default assets;

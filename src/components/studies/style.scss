@@ -1,14 +1,22 @@
 @import '/src/assets/variables.scss';
 
+.studies {
+  & h2 {
+    margin-bottom: 1rem;
+  }
+}
+
 .courses {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
   // max-width: 600px;
 }
 
 .certificate {
+  max-width: 80px;
   padding: 0.25rem;
   display: flex;
   align-items: center;

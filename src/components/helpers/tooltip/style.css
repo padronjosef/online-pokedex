@@ -1,0 +1,49 @@
+@import '/src/assets/variables.scss';
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  top: 0;
+}
+
+/* Tooltip text */
+.tooltip__text {
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  width: fit-content;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip__text {
+  display: none;
+  max-width: 160px;
+  padding: 8px;
+  color: var(--color-secondary);
+  background-color: var( --color-tertiary);
+  z-index: 200;
+}
+
+/* Tooltip arrow */
+.tooltip__text::after {
+  content: "";
+  position: absolute;
+  
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var( --color-tertiary) transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip__text {
+  display: block;
+}
