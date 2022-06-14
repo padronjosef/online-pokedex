@@ -4,6 +4,7 @@ import { Pokeball } from '/src/helpers'
 
 export function NotFound() {
   const { effects: { fetchPokemons } } = useContext(contextApi)
+
   return (
     <div className='not-found'>
       <div className='not-found__numbers'>

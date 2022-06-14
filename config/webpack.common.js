@@ -1,10 +1,18 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require("path");
+const webpack = require('webpack')
+const path = require("path")
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Dotenv = require('dotenv-webpack')
+const WorkboxPlugin = require('workbox-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
+  watchOptions: {
+    aggregateTimeout: 200,
+    poll: 1000,
+  },
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../build"),
@@ -28,11 +36,6 @@ module.exports = {
         type: "asset",
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
       },
-      {
-        test: /\.(ico|json)$/,
-        exclude: /node_modules/,
-        use: ["file-loader?name=[name].[ext]"]
-      }
     ],
   },
   resolve: {
@@ -40,15 +43,31 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "public/index.html",
-      filename: "index.html",
-      inject: true,
-      favicon: "public/icons/favicon.ico",
-      manifest: "public/manifest.json",
+      template: path.resolve('public/index.html'),
+      filename: './index.html',
+      favicon: 'public/icons/favicon.ico',
+      title: 'Pokedex Online',
+      title: 'Pokedex Online WPA',
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'assets/[name].css',
     }),
+    new Dotenv({
+      safe: true,
+      systemvars: true
+    }),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
+      maximumFileSizeToCacheInBytes: 7 * 1024 * 1024
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'public/icons', to: 'icons' },
+        { from: 'public/manifest.json', to: 'manifest.json' }
+      ]
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
-};
+}
