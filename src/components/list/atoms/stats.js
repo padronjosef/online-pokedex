@@ -8,19 +8,13 @@ export function Stats({ stats = [] }) {
 
   return (
     <div className='stats'>
-      {stats.map(({ name, value }) => {
-        const lightIcons = () => {
-          if (isMobile) return name + "-white"
-          return op_color ? name + "-white" : name
-        }
-
-        return (
+      {stats.map(({ name, value }) => 
           <Tooltip text={name} key={name}>
-            <img className="stats__img" src={getAsset("stats", lightIcons())} alt={name} />
+            <img className="stats__img" src={getAsset("stats", name + '-white')} alt={name} />
             <p className={`stats__text ${showShadow}`}>{value}</p>
           </Tooltip>
         )
-      })}
+      }
     </div>
   )
 }
