@@ -11,9 +11,9 @@ export const filterByType = (toFilter, typeValue) => {
 
 export const filterByPage = (toFilter, page) => {
   if (typeof page !== "number") {
-    return toFilter.slice(0, 30)
+    return toFilter.slice(0, 10)
   }
-  return toFilter.slice(page, page + 30)
+  return toFilter.slice(page, page + 10)
 }
 
 export const applyFilters = (toFilter, { type, page }) => {

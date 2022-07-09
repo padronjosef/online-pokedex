@@ -50,7 +50,7 @@ const reduceData = (fullData) => {
     egg_groups: eggs,
     types: typesRaw,
     stats: formatedStats,
-    evolution_chain: evolution_chain.chain
+    evolution_chain: evolution_chain?.chain,
   }
 
   return { ...rest, ...extra }
@@ -63,10 +63,18 @@ const getFullData = basicData => {
     const specieResult = await fetch_specie.json()
 
     // evolution chain
-    const fetch_evolution_chain = await fetch(specieResult.evolution_chain.url)
-    const evolution_chain = await fetch_evolution_chain.json()
+    const evolutionUrl = specieResult.evolution_chain?.url
 
-    const fullData = await { ...pokemon, species: specieResult, evolution_chain }
+    if(evolutionUrl) {
+      const fetch_evolution_chain = await fetch(evolutionUrl)
+      const evolution_chain = await fetch_evolution_chain.json()
+
+      const fullData = await { ...pokemon, species: specieResult, evolution_chain }
+
+      return await reduceData(fullData)
+    }
+    
+    const fullData = await { ...pokemon, species: specieResult }
 
     return await reduceData(fullData)
   })

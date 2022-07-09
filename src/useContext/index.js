@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react'
-import { toQuery } from '/src/helpers/formatData'
+import { toQuery, ENV_LOCALHOST } from '/src/helpers'
 import { constants } from './constants'
 import { applyFilters, totalOfPokemon } from './fillterEffects'
 import { getChunks } from './fetchEffects'
@@ -74,16 +74,21 @@ export const ContextProvider = ({ children }) => {
     return `https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`
   }
 
+  const getNumberOfPokemons = async () => {
+      const firstFetch = await fetch(URL_PAGE())
+      const firstJson = await firstFetch.json()
+      const getTotal = await firstJson.count
+      
+      return getTotal
+  }
+
   const fetchPokemons = async () => {
     setNotFound(false)
     setPokemons(false)
     setCardData(false)
 
     // first fetch
-    const firstFetch = await fetch(URL_PAGE())
-    const firstJson = await firstFetch.json()
-    const getTotal = await firstJson.count
-    // const getTotal = 30
+    const getTotal = ENV_LOCALHOST ? 100 : getNumberOfPokemons()
 
     // fetch them all
     const url = URL_PAGE(getTotal)
