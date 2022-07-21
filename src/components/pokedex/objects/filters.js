@@ -7,7 +7,7 @@ export function Filters() {
   return (
     <section className='pokedex__info highlight'>
       <div className='filters__header highlight'>
-        Order by
+        Filter by
       </div>
       {FILTERS.map(filter => (
         <div className='filters' key={filter}>

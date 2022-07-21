@@ -13,8 +13,10 @@ export const ContextProvider = ({ children }) => {
 
   const [firstFetch, setFirstFetch] = useState([])
   const [pokemons, setPokemons] = useState([])
-
   const [cardData, setCardData] = useState()
+
+  useEffect(() => {setCardData(getLocal('cardData'))}, [])
+
   const [spritesLength, setSpritesLength] = useState(0)
   const [notFound, setNotFound] = useState(false)
   const [toggle, setToggle] = useState(false)
