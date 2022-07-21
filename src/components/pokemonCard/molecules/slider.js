@@ -3,7 +3,7 @@ import { NextPrev, BackgroundId, CardImg } from '../atoms'
 import { contextApi } from '/src/useContext'
 
 export const Slider = () => {
-  const { spritesLength } = useContext(contextApi)
+  const { spritesLength, effects: { setSpritesLength }} = useContext(contextApi)
 
   const [index, setIndex] = useState(0)
   const handleNext = () => index + 1 === spritesLength ? setIndex(0) : setIndex(index + 1)

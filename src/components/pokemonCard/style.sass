@@ -3,12 +3,13 @@
 .pokemonCard
   display: flex
   flex-direction: column
-  max-width: 720px
+  width: 100%
   background: white
   border-radius: 4px
   background-color: transparent
   position: relative
   gap: 1rem
+  margin-bottom: 3rem
   @media screen and (max-width: 1200px)
     padding: 1rem
 
@@ -215,3 +216,44 @@
     background-color: $btn-color1
     border-radius: 50%
     cursor: pointer
+
+.evolchain
+
+  &__title
+    margin: 1rem 0
+    text-align: center
+    color: white
+    font-weight: 600
+
+  &__wrapper
+    gap: 1rem
+    width: 100%
+    display: flex
+    overflow-x: scroll
+
+    &::-webkit-scrollbar 
+        background-color: $bg-color1
+        height: 8px
+        border-radius: 5px
+
+    &::-webkit-scrollbar-thumb 
+        background-color: $text-color1
+        border-radius: 5px
+
+  &__card
+    position: relative
+    background-color: $bg-color1
+    border-radius: 4px
+    width: 100%
+    min-width: 200px
+    max-width: 200px
+    margin: auto
+
+  &__name
+    background-color: $bg-color1
+    position: absolute
+    bottom: 0
+    padding: .4rem 0
+    text-align: center
+    width: 100%
+    color: #fff

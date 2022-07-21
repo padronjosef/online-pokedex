@@ -26,7 +26,7 @@ export const CardImg = ({ index = 0 }) => {
 
   useEffect(() => {
     setSpritesLength(carrousel.length)
-  }, [spritesLength])
+  }, [spritesLength, cardData])
 
   return (
     <img className='slider__img' src={carrousel[index]} />
