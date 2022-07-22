@@ -89,7 +89,7 @@ export const ContextProvider = ({ children }) => {
     setCardData(false)
 
     // first fetch
-    const getTotal = ENV_LOCALHOST ? 100 : getNumberOfPokemons()
+    const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
 
     // fetch them all
     const url = URL_PAGE(getTotal)

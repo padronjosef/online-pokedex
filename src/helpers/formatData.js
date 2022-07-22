@@ -83,4 +83,4 @@ export const fullWeight = (weight) => {
   return `${metric} - ${imperial}`
 }
 
-export const ENV_LOCALHOST = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+export const ENV_LOCALHOST = ['localhost', '127.0.0.1'].includes(location.hostname)
