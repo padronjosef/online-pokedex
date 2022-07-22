@@ -35,7 +35,6 @@ export const ContextProvider = ({ children }) => {
     return () => removeEventListener('resize', resizer)
   }, [])
 
-
   // options
   const [options, setOptions] = useState({
     op_color: getLocal("op_color") || false,
