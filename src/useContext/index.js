@@ -84,9 +84,9 @@ export const ContextProvider = ({ children }) => {
   }
 
   const fetchPokemons = async () => {
-    setNotFound(false)
     setPokemons(false)
     setCardData(false)
+    setNotFound()
 
     // first fetch
     const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
@@ -101,7 +101,7 @@ export const ContextProvider = ({ children }) => {
     const pokemons = await getChunks(results, fetch)
 
     const filteredpokemons = await applyFilters(pokemons, { ...filters })
-
+    
     setPokemons(filteredpokemons)
     setFirstFetch(pokemons)
   }
@@ -122,7 +122,8 @@ export const ContextProvider = ({ children }) => {
     if (!query) return handleFilters("page", 0)
 
     const pokemonsFiltered = firstFetch.filter(pokemon => (pokemon.name || pokemon.id).includes(query))
-    setPokemons(pokemonsFiltered)
+    
+    pokemonsFiltered.length ? setPokemons(pokemonsFiltered) : setNotFound(!notFound)
   }
 
   const handleKeyDown = (e) => e.key === 'Enter' && searchPokemons()
