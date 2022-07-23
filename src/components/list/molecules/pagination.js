@@ -35,11 +35,14 @@ export const Pagination = () => {
 
 	return (
 		<nav className='navbar stickers'>
-			{buttons.map(({ name, logic, disabled, className }) => (
-				<button disabled={disabled} onClick={logic} key={name} className={`navbar__btn highlight ${className}`}>
-					{name}
-				</button>
-			))}
+			{buttons.map(({ name, logic, disabled }) => {
+				const isDisabled = `navbar__btn highlight ${disabled ? 'disabled' : ''}`
+				return (
+					<button disabled={disabled} onClick={logic} key={name} className={isDisabled}>
+						{name}
+					</button>
+				)
+			})}
 		</nav>
 	)
 }

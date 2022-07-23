@@ -1,7 +1,7 @@
 export let totalOfPokemon = 0
 
 export const getTypesToRender = toFilter => {
-  const filteredTypes = toFilter.map(item => item.types || item.name)
+  const filteredTypes = toFilter.map(item => item.types)
   const flatteredTypes = filteredTypes.flatMap(item => item)
   
   return ['All Pokemons', ...new Set(flatteredTypes)]

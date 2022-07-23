@@ -8,35 +8,33 @@ export function Types() {
 
   const handleClick = name => () =>  handleFilters("type", name)
 
-  const typesToRender = getTypesToRender(firstFetch)
-  const typesToDisable = getTypesToRender(types)
+  const activeTypes = getTypesToRender(firstFetch)
 
-  const diosmioFuncionaPls = typesToDisable.filter(item => !typesToRender.includes(item))
+  const checkingTypes = types.map(item => ({
+    ...item, disabled: !activeTypes.includes(item.name)
+  }))
 
-  return ( 
+  const sortedTypes = checkingTypes.sort((a, b) => a.disabled - b.disabled)
+
+  return (
     <section className='pokedex__info highlight'>
       {
-        typesToRender.map( name => (
-          <div
-            className={`types ${name === filters.type ? 'types--active highlight' : ''}`}
-            onClick={handleClick(name)}
-            key={name}
-          >
-            <TypesIcon type={name} />
-            <p className="types__text">{name}</p>
-          </div>
-        )) 
-      }
-      {
-        diosmioFuncionaPls.map( name => (
-          <div
-            className={`types disabled`}
-            key={name}
-          >
-            <TypesIcon type={name} />
-            <p className="types__text">{name}</p>
-          </div>
-        ))
+        sortedTypes.map(({ name, disabled }) => {
+          const isFocused = name === filters.type ? 'types--active highlight' : ''
+          const isDisabled = disabled ? 'disabled' : ''
+
+          return (
+            <button
+              className={`types ${isFocused} ${isDisabled}`}
+              onClick={handleClick(name)}
+              key={name}
+              disabled={isDisabled}
+            >
+              <TypesIcon type={name} />
+              <p className="types__text">{name}</p>
+            </button>
+          )
+        }) 
       }
     </section>
   )
