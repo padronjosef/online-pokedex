@@ -6,7 +6,7 @@ export function NotFound() {
   const { effects: { fetchPokemons } } = useContext(contextApi)
 
   return (
-    <div className='not-found'>
+    <div className='not-found highlight'>
       <div className='not-found__numbers'>
         <span className='not-found__span'>4</span>
         <Pokeball width="90px" />
@@ -21,7 +21,7 @@ export function NotFound() {
         </p>
       </div>
       <button
-        className='not-found__button'
+        className='not-found__button highlight'
         onClick={fetchPokemons}
       >
         Go Back Home

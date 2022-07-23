@@ -32,6 +32,15 @@
       @media screen and (max-width: 720px)
         display: none
 
+.mobile
+  &:nth-child(3)
+    display: flex
+    // width: 100%
+
+
+
+
+
 .types
   display: flex
   align-items: center
@@ -174,23 +183,24 @@
   flex-direction: column
   width: 100%
   height: 60vh
-  border: 1px solid $tertiary-color
   border-radius: 4px
   margin-top: 2rem
   font-weight: 800
   text-align: center
+  background-color: $bg-color1
   &__numbers
     display: flex
     justify-content: center
     align-items: center
     font-family: 'Rubik Mono One', sans-serif
-    color: $tertiary-color
+    color: $btn-color1
   &__span
     font-size: 80px
   &__uh-oh
     margin-top: 0.5rem
+    color: $text-color1
   &__description
-    color: $tertiary-color
+    color: $text-color1
     margin-top: 0.2rem
   &__button
     padding: .5rem 1.5rem
