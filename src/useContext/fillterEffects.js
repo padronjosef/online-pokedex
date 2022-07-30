@@ -1,8 +1,16 @@
 export let totalOfPokemon = 0
 
+export const getTypesToRender = toFilter => {
+  const filteredTypes = toFilter.map(item => item.types)
+  const flatteredTypes = filteredTypes.flatMap(item => item)
+  
+  return ['All Pokemons', ...new Set(flatteredTypes)]
+}
+
 export const filterByType = (toFilter, typeValue) => {
   if (typeValue !== 'All Pokemons') {
-    return toFilter.filter(({ types }) => types.some(type => type === typeValue)
+    return toFilter.filter(({ types }) => 
+      types.some(type => type === typeValue)
     )
   }
 
@@ -10,9 +18,12 @@ export const filterByType = (toFilter, typeValue) => {
 }
 
 export const filterByPage = (toFilter, page) => {
+  getTypesToRender(toFilter)
+
   if (typeof page !== "number") {
     return toFilter.slice(0, 10)
   }
+
   return toFilter.slice(page, page + 10)
 }
 
