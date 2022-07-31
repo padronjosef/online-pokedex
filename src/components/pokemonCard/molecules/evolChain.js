@@ -5,6 +5,8 @@ import { Spinner } from '/src/helpers';
 export function EvolChain() {
   const { loading, firstFetch, cardData: { types, evolution_chain }, effects: { handleCardData } } = useContext(contextApi)
 
+  if (!evolution_chain) return
+
   function dataFormater(pokemon, evolList = []) {
     evolList.push(pokemon.species?.name)
 
@@ -23,7 +25,9 @@ export function EvolChain() {
 
   const handleClick = item => () => handleCardData(item)
 
+
   if (!loading) return <Spinner />
+  if (!pokemonMatches.length) return
 
   return (
     <div className='evolchain'>

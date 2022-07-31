@@ -6,7 +6,7 @@ import './style.sass'
 
 export const PokemonCard = () => {
   const { cardData } = useContext(contextApi)
-  
+
   if (!cardData) return <Spinner />
 
   return (

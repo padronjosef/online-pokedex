@@ -8,10 +8,10 @@ export function Options() {
   } = useContext(contextApi)
 
   const buttons = [
-    { state: "op_color", text: "color", active: op_color },
-    { state: "op_shiny", text: "shiny", active: op_shiny },
-    { state: "op_rotate", text: "rotate", active: op_rotate },
-    { state: "op_gender", text: "gender", active: op_gender },
+    { state: "op_color", text: op_color ? "types" : "color", active: op_color },
+    { state: "op_shiny", text: op_shiny ? "shiny" : "normal", active: op_shiny },
+    { state: "op_rotate", text: op_rotate ? "back" : "front", active: op_rotate },
+    { state: "op_gender", text: op_gender ? "female" : "gender", active: op_gender },
     { state: "op_units", text: op_units ? "imperial" : "metric", active: op_units },
     { state: "op_view", text: op_view ? "grid" : "list", active: op_view }
   ]
