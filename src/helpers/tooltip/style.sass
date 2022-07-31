@@ -7,8 +7,8 @@
 
 /* Tooltip text */
 .tooltip .tooltip__text
-  background-color: $tertiary-color
-  color: $btn-color2
+  background-color: $alfa2
+  color: $text-color
   text-align: center
   padding: 5px 0
   border-radius: 6px
@@ -18,7 +18,7 @@
 
   /* Position the tooltip text */
   position: absolute
-  z-index: 1
+  z-index: 100
   top: calc(100% + 5px)
   left: 50%
   transform: translateX(-50%)
@@ -36,7 +36,7 @@
   margin-left: -5px
   border-width: 5px
   border-style: solid
-  border-color: transparent transparent $tertiary-color transparent
+  border-color: transparent transparent $tertiary transparent
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltip__text

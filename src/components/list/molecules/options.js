@@ -3,7 +3,7 @@ import { contextApi } from '/src/useContext'
 
 export function Options() {
   const {
-    options: { op_color, op_shiny, op_rotate, op_gender, op_units },
+    options: { op_color, op_shiny, op_rotate, op_gender, op_units, op_view },
     effects: { handleOptions }
   } = useContext(contextApi)
 
@@ -13,7 +13,10 @@ export function Options() {
     { state: "op_rotate", text: "rotate", active: op_rotate },
     { state: "op_gender", text: "gender", active: op_gender },
     { state: "op_units", text: op_units ? "imperial" : "metric", active: op_units },
+    { state: "op_view", text: op_view ? "grid" : "list", active: op_view }
   ]
+
+  const handleClick = (state, active) => () => handleOptions(state, !active)
 
   return (
     <div className='options stickers'>
@@ -21,9 +24,9 @@ export function Options() {
         <button
           key={text}
           className={`options__btn highlight ${active ? "options__btn--active" : ''}`}
-          onClick={() => handleOptions(state, !active)}
+          onClick={handleClick(state, active)}
         >
-          {text}
+          {text.toLocaleUpperCase()}
         </button>
       ))}
     </div>

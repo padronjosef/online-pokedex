@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { contextApi } from '/src/useContext'
 
 export function Filters() {
-  const { FILTERS } = useContext(contextApi)
+  const { loading, FILTERS } = useContext(contextApi)
 
   return (
     <section className='pokedex__info highlight'>
@@ -16,11 +16,14 @@ export function Filters() {
             className='filters__input highlight'
             placeholder={filter}
             type="number"
+            disabled={!loading}
           />
         </div>
       ))}
       <div className='filters__wrapper'>
-        <button className='filters__button highlight'>Apply Filters</button>
+        <button disabled={!loading} className='filters__button highlight'>
+          Apply Filters
+        </button>
       </div>
     </section>
   )

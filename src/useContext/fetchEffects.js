@@ -73,14 +73,14 @@ const getFullData = basicData => {
 
       return await reduceData(fullData)
     }
-    
+
     const fullData = await { ...pokemon, species: specieResult }
 
     return await reduceData(fullData)
   })
 }
 
-export const getAll = async (items, fn) => {
+export const getAll = async (items, fn ) => {
   const promises = await items.map(item => fn(item.url))
 
   const result = await Promise.all(
@@ -106,20 +106,24 @@ export const getSeries = async (items, fn) => {
 
 export const getSplits = async (items, chunkSize) => {
   const result = []
+
   for (let i = 0; i < items.length; i += chunkSize) {
     result.push(items.slice(i, i + chunkSize))
   }
+
   return result
 }
 
-export const getChunks = async (items, fn, chunkSize = 10) => {
+export const getChunks = async (items, fn, setFilters, chunkSize = 10) => {
   let result = []
 
   const splits = await getSplits(items, chunkSize)
 
   await getSeries(splits, async chunk => {
     const all = await getAll(chunk, fn)
+
     result.push(...all)
+    setFilters(result)
   })
 
   return result

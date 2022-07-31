@@ -14,13 +14,15 @@ export const ContextProvider = ({ children }) => {
   const [firstFetch, setFirstFetch] = useState([])
   const [pokemons, setPokemons] = useState([])
   const [cardData, setCardData] = useState()
+  const [loading, setLoading] = useState(false)
 
-  useEffect(() => {setCardData(getLocal('cardData'))}, [])
+  useEffect(() => { setCardData(getLocal('cardData')) }, [])
 
   const [spritesLength, setSpritesLength] = useState(0)
   const [notFound, setNotFound] = useState(false)
   const [toggle, setToggle] = useState(false)
   const [isMobile, setIsMobile] = useState(window.screen.width < 720)
+  const [numberOfPokemons, setNumberOfPokemons] = useState(0)
 
   const handleToogle = () => setToggle(!toggle)
 
@@ -42,6 +44,7 @@ export const ContextProvider = ({ children }) => {
     op_rotate: getLocal("op_rotate") || false,
     op_gender: getLocal("op_gender") || false,
     op_units: getLocal("op_units") || false,
+    op_view: getLocal("op_view") || false,
   })
 
   const handleOptions = (name, value) => {
@@ -50,12 +53,16 @@ export const ContextProvider = ({ children }) => {
   }
 
   const [filters, setFilters] = useState({
-    type: getLocal("type") || 'All Pokemons',
-    page: getLocal("page") || 0,
+    // type: getLocal("type") || 'All Pokemons',
+    // page: getLocal("page") || 0,
+    type: 'All Pokemons',
+    page: 0,
   })
 
   const handleFilters = (name, value) => {
-    let verifyFilters = () => {
+    closeCard()
+
+    const verifyFilters = () => {
       if (name !== 'page') {
         setLocal('page', 0)
         return { ...filters, 'page': 0 }
@@ -71,25 +78,26 @@ export const ContextProvider = ({ children }) => {
     setPokemons(result)
   }
 
-  const URL_PAGE = (limit = 0, offset = 0) => {
-    return `https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`
-  }
+  const URL_PAGE = (limit = 0, offset = 0) => `https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`
 
   const getNumberOfPokemons = async () => {
-      const firstFetch = await fetch(URL_PAGE())
-      const firstJson = await firstFetch.json()
-      const getTotal = await firstJson.count
-      
-      return getTotal
+    const firstFetch = await fetch(URL_PAGE())
+    const firstJson = await firstFetch.json()
+    const getTotal = await firstJson.count
+
+    return getTotal
   }
 
   const fetchPokemons = async () => {
+    setNotFound(false)
     setPokemons(false)
     setCardData(false)
-    setNotFound()
+    setLoading(false)
 
     // first fetch
-    const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
+    const getTotal = ENV_LOCALHOST ? 200 : await getNumberOfPokemons()
+
+    setNumberOfPokemons(getTotal)
 
     // fetch them all
     const url = URL_PAGE(getTotal)
@@ -97,13 +105,17 @@ export const ContextProvider = ({ children }) => {
     const rawData = await res.json()
     const results = rawData.results
 
-    // getting basic info
-    const pokemons = await getChunks(results, fetch)
+    const setFilters = async data => {
+      const filteredpokemons = await applyFilters(data, { ...filters })
 
-    const filteredpokemons = await applyFilters(pokemons, { ...filters })
-    
-    setPokemons(filteredpokemons)
+      setPokemons(filteredpokemons)
+    }
+
+    // getting basic info
+    const pokemons = await getChunks(results, fetch, setFilters)
+
     setFirstFetch(pokemons)
+    setLoading(true)
   }
 
   const closeCard = () => {
@@ -122,8 +134,7 @@ export const ContextProvider = ({ children }) => {
     if (!query) return handleFilters("page", 0)
 
     const pokemonsFiltered = firstFetch.filter(pokemon => (pokemon.name || pokemon.id).includes(query))
-    
-    pokemonsFiltered.length ? setPokemons(pokemonsFiltered) : setNotFound(!notFound)
+    setPokemons(pokemonsFiltered)
   }
 
   const handleKeyDown = (e) => e.key === 'Enter' && searchPokemons()
@@ -141,7 +152,9 @@ export const ContextProvider = ({ children }) => {
     totalOfPokemon,
     inputSearch,
     isMobile,
-    toggle
+    toggle,
+    numberOfPokemons,
+    loading
   }
 
   function effects() {

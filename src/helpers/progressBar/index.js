@@ -8,7 +8,7 @@ export const ProgressBar = ({
   max = 100,
   color = ""
 }) => {
-  const pogress = (value / max) * 100
+  const progress = (value / max) * 100
 
   return (
     <div className='progress-bar' >
@@ -18,7 +18,7 @@ export const ProgressBar = ({
       <div className='progress-bar__bar'>
         <div
           className={`progress-bar__fill ${color}`}
-          style={{ width: pogress + "%" }}
+          style={{ width: progress + "%" }}
         >
           <span className='progress-bar__value'>
             {value}

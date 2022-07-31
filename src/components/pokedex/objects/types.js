@@ -4,9 +4,9 @@ import { getTypesToRender } from '/src/useContext/fillterEffects'
 import { TypesIcon } from '../atoms'
 
 export function Types() {
-  const { firstFetch, types, filters, effects: { handleFilters } } = useContext(contextApi)
+  const { loading, firstFetch, types, filters, effects: { handleFilters } } = useContext(contextApi)
 
-  const handleClick = name => () =>  handleFilters("type", name)
+  const handleClick = name => () => handleFilters("type", name)
 
   const activeTypes = getTypesToRender(firstFetch)
 
@@ -28,13 +28,13 @@ export function Types() {
               className={`types ${isFocused} ${isDisabled}`}
               onClick={handleClick(name)}
               key={name}
-              disabled={isDisabled}
+              disabled={!loading || isDisabled}
             >
               <TypesIcon type={name} />
               <p className="types__text">{name}</p>
             </button>
           )
-        }) 
+        })
       }
     </section>
   )

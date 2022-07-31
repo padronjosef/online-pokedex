@@ -10,6 +10,10 @@ export function ListItem() {
     effects: { handleCardData },
   } = useContext(contextApi)
 
+  const handleClick = data => () => handleCardData(data)
+
+  const fixName = name => name.split("-").join(" ")
+
   return (
     <ul className='pokelist'>
       {pokemons.map(pokemon => {
@@ -19,7 +23,7 @@ export function ListItem() {
         return (
           <li
             key={id}
-            onClick={() => handleCardData(pokemon)}
+            onClick={handleClick(pokemon)}
             className={`pokeitem grid-rows highlight ${typeColor}`}
           >
             <figure className="sprites__figure">
@@ -30,7 +34,7 @@ export function ListItem() {
             <p className='pokeitem__id'>{id}</p>
             <div className='pokeitem__name'>
               <Tooltip text={subTitle}>
-                <p>{name.split("-").join(" ")}</p>
+                <p>{fixName(name)}</p>
               </Tooltip>
             </div>
             <p className='pokeitem__height'>{formatHeight(height, op_units)}</p>

@@ -1,11 +1,11 @@
 @import 'src/assets/variables.sass'
 
 .color-white
-  color: $btn-color2 !important
+  color: $text-color !important
 
 .list-header
   font-weight: bold
-  color: $text-color1
+  color: $text-color
   font-size: 14px
   padding: 0.5rem
   @media screen and (max-width: 720px)
@@ -13,18 +13,19 @@
 
 .stickers
   display: grid
-  grid-template-columns: repeat(5, 1fr)
   width: 102%
-  gap: 1%
   top: 0
   position: sticky
-  background-color: $bg-color3
+  background-color: $secondary
   z-index: 100
   padding: 0.5rem 1%
   @media screen and (max-width: 720px)
     width: 104%
+
 .options
   top: 0
+  grid-template-columns: repeat(3, 1fr)
+  gap: 0.5rem
   @media screen and (max-width: 720px)
     display: none
   &__btn
@@ -36,13 +37,13 @@
     border-radius: 4px
     box-sizing: border-box
     font-weight: 600
-    background: $secondary-color
-    color: $text-color1
+    background: $tertiary
+    color: $text-color
     padding: 0.5rem 0
     font-size: 12px
     &--active
-      background: $bg-color1
-      color: $btn-color2
+      background: $primary
+      color: $text-color
 
 .pokelist-wrapper
   width: 100%
@@ -70,7 +71,7 @@
   cursor: pointer
 
 .active-colors
-  color: $btn-color2 !important
+  color: $text-color !important
 
 .grid-rows
   align-items: center
@@ -80,7 +81,7 @@
   grid-template-columns: 1fr 0.5fr 2fr repeat(4, 1fr)
   text-transform: uppercase
   border-radius: 4px
-  background-color: $secondary-color
+  background-color: $tertiary
   gap: 0.5rem
   @media screen and (max-width: 720px)
     padding: 1rem
@@ -88,11 +89,15 @@
 
 .pokeitem
   max-width: 720px
-  color: $text-color1
+  color: $text-color
   font-weight: 600
   cursor: pointer
   position: relative
-  padding: 0 0.5rem
+  padding: 4px
+  &:hover
+    padding: 2px
+    border: 2px solid $text-color
+    opacity: 0.8
   @media screen and (max-width: 720px)
     display: flex
     flex-wrap: wrap
@@ -105,25 +110,25 @@
       position: absolute
       left: 0.5rem
       top: 0.5rem
-      background-color: $bg-color2
+      background-color: $primary
       padding: .5rem
       border-radius: 50%
       width: 40px
       height: 40px
       vertical-align: middle
       line-height: 24px
-      color: $btn-color2
-      background-color: $secondary-color
+      color: $text-color
+      background-color: $tertiary
   &__name
     font-size: 12px
     @media screen and (max-width: 720px)
       position: absolute
       top: 0.7rem
-      background-color: $bg-color2
+      background-color: $primary
       padding: 0.5rem
       border-radius: 8px
-      color: $btn-color2
-      background-color: $secondary-color
+      color: $text-color
+      background-color: $tertiary
       max-width: 120px
   &__height
     font-size: 12px
@@ -131,22 +136,22 @@
       position: absolute
       bottom: 3rem
       left: 0.5rem
-      background-color: $bg-color2
+      background-color: $primary
       padding: 0.2rem 0.5rem
       border-radius: 8px
-      color: $btn-color2
-      background-color: $secondary-color
+      color: $text-color
+      background-color: $tertiary
   &__weight
     font-size: 12px
     @media screen and (max-width: 720px)
       position: absolute
       bottom: 3rem
       right: 0.5rem
-      background-color: $bg-color2
+      background-color: $primary
       padding: 0.2rem 0.5rem
       border-radius: 8px
-      color: $btn-color2
-      background-color: $secondary-color
+      color: $text-color
+      background-color: $tertiary
   &__icons
     display: flex
     flex-direction: column
@@ -173,10 +178,10 @@
     width: 20px
   &__text
     font-size: 12px
-    color: $text-color1
+    color: $text-color
     font-weight: 600
   @media screen and (max-width: 720px)
-    background-color: $secondary-color
+    background-color: $tertiary
     padding: 0.2rem 1rem
     border-radius: 4px 4px 0 0
     display: flex
@@ -185,7 +190,7 @@
     position: absolute
     bottom: 0
     &__text
-      color: $btn-color2
+      color: $text-color
   @media screen and (max-width: 350px)
     border-radius: 0 0 4px 4px 
 
@@ -202,13 +207,13 @@
     box-sizing: border-box
 
 .female__simbol
-  color: $bg-color1
+  color: $primary
   position: absolute
   right: 2px
   bottom: 2px
-  background: $bg-color2
-  border: 1px solid $bg-color1
-  background-color: $btn-color2
+  background-color: $primary
+  border: 1px solid $primary
+  background-color: $text-color
   padding: 2px
   border-radius: 50%
   width: 22px
@@ -218,13 +223,15 @@
     right: 1ren
 
 .navbar
+  grid-template-columns: repeat(5, 1fr)
+  gap: 1%
   bottom: 0
   &__btn
     width: 100%
     font-family: $family
     font-size: 16px
-    background: $bg-color1
-    color: $btn-color2
+    background: $primary
+    color: $text-color
     cursor: pointer
     border: none
     border-radius: 4px
@@ -232,25 +239,25 @@
     font-size: 12px
     &:disabled
       cursor: default
-      background: $tertiary-color
+      background: $tertiary
 
 .counter
-  background-color: $bg-color3
+  background-color: $secondary
   border-radius: 20px
   padding-left: 0
   padding-right: 0
-  border: 1px solid $btn-color3
+  border: 1px solid $alfa1
   cursor: default
 
 .go-back-btn
   padding: .5rem 1.5rem
   font-family: $family
   font-size: 16px
-  background: $bg-color1
-  color: $btn-color2
+  background: $primary
+  color: $text-color
   cursor: pointer
   border: none
   border-radius: 8px
   &:disabled
       cursor: default
-      background: $tertiary-color
+      background: $tertiary

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { contextApi } from '/src/useContext'
-import { Options, Header, ListItem, Pagination } from './molecules/index'
-import { Spinner } from '/src/helpers'
+import { Options, Header, ListItem, Pagination } from './molecules'
 import { NotFound } from '/src/components/pokedex/molecules'
+import { Spinner } from '/src/helpers'
 import './style.sass'
 
 export function List() {

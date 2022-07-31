@@ -4,15 +4,17 @@ import back from '/src/assets/back.svg'
 import { normalize } from '/src/helpers'
 
 export const Header = () => {
-  const { cardData, effects: { closeCard } } = useContext(contextApi)
+  const { loading, cardData, effects: { closeCard } } = useContext(contextApi)
   const { name, types, subTitle } = cardData
   const type = types[0]
+
+  const handleClick = () => loading && closeCard()
 
   return (
     <div className='pokemonCard__header' >
       <img
-        className={`pokemonCard__back highlight ${type}`}
-        onClick={closeCard}
+        className={`pokemonCard__back highlight ${type} ${!loading && "disabled"}`}
+        onClick={handleClick}
         src={back}
       />
       <div className='pokemonCard__title-wrapper'>
