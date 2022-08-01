@@ -23,7 +23,10 @@ export function EvolChain() {
 
   const pokemonMatches = firstFetch.filter(item => listOfNames.includes(item.name))
 
-  const handleClick = item => () => handleCardData(item)
+  const handleClick = item => () => {
+    window.scrollTo(0, 0)
+    handleCardData(item)
+  }
 
 
   if (!loading) return <Spinner />
