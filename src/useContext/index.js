@@ -95,8 +95,7 @@ export const ContextProvider = ({ children }) => {
     setLoading(false)
 
     // first fetch
-    // const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
-    const getTotal = await getNumberOfPokemons()
+    const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
 
     setNumberOfPokemons(getTotal)
 
