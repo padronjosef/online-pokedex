@@ -41,7 +41,7 @@ export const Pagination = () => {
         const isDisabled = `navbar__btn highlight ${disabled ? 'disabled' : ''}`
         return (
           <button disabled={disabled} onClick={logic} key={name} className={isDisabled}>
-            {name}
+            {name.toLocaleUpperCase()}
           </button>
         )
       })}

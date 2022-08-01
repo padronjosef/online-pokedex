@@ -67,24 +67,27 @@
   &__img
     width: 16px
 
-  &__back
-    width: 40px
-    height: 40px
-    fill: $text-color
-    border-radius: 50%
-    cursor: pointer
-    left: 0
-    top: 0
-    z-index: 1000
-    @media screen and (max-width: 720px)
-      position: fixed
-      top: 1rem
-      left: 1rem
   &__header
     display: flex
     align-items: center
     justify-content: center
     font-size: 2rem
+    position: relative
+  &__back
+    position: absolute
+    z-index: 1000
+    left: 0
+    bottom: 50%
+    transform: translateY(50%)
+    width: 40px
+    height: 40px
+    fill: $text-color
+    border-radius: 50%
+    cursor: pointer
+    @media screen and (max-width: 720px)
+      position: fixed
+      top: 1rem
+      left: 1rem
   &__title-wrapper
     display: flex
     flex-direction: column
@@ -235,7 +238,6 @@
     text-align: center
     color: $text-color
     font-weight: 600
-
   &__wrapper
     gap: 1rem
     width: 100%
@@ -249,7 +251,6 @@
     &::-webkit-scrollbar-thumb
       background-color: $text-color
       border-radius: 5px
-
   &__card
     position: relative
     border-radius: 4px
@@ -262,14 +263,15 @@
     &:hover
       padding: 2px
       border: 2px solid $text-color
-
   &__name
     position: absolute
     bottom: 0
+    left: 0
     padding: .4rem 0
     text-align: center
     width: 100%
     color: $text-color
+    font-weight: 600
 
 .moveList
   &__tittle
@@ -279,10 +281,53 @@
     font-weight: 600
     &:first-child
       margin-top: 2rem
+  &__select
+    gap: 1rem
+    width: 100%
+    display: flex
+    overflow-x: scroll
+    margin-bottom: 0.5rem
+    &::-webkit-scrollbar
+      background-color: $primary
+      height: 8px
+      border-radius: 5px
+    &::-webkit-scrollbar-thumb
+      background-color: $text-color
+      border-radius: 5px
+
+  &__option
+    display: flex
+    padding: 1rem
+    cursor: pointer
+    font-weight: 600
+    align-items: center
+    justify-content: center
+    gap: 0.4rem
+    width: 100%
+    margin: auto
+    color: $text-color
+    &--active
+      border: 1px solid $tertiary
+      font-weight: 600
+      border-radius: 4px
+      background-color: $text-color
+      color: $tertiary
+  &__img
+    width: 18px
   &__wrapper
     display: grid
     grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) )
     gap: 1rem
+  &__description
+    // color: $text-color
+    // background-color: $tertiary
+    color: $tertiary
+    background-color: $text-color
+    padding: 0.5rem
+    border-radius: 4px
+    text-align: center
+    margin-bottom: 1rem
+    font-weight: 600
   &__item
     background: $tertiary
     color: $text-color

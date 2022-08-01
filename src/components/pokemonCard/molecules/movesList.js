@@ -1,49 +1,48 @@
-import React, { useContext, Fragment } from 'react'
+import React, { useContext, useState, useEffect, Fragment } from 'react'
 import { contextApi } from '/src/useContext'
-import { normalize } from '/src/helpers'
+import { MovesItems } from '../atoms'
+import { normalize, getAsset } from '/src/helpers';
 
 export const MovesList = () => {
-  const { cardData: { moves } } = useContext(contextApi)
+  const { cardData } = useContext(contextApi)
+  const { moves } = cardData
 
   if (!moves.length) return
 
-  const sortedMoves = moves.sort((a, b) => a.learnLvl - b.learnLvl)
+  const categories = [...new Set([...moves.map(item => item.learnMethod)])].sort()
+  console.log("🚀 ~ file: movesList.js ~ line 13 ~ MovesList ~ categories", categories)
 
-  const eggMoves = sortedMoves.filter(item => item.learnMethod === 'egg')
-  const tutorMoves = sortedMoves.filter(item => item.learnMethod === 'tutor')
-  const machineMoves = sortedMoves.filter(item => item.learnMethod === 'machine')
-  const levelMoves = sortedMoves.filter(item => item.learnMethod === 'level-up')
+  useEffect(() => { setActiveFilter(categories[0]) }, [cardData])
 
-  const movesToRender = [
-    { title: "Egg Moves", movesList: eggMoves },
-    { title: "Level Up Moves", movesList: levelMoves },
-    { title: "Tutor Moves", movesList: tutorMoves },
-    { title: "Machine Moves", movesList: machineMoves }
-  ]
+  const [activeFilter, setActiveFilter] = useState()
+
+  const movesToRender = moves.filter(item => item.learnMethod === activeFilter)
+
+  const handleClick = newMoveSet => () => setActiveFilter(newMoveSet)
+
+  const moveDescription = {
+    'egg': "Learn the following moves via breeding",
+    'level-up': "Learn the following moves at the levels specified",
+    'machine': "Is compatible with these Technical Machines",
+    'tutor': "Can be taught these attacks from move tutors"
+  }
 
   return (
     <div className='moveList'>
-      {movesToRender.map(({ title, movesList }) => (
-        <Fragment key={title}>
-          {movesList.length > 0 && (
-            <Fragment>
-              <h3 className='moveList__tittle'>{title}</h3>
-              <div className='moveList__wrapper' >
-                {movesList.map(({ name, learnLvl, learnMethod }) => {
-                  const byLvl = learnMethod === 'level-up'
-                  const showLevel = learnLvl > 0 && <>{learnLvl} - </>
-                  return (
-                    <p key={name} className='moveList__item'>
-                      {showLevel}
-                      {normalize(name)}
-                    </p>
-                  )
-                })}
-              </div>
-            </Fragment>
-          )}
-        </Fragment>
-      ))}
-    </div>
+      <h3 className='moveList__tittle'>List of moves</h3>
+      <div className='moveList__select'>
+        {categories.map(item => {
+          const isActive = activeFilter === item ? 'moveList__option--active' : ''
+          return (
+            <div onClick={handleClick(item)} key={item} className={`moveList__option ${isActive}`}>
+              <img className='moveList__img' src={getAsset('moves', item)} alt={item} />
+              <p>{normalize(item)}</p>
+            </div>
+          )
+        })}
+      </div>
+      <h4 className='moveList__description'>{moveDescription[activeFilter]}</h4>
+      <MovesItems toRender={movesToRender} description={moveDescription[activeFilter]} />
+    </div >
   )
 }

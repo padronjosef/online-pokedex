@@ -1,7 +1,6 @@
 import React, { useContext, Fragment } from 'react'
 import { contextApi } from '/src/useContext'
 import { getAsset } from '/src/helpers'
-import { normalize } from '/src/helpers'
 
 export const Complementary = () => {
   const { cardData: { egg_groups, shape, generation, growth_rate, habitat } } = useContext(contextApi)

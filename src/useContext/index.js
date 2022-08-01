@@ -72,7 +72,7 @@ export const ContextProvider = ({ children }) => {
 
     setLocal(name, value)
     setFilters({ ...verifyFilters(), [name]: value })
-    setCardData(false)
+    closeCard()
 
     const result = applyFilters(firstFetch, { ...verifyFilters(), [name]: value })
     setPokemons(result)
@@ -95,8 +95,8 @@ export const ContextProvider = ({ children }) => {
     setLoading(false)
 
     // first fetch
-    // const getTotal =  1
-    const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
+    // const getTotal = ENV_LOCALHOST ? 100 : await getNumberOfPokemons()
+    const getTotal = await getNumberOfPokemons()
 
     setNumberOfPokemons(getTotal)
 
@@ -136,6 +136,7 @@ export const ContextProvider = ({ children }) => {
 
     const pokemonsFiltered = firstFetch.filter(pokemon => (pokemon.name || pokemon.id).includes(query))
     setPokemons(pokemonsFiltered)
+    closeCard()
   }
 
   const handleKeyDown = (e) => e.key === 'Enter' && searchPokemons()
