@@ -35,7 +35,7 @@ export const Complementary = () => {
           <p className='complementary__value'>{value}</p>
         </div>
       ))}
-      {habitat.name && (
+      {habitat?.name && (
         <div className='complementary__item'>
           <h4 className='complementary__name complementary__img-name'>{habitat?.name}</h4>
           <img className='complementary__img' src={getAsset('habitats', habitat?.name)} alt={habitat?.name} />
