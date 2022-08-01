@@ -27,11 +27,13 @@ export function EvolChain() {
 
 
   if (!loading) return <Spinner />
-  if (!pokemonMatches.length) return
+  if (pokemonMatches.length <= 1) return
 
   return (
     <div className='evolchain'>
-      <h3 className='evolchain__title'>Evolution chain</h3>
+      <h3 className='evolchain__title'>
+        Evolution chain
+      </h3>
       <div className='evolchain__wrapper'>
         {pokemonMatches.map(pokemon => {
           const { name, sprites: { front_default } } = pokemon

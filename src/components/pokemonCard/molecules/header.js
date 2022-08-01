@@ -4,7 +4,7 @@ import back from '/src/assets/back.svg'
 import { normalize } from '/src/helpers'
 
 export const Header = () => {
-  const { loading, cardData, effects: { closeCard } } = useContext(contextApi)
+  const { cardData, effects: { closeCard } } = useContext(contextApi)
   const { name, types, subTitle } = cardData
   const type = types[0]
 

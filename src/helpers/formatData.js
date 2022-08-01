@@ -10,8 +10,8 @@ export const getLast = (list) => {
   return Math.ceil(list / 10) * 10
 }
 
-export const getAsset = (where, name) => {
-  return require(`/src/assets/${where}/${name}.png`)
+export const getAsset = (where, name, ext = 'png') => {
+  return require(`/src/assets/${where}/${name}.${ext}`)
 }
 
 export const normalize = (text = '') => {
@@ -19,7 +19,7 @@ export const normalize = (text = '') => {
 }
 
 export const toQuery = (query = '') => {
-  if( typeof query === "number") return Math.abs(query).trim()
+  if (typeof query === "number") return Math.abs(query).trim()
   return query.trim().replace(" ", "-")
 }
 

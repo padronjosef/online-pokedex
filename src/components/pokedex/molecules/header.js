@@ -10,7 +10,6 @@ export function Header() {
       <div className='header__wrapper'>
         <Pokeball width={"2.5rem"} onClick={closeCard} />
         <h1 className='header__name' onClick={closeCard} >Online Pokedex</h1>
-        <BurgerBtn />
       </div>
       <Searcher />
     </header>

@@ -10,12 +10,14 @@ export function LoadingBar() {
 
   const progress = 100 - ((total - loaded) / total * 100)
 
+  const borderRadiusFix = progress < 5 ? { borderRadius: "50%" } : ''
+
   if (loading) return
 
   return (
     <div className='loadingBar'>
       <div className='loadingBar__text'>{parseInt(progress)}%</div>
-      <div className='loadingBar__progress' style={{ width: `${progress}%` }} />
+      <div className='loadingBar__progress' style={{ width: `${progress}% ${borderRadiusFix}` }} />
     </div>
   )
 }

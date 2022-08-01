@@ -4,8 +4,9 @@ import { actualPage, totalPages, getLast } from '/src/helpers'
 
 export const Pagination = () => {
   const { loading, totalOfPokemon, filters: { page }, effects: { handleFilters } } = useContext(contextApi)
+  const numberOfPages = totalPages(totalOfPokemon)
 
-  if(!loading) return
+  if (!loading || numberOfPages <= 1) return
 
   const buttons = [
     {
@@ -19,7 +20,7 @@ export const Pagination = () => {
       disabled: !page
     },
     {
-      name: actualPage(page) + " / " + totalPages(totalOfPokemon),
+      name: actualPage(page) + " / " + numberOfPages,
       className: "counter",
     },
     {

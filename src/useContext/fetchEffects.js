@@ -16,14 +16,15 @@ const reduceData = (fullData) => {
     held_items,
     evolution_chain,
     sprites,
+    moves,
     ...rest } = fullData
 
   const { other: { dream_world, home, }, versions, ...restSprites } = sprites
   const official = sprites.other["official-artwork"]
 
-  const formatedSprites = { ...restSprites, dream_world, home, official }
+  const formattedSprites = { ...restSprites, dream_world, home, official }
 
-  const { genera, flavor_text_entries, egg_groups, color, generation } = species
+  const { genera, flavor_text_entries, egg_groups, color, generation, growth_rate, habitat, shape } = species
 
   const power = stats.reduce((acum, value) => acum + value.base_stat, 0)
 
@@ -33,14 +34,21 @@ const reduceData = (fullData) => {
   const descriptionEN = flavor_text_entries.filter(item => item.language.name === "en")
   const description = descriptionEN[0].flavor_text.replace("\f", '. ')
 
-  const formatedStats = stats.map(({ stat, base_stat }) => ({ name: stat.name, value: base_stat }))
+  const formattedStats = stats.map(({ stat, base_stat }) => ({ name: stat.name, value: base_stat }))
 
   const eggs = egg_groups.map(egg => egg.name)
 
+
   const typesRaw = types.map(item => item.type.name)
 
+  const formattedMoves = moves?.map(item => ({
+    name: item.move?.name,
+    learnLvl: item.version_group_details[0]?.level_learned_at,
+    learnMethod: item.version_group_details[0]?.move_learn_method.name,
+  }))
+
   const extra = {
-    sprites: formatedSprites,
+    sprites: formattedSprites,
     generation: constants().ROMAN_NUMBERS[generation.name.replace("generation-", '')],
     power,
     subTitle,
@@ -49,8 +57,12 @@ const reduceData = (fullData) => {
     color: color.name,
     egg_groups: eggs,
     types: typesRaw,
-    stats: formatedStats,
+    stats: formattedStats,
     evolution_chain: evolution_chain?.chain,
+    growth_rate,
+    habitat,
+    moves: formattedMoves,
+    shape: shape?.name
   }
 
   return { ...rest, ...extra }
@@ -65,7 +77,7 @@ const getFullData = basicData => {
     // evolution chain
     const evolutionUrl = specieResult.evolution_chain?.url
 
-    if(evolutionUrl) {
+    if (evolutionUrl) {
       const fetch_evolution_chain = await fetch(evolutionUrl)
       const evolution_chain = await fetch_evolution_chain.json()
 
@@ -80,7 +92,7 @@ const getFullData = basicData => {
   })
 }
 
-export const getAll = async (items, fn ) => {
+export const getAll = async (items, fn) => {
   const promises = await items.map(item => fn(item.url))
 
   const result = await Promise.all(

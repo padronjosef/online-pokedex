@@ -10,7 +10,10 @@ export function ListItem() {
     effects: { handleCardData },
   } = useContext(contextApi)
 
-  const handleClick = data => () => handleCardData(data)
+  const handleClick = data => () => {
+    window.scrollTo(0, 0)
+    handleCardData(data)
+  }
 
   const fixName = name => name.split("-").join(" ")
 

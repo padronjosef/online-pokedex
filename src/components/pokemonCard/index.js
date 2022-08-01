@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { contextApi } from '/src/useContext'
 import { Spinner } from "/src/helpers"
-import { Header, Slider, Info, Stats, EvolChain } from './molecules'
+import { Header, Slider, Info, Stats, EvolChain, MovesList, Complementary } from './molecules'
 import './style.sass'
 
 export const PokemonCard = () => {
@@ -18,7 +18,9 @@ export const PokemonCard = () => {
         <Slider />
         <Stats />
       </div>
+      <Complementary />
       <EvolChain />
+      <MovesList />
     </div >
   )
 }
