@@ -5,7 +5,6 @@ import { normalize } from '/src/helpers'
 
 export const Complementary = () => {
   const { cardData: { egg_groups, shape, generation, growth_rate, habitat } } = useContext(contextApi)
-  console.log("🚀 ~ file: complementary.js ~ line 8 ~ Complementary ~ shape", shape)
 
   const generations = ['Kanto', 'Johto', 'Hoenn', 'Sinnoh', 'Unova', 'Kalos', 'Alola', 'Galar']
 
@@ -39,7 +38,7 @@ export const Complementary = () => {
       {habitat.name && (
         <div className='complementary__item'>
           <h4 className='complementary__name complementary__img-name'>{habitat?.name}</h4>
-          <img className='complementary__img' src={getAsset('habitats', habitat?.name)} alt={habitat.name} />
+          <img className='complementary__img' src={getAsset('habitats', habitat?.name)} alt={habitat?.name} />
         </div>
       )}
     </div>
